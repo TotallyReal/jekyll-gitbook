@@ -1,0 +1,20 @@
+module Jekyll
+  class ExternalOrderGenerator < Generator
+    priority :low
+
+    def generate(site)
+      post_order_data = site.data["post_order"]
+
+      if post_order_data
+        # Ensure only valid pages are included
+        ordered_pages = post_order_data.select do |page|
+          site.pages.any? { |p| p.relative_path == page }
+        end
+        /puts site.pages/
+
+        # Sort the pages based on their order in the external data
+        site.pages.sort_by! { |p| ordered_pages.index(p.relative_path) || Float::INFINITY }
+      end
+    end
+  end
+end

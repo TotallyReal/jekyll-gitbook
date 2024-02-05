@@ -1,0 +1,70 @@
+<div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="{{site.baseurl}}/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            {% if page.url == "/index.html" or page.url == "/" %}
+            <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
+                {% else %}
+            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
+                {% endif %}
+                <a href="{{site.baseurl}}/" onclick="pageScrollToTop(this)">
+                    {{ site.title | escape }}
+                </a>
+            </li>
+            <li class="divider"></li>
+
+            {% assign post_order = site.data.post_order %}
+
+            {% for post_basename in post_order %}
+                {% assign post_path = '/pages/' | append: post_basename | append: '/' %}
+                {% assign post = site.pages | where: 'url', post_path | first %}
+
+                {% if page.url == post.url %}
+                    <li class="chapter active" data-level="1.2" data-path="{{ site.baseurl }}{{ post_path }}">
+                {% else %}
+                    <li class="chapter" data-level="1.1" data-path="{{ site.baseurl }}{{ post_path }}">
+                {% endif %}
+                    <a href="{{ site.baseurl }}{{ post_path }}" onclick="pageScrollToTop(this)">
+                        {{ post.title | escape }}
+                    </a>
+                </li>
+
+            {% endfor %}
+
+            <li class="divider"></li>
+            <li>Inside this page:</li>
+            <li class="chapter active" data-level="1.4" data-path="{{ site.baseurl }}{{ page.url }}">
+                <a href="{{ site.baseurl }}{{ post_path }}" onclick="pageScrollToTop(this)">
+                    {{ page.title | escape }}
+                </a>
+                {% if site.toc.enabled %}
+                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+</div>
