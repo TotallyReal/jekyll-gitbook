@@ -53,6 +53,11 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
+    order:
+      - course_description.md
+      - motivation.md
+      - inner_products.md
+      - orthogonality.md
 
 page_width: 800px
 

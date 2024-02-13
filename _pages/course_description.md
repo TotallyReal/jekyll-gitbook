@@ -5,22 +5,39 @@ category: Fourier Analysis
 layout: post
 ---
 
-# Description
-short description for Fourier analysis
+before content 
 
-# Syllabus
-**Fourier series**: Definitions, Dirichlet's convergence theorem, ...
+> [!proof] This is a proof
+> This is line 1. It is actually a very long line , as you can see by yourself. I am still writing it as a very long line just to see the paragraph in action.
+> 
+> This is line 2
+> This is line 3
+> ...
+> Final content line
 
-**Fourier transforms**: Definition,...
+another line
 
-# Prerequisites
-- [**Basic Linear Algebra**][1]: Linear system of equations, matrices, eigenvalues and eigenvectors.
-- [**Inner Products**][2]: Inner products and norms, orthonormal bases, orthogonal projection.
-- [**Calculus**][3]: Limits, continuity, derivatives and integrals on finite and infinite segments.
+> [!shadowed-section] This is the title
+> This is line 1. It is actually a very long line , as you can see by yourself. I am still writing it as a very long line just to see the paragraph in action.
+> 
+> This is line 2
+> This is line 3 $a+b=c$
+> ...
+> $$\begin{pmatrix}
+> a & b \\
+> c & d
+> \end{pmatrix}$$
+> Final content line
 
-# Recommended books
+another line
 
+after content
 
-[1]: https://basic_linear_algebra
-[2]: https://inner_products
-[3]: https://calculus
+$\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}$
+$$\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}$$

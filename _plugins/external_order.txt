@@ -3,18 +3,54 @@ module Jekyll
     priority :low
 
     def generate(site)
-      post_order_data = site.data["post_order"]
+      # puts "--------------------------------------------------------------------"
 
-      if post_order_data
-        # Ensure only valid pages are included
-        ordered_pages = post_order_data.select do |page|
-          site.pages.any? { |p| p.relative_path == page }
-        end
-        /puts site.pages/
+      c = site.collections["pages"]
+      doc = c.docs[0]
+      # puts doc.path
+      # # puts doc.data
+      # c.docs.each do |page|
+      #   puts File.basename(page.path, '.*')
+      # end
 
-        # Sort the pages based on their order in the external data
-        site.pages.sort_by! { |p| ordered_pages.index(p.relative_path) || Float::INFINITY }
-      end
+      # post_order_data = site.data["post_order"]["pages"]
+      # puts post_order_data
+
+      # sorted_docs = site.collections["pages"].docs.sort_by do |doc|
+      #   # Get the index of the document's file name in the post_order list
+      #   post_order_data.index(File.basename(doc.path, '.*'))
+      # end
+      # if post_order_data
+      #   # Ensure only valid pages are included
+      #   ordered_pages = post_order_data.select do |page|
+      #     site.pages.any? { |p| p.relative_path == page }
+      #   end
+      #   /puts site.pages/
+
+      #   # Sort the pages based on their order in the external data
+      #   site.pages.sort_by! { |p| ordered_pages.index(p.relative_path) || Float::INFINITY }
+      # end
+      # puts "--------------------------------------------------------------------"
     end
   end
 end
+
+def print_variables(obj)
+  puts "# #{obj.class}"
+  obj.instance_variables.each do |var|
+    var_name = var.to_s.delete('@')
+    var_value = obj.instance_variable_get(var)
+    var_type = var_value.class
+    puts "#{var_name}: #{var_type}"
+  end
+end
+
+def print_pages()  
+  site.pages.each do |page|
+    # Print the path and name of the page
+    puts "Path: #{page.path}, Name: #{page.name}"
+  end
+end
+
+
+

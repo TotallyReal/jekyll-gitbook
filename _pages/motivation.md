@@ -5,9 +5,10 @@ date: 2024-01-01
 category: Fourier
 layout: post
 ---
-<!--<iframe scrolling="no" src="../../p5js/sketch.html" width="400" height="200" style="border:none"></iframe>-->
+
 # What do we analyze?
 
+abc
 The "**Fourier Analysis**" is one of the most useful tool when we try to study real (and complex) function. These function of course appear naturally in many places, for example:
  - **Physics**: position, speed, force, temperature, etc. ,
  - **Digital representations**: like pixels in images, sound in audio file, or movement in animation
@@ -44,10 +45,10 @@ We can think of this as advancing in position or time (depending on what our fun
 
 This "symmetry" structure seems simple at first, however it leads to very interesting questions. Are there interesting "patterns" that our functions exhibit under this symmetries? For example, the function "repeats" itself when we move to the left or right? Are there "basic" patterns that we should look for when given such a function? This "pattern" search question is the main goal of our course, and in a sense the "Fourier analysis" can be thought of as pattern investigation of these functions.
 
-> #### Remark: 
+> [!remark] Remark: 
 > In our course we will mainly be interested in the periodic functions, and functions on the real line. In this study, we will naturally also see the space of infinite sequences.
 > The finite discrete Fourier transforms are also very important, but will not be part of this course. However, they appear frequently in the theoretical side of computer science, if you wish to study more about them.
-{: .remark }
+
 
 ---
 # Some "Real life" problems:

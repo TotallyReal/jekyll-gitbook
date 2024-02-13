@@ -1,4 +1,44 @@
+/*------------- callout ------------------*/
 
+.markdown-section .callout p {
+    font-family: verdana;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.markdown-section .callout {
+    position: relative;
+    border: 6px solid #ccccff; /* Adjust the border style and color as needed */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 15px 20px 2px 20px; /* Adjust the padding as needed */
+    margin: 25px; /* Adjust the margin as needed */
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.markdown-section .callout .env-title {
+    position: absolute;
+    top: -27px; /* Adjust the positioning as needed : 15 from padding in section + 12~half of font size*/
+    background-color: #ccccff; /* Background color to cover the top border */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 5px 20px; /* Adjust the padding as needed */
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the title bold */
+}
+
+.markdown-section .callout .env-content {
+    border-radius: 8px; /* Add rounded corners */
+    top: -35px; /* Adjust the positioning as needed */
+    margin-top: 0px; /* Adjust the spacing between title and content as needed */
+}
+
+/*------------- callout ------------------*/
+
+.callout[data-callout="proof"] {
+    --callout-color: 106, 184, 189;
+    --callout-icon: lucide-scroll;
+    border: 1px solid rgba(255,255,255, 0.5);
+}
 /*------------- highlight-section ------------------*/
 
 .markdown-section .highlight-section p {
@@ -19,19 +59,19 @@
     font-family: CMU Serif, Times, Noto Serif JP;
 }
 
-    .markdown-section .highlight-section .env-title {
-        padding: var(--size-2-3);
-        padding-left: var(--size-4-3);
-        /*inner title?*/
-        font-family: Inter;
-        font-weight: normal;
-        color: rgb(var(--callout-color));
-    }
+.markdown-section .highlight-section .env-title {
+    padding: var(--size-2-3);
+    padding-left: var(--size-4-3);
+    /*inner title?*/
+    font-family: Inter;
+    font-weight: normal;
+    color: rgb(var(--callout-color));
+}
 
-    .markdown-section .highlight-section .env-content {
-        background-color: var(--background-primary);
-        padding: 1px 20px 2px 20px;
-    }
+.markdown-section .highlight-section .env-content {
+    background-color: var(--background-primary);
+    padding: 1px 20px 2px 20px;
+}
 
 /*------------- shadowed-section ------------------*/
 

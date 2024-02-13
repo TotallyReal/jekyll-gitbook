@@ -1,0 +1,28 @@
+module Jekyll
+    module WikilinkFilter
+      def wikilinks(input, site)
+
+        # puts "Value of variable x:"
+        # puts "*************************************************************************"
+
+        # site.pages.each do |page|
+        #     puts "Available Page Title: #{page.data['title']}"
+        # end
+
+        # input.gsub(/\[\[([^\]]+?)\]\]/) do
+        #   page_title = $1
+        #   target_page = site.pages.find { |page| page.data["title"] == page_title }
+  
+        #   if target_page
+        #     page_url = target_page.url
+        #     "[#{page_title}](#{page_url})"
+        #   else
+        #     "[#{page_title}](#)"
+        #   end
+        # end
+      end
+    end
+  end
+  
+  Liquid::Template.register_filter(Jekyll::WikilinkFilter)
+  
