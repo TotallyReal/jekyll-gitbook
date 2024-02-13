@@ -33,7 +33,9 @@
                 </div>
 
                 <div class="body-inner">
-                    {%- include preamble.html -%}
+                    <div id="hiddenDiv" style="display: none;">
+                        {%- include preamble.html -%}
+                    </div>
                     {%- include body.html -%}
 
                     {% if page.previous %}

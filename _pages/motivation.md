@@ -24,7 +24,7 @@ Having so many "real functions" types, and having them representing so many obje
 2. **Linear algebra**: Usually this chosen family forms a vector space, allowing us to use all the tools from linear algebra.
 3. **Calculus**: Using the structure of the real line, we can look at continuity, derivative, integral, etc.
 4. **Geometry**: We can also measure the "size", namely the norm, of a function in several ways. For example, measure the area beneath the graph of the function (in absolute value): 
-   <center><img src="../../images/motivation/area.jpg" width="500"  /> </center>
+   <center><img src="../images/motivation/area.jpg" width="500"  /> </center>
    These norms satisfy the well known triangle inequality $\norm{f+g} \leq \norm f + \norm g$, which let us construct a **geometry** on our space, since we can measure distances, e.g. $dist(f,g):=\norm{f-g}$.
 5. **Angles**: More generally, we can think of "angles" between vectors, and draw intuition from the standard Euclidean spaces (e.g. the Pythagoras theorem). More formally, we add an [inner product] structure (as we shall see soon).	
 
@@ -34,8 +34,7 @@ The main idea in Fourier analysis, is that we add one more very interesting stru
 **Symmetry**:
 
 These families usually have very nice "symmetries". Usually we think of symmetries like reflections - we have the original object, we take its reflection though a mirror, and somehow get the "same" object (or at the very least it looks the same). Something similar happens with our real functions - for example, functions on the real line are "symmetric" to left and right translations: we can "move" functions to the left and right to get another function in the family :
-
-<center><img src="../../images/motivation/translation.jpg" width="500"  /> </center>
+<center><img src="../images/motivation/translation.jpg" width="500"  /> </center>
 
 $$ \text{Translation left and right: }f(x) \mapsto f(x+c)$$
 
@@ -58,7 +57,7 @@ Let see some examples for this pattern search in real life problems.
 
 When playing music on a piano (and many other instruments as well), we usually play different notes that sound "harmonious" together. For example, the chord `C` on the piano is a combination of the notes `C,E,G`. Each of these notes correspond to a "pure" sine sound wave with a given frequency, and when they are all played together, these waves sum up as can be seen in the image below.
 
-<center><img src="../../images/motivation/piano keyboard.png" height="200"  /><img src="../../images/motivation/piano_notes.png" height="200"  /> </center>
+<center><img src="../images/motivation/piano keyboard.png" height="200"  /><img src="../images/motivation/piano_notes.png" height="200"  /> </center>
 
 Suppose now that we can hear this combination of notes together. Can we find out what are the notes being played? For example, can we extract from the `C+E+G` orange wave in the image, the `C,E,G` red, green and blue waves? This is one type of "pattern" search that Fourier transformation allows us to do.
 More over, when we are listening to the chord, there is probably a lot of background white noise, which we should think of as something "without any pattern". Is it possible to extract from the "noisy" chord the notes as well? This too can be done using Fourier transformation.

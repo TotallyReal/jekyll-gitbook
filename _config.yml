@@ -40,9 +40,6 @@ syntax_highlighter_style: colorful
 
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
-# Permalinks
-permalink:                /:categories/:year-:month-:day-:title:output_ext
-
 # Disqus comments
 # disqushandler:            sighingnow
 
@@ -52,7 +49,7 @@ exclude:
 collections:
   pages:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path.html
     order:
       - course_description.md
       - motivation.md
@@ -70,11 +67,12 @@ plugins:
   - jekyll-readme-index
   - jemoji
 
-
 extra_css:
-  # assets/latex-environments.css
   css/style.css
 
 sass:
   sass_dir: _sass
   style: compressed
+
+extra_body_js:
+  js/collapsible.js

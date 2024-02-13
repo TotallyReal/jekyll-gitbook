@@ -1,1 +1,0 @@
-[[liblib/course_description|course_description]]

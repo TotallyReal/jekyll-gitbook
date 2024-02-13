@@ -8,7 +8,7 @@ module Jekyll
       puts "------------------+++++++++++++++++++++++++++----------------"
       
       site.collections["pages"].docs.each do |doc|
-        puts File.basename(doc.path, '.*')
+        # puts File.basename(doc.path, '.*')
         if File.basename(doc.path, '.*') != 'hebrew_motivation'
           mod_content = `python scripts\\converter.py '#{Base64.strict_encode64(doc.content)}'`
           doc.content = mod_content

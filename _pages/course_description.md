@@ -4,7 +4,7 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-
+![imgimg](imgimg.png)
 before content 
 The "**Fourier Analysis**" is one of the most useful tool when we try to study real (and complex) function. These function of course appear naturally in many places, for example:
  - **Physics**: position, speed, force, temperature, etc. ,
@@ -25,35 +25,3 @@ These "real functions" come in several flavors, according to their domains, and 
 > This is line 1. It is actually a very long line , as you can see by yourself. I am still writing it as a very long line just to see the paragraph in action.
 > ...
 > Final content line
-
-another line
-
-> [!remark] Remark:
-> This is line 1. It is actually a very long line , as you can see by yourself. I am still writing it as a very long line just to see the paragraph in action.
-> ...
-> $$\begin{pmatrix}
-> a & b \\
-> c & d
-> \end{pmatrix}$$
-> Final content line
-
-another line
-
-> [!theorem] Theorem:
-> This is line 1. It is actually a very long line , as you can see by yourself. I am still writing it as a very long line just to see the paragraph in action.
-> 
-> Final content line
-
-another line
-
-after content $a+b=c$ 
-$\begin{pmatrix} a & b \\\\ aaa & d \end{pmatrix}$
-
-$$\begin{pmatrix}
-a & b \\
-c & d
-\end{pmatrix}$$
-
-> [!lem] Lemma:
-> This is the content
-

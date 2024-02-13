@@ -42,4 +42,14 @@
 <!-- introduce mathjax support -->
 {% include fixes-chrome-anchors.html %}
 
-<script src="{{site.baseurl}}/scripts/collapsible.js" type="text/javascript"></script>
+
+{% if site.extra_body_js %}
+    {%- for extra_js in site.extra_body_js -%}
+        {%- assign starts_with = extra_js | slice: 0,4  -%}
+        {% if starts_with == "http" %}
+<script src="{{ extra_js }}"></script>
+        {%- else -%}
+<script src="{{site.baseurl}}/{{ extra_js }}"></script>
+        {%- endif -%}
+    {%- endfor -%}
+{% endif %}

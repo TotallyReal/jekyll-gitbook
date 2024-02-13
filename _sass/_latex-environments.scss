@@ -1,9 +1,11 @@
 /*------------- environment styles ------------------*/
 
+$callout-title-fontsize: 20px;
+
 .callout-content-wrapper {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
+    transition: grid-template-rows 0.3s ease-out;
 }
 
 .section.active .callout-content-wrapper,
@@ -21,16 +23,16 @@
 
 %env-section {
     margin: 15px 5px 15px 5px;
-    padding: 15px 10px 2px 10px;
+    padding: 5px 10px 2px 10px;
 }
 
 .highlight-section {
-    --callout-color: 238, 100, 149;
+    $callout-color: 238, 100, 149;
     --callout-icon: lucide-sun;
     border-top: none;
     border-bottom: none;
     border-right: none;
-    border-left: 4px solid rgb(var(--callout-color));
+    border-left: 4px solid rgb(238, 100, 149);
     box-shadow: none;
     margin: 5px;
 
@@ -41,8 +43,8 @@
         /*inner title?*/
         font-family: Inter;
         font-weight: normal;
-        background: rgba(var(--callout-color), 0.2);
-        color: rgb(var(--callout-color));
+        background: rgba(238, 100, 149, 0.2);
+        color: rgb(238, 100, 149);
     }
 
     .callout-content {
@@ -55,7 +57,7 @@
     border: 6px solid #ccccff; /* Adjust the border style and color as needed */
     border-radius: 8px; /* Add rounded corners */
     @extend %env-section;
-    margin-top: 25px;
+    margin-top: 30px;
     padding-top: 25px;
 
     .callout-title {
@@ -64,7 +66,7 @@
         background-color: #ccccff; /* Background color to cover the top border */
         border-radius: 8px; /* Add rounded corners */
         padding: 1px 10px; /* Adjust the padding as needed */
-        font-size: 25px; /* Adjust the font size as needed */
+        font-size: $callout-title-fontsize;
         font-weight: bold; /* Make the title bold */
     }
 
@@ -88,10 +90,10 @@
     background-position: top left, top right, bottom left, bottom right;
     border: solid #808080;
     border-width: 0 3px;
-    @extend %env-section;    
+    @extend %env-section;
 
     .callout-title {
-        font-size: 25px; /* Adjust the font size as needed */
+        font-size: $callout-title-fontsize; 
         font-weight: bold; /* Make the title bold */
     }
 
@@ -151,164 +153,4 @@
 
 .callout[data-callout="example"] {
     @extend .bracket-section
-}
-
-/*-------------------------------*/
-
-.collapsible {
-    overflow: hidden;
-    background-color: rgb(250, 0, 200);
-}
-
-.collapsible .det-title {
-    background-color: rgb(250, 180, 200);
-    cursor: pointer;
-}
-
-.collapsible .content {
-    background-color: rgb(50, 180, 200);
-    max-height: 1px;
-    overflow: hidden;
-}
-
-details {
-    margin: 0;
-    margin-bottom: 0.85em;
-    padding: 0 15px;
-
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    color: black;
-}
-
-.markdown-section .title, .markdown-section theorem {
-    font-weight: 700;
-    font-size: 1.25em;
-    cursor: pointer;
-    border-right: 5px solid rgb(90, 120, 135, 0.5);
-}
-
-/* ------------------------------ Theorem ------------------------------ */
-
-.markdown-section blockquote.theorem {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    color: black;
-}
-
-.markdown-section blockquote.theorem h4 {
-    /*background-color: rgb(106, 250, 149);*/
-    font-style: bold;
-}
-
-/* ------------------------------ Lemma ------------------------------ */
-
-.markdown-section blockquote.lemma {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    color: black;
-}
-
-.markdown-section blockquote.lemma h4 {
-    font-style: bold;
-}
-
-/* ------------------------------ Example ------------------------------ */
-
-.markdown-section blockquote.example {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    color: black;
-}
-
-.markdown-section blockquote.example h4 {
-    font-style: bold;
-}
-
-/* ------------------------------ Definition ------------------------------ */
-
-.markdown-section blockquote.definition {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    color: black;
-}
-
-.markdown-section blockquote.definition h4 {
-    font-style: bold;
-}
-
-/* ------------------------------ Proof ------------------------------ */
-
-.markdown-section blockquote.proof {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    color: black;
-}
-
-.markdown-section blockquote.proof h4 {
-    font-style: bold;
-}
-
-/* ------------------------------ Remark ------------------------------ */
-
-.markdown-section blockquote.remark {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    font-style: italic;
-    color: #000000;
-    font-family: CMU Serif, Times, Noto Serif JP;
-}
-
-.markdown-section blockquote.remark h4 {
-    font-style: bold;
-}
-
-/* ------------------------------ Exercise ------------------------------ */
-
-.markdown-section blockquote.exercise {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    color: black;
-}
-
-.markdown-section blockquote.exercise h4 {
-    font-style: bold;
-}
-
-/* ------------------------------ Problem ------------------------------ */
-
-.markdown-section blockquote.problem {
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: 5px solid rgb(90, 120, 135, 0.5);
-    background-color: rgb(150, 180, 200);
-    color: black;
-}
-
-.markdown-section blockquote.problem h4 {
-    font-style: bold;
 }

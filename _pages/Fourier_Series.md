@@ -4,7 +4,6 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-
 # The Fourier series
 
 After reminding ourselves the notations and results from inner product spaces, and combining it with the norm convergence in our new infinite dimensional vector spaces, we are ready to study the Fourier transforms on periodic function.
@@ -98,7 +97,7 @@ Leaving the edges aside for now, where does the Fourier series converges at the 
 
 $$\sum_0^\infty \frac{4}{(2n+1)\pi} \overbrace{\sin((2n+1)0)}^{=0}=0.$$
 
-![[step function approx.png|400]]
+![400](step%20function%20approx.png)
 More over, the intuition is that the approximation seems to converge to $-1$ just to the left of $x=0$ and to $+1$ just to the right of $x=0$ , and more or less go straight from $-1$ to $+1$ in the middle. In other words, the value at $x=0$ is exactly the average of the two values to its left and to its right! 
 
 We actually see something similar at the edge points $\pm \pi$. If we think of $f$ as a periodic function, then as it passes through the point $x=\pi$ it jumps from $+1$ to $-1$ , which again has average $0$ which is where our blue approximation function is at.
@@ -141,7 +140,7 @@ We this new definition of "differentiable" function, we have the following:
 >    Try to prove this using other methods (clue: $\arctan(1)=\frac{\pi}{4}$).
 >    
 > 2. As another example, recall that the approximation for $f(x)=x$ looks like:
->    ![[Pasted image 20240131120746.png|600]]
+>    ![600](Pasted%20image%2020240131120746.png)
 >    Here the function is "continuous" except for the edges, where it jumps from $f(\pi^-)=\pi$ to $f(-\pi^+)=-\pi$. The average is of course $\frac{f(-\pi^+)+f(\pi^-)}{2}=0$, and the pointwise convergence at these points are
 >    
 >    $$2\sum_{k=1}^{\infty}\left(-1\right)^{k+1}\overbrace{\frac{\sin\left(\pm k\pi\right)}{k}}^{=0}=0.$$ 
@@ -196,9 +195,9 @@ Note that going the other way around, given the $n$-th Fourier coefficients of $
 
 
 >[!proof]- Proof:
-> Denote by $a_n,b_n$, and $\tilde{a}_n,\tilde{b}_n$ the Fourier coefficients of $f(x)$ and $f'(x)$ respectively. By the theorem we know that $|a_n|=\frac{|\tilde{n}_n|}{n}, |b_n|=\frac{|\tilde{a}_n|}{n}$ for $n\geq 1$. Using this fact and the Cauchy Shwarz inequality, we get
+> Denote by $a_n,b_n$, and $\tilde{a}_n,\tilde{b}_n$ the Fourier coefficients of $f(x)$ and $f'(x)$ respectively. By the theorem we know that $\abs{a_n}=\frac{\abs{\tilde{n}_n}}{n}, \abs{b_n}=\frac{\abs{\tilde{a}_n}}{n}$ for $n\geq 1$. Using this fact and the Cauchy Shwarz inequality, we get
 > 
-> $$\sum_1^N (|a_n|+|b_n|)=\sum_1^N \frac{1}{n}(|\tilde{a}_n|+|\tilde{b}_n|)\leq \sqrt{\sum_1^N \frac{2}{n^2}}\sqrt{\sum_1^N\left( |\tilde{a}_n|^2+|\tilde{b}_n|^2\right)}.$$
+> $$\sum_1^N (\abs{a_n}+\abs{b_n})=\sum_1^N \frac{1}{n}(\abs{\tilde{a}_n}+|\tilde{b}_n|)\leq \sqrt{\sum_1^N \frac{2}{n^2}}\sqrt{\sum_1^N\left( |\tilde{a}_n|^2+|\tilde{b}_n|^2\right)}.$$
 > 
 > If we can show that the last expression is bounded (and therefore converge) we could use Weierstrass theorem to prove uniform convergence. We already know that  $\sum_1^\infty \frac{1}{n^2}$ is finite (and even know how to compute it), and for the other term we can use Bessel's inequality to obtain:
 > 
@@ -368,4 +367,4 @@ Let's summarize our convergence results in the space $E[-\pi,\pi]$:
 
 ---
 
-<-[[Infinite Orthonormal basis|Previous: Orthonormal basis]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,   ??? -> 
+<-[Previous: Orthonormal basis](Infinite%20Orthonormal%20basis)    ,    [](Fourier%20Course%20Information#Table%20of%20contents|Back%20to%20table%20of%20contents)    ,   ??? -> 

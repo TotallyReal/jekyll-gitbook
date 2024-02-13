@@ -5,7 +5,7 @@ category: Fourier Analysis
 layout: post
 ---
 
-[[motivation]]
+[motivation](motivation.md)
 
 
 # this is the first title {#id}
