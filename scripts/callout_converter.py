@@ -12,10 +12,10 @@ def process_match(match):
 <div class="callout" data-callout="{class_name}">
 
   {{::options parse_block_html="false" /}}
-  <div class="env-title">{title}</div>
+  <div class="callout-title">{title}</div>
   {{::options parse_block_html="true" /}}
   
-  <div class="env-content">
+  <div class="callout-content">
 {content}
   </div>
 </div>

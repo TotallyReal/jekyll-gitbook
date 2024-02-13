@@ -97,6 +97,7 @@ In our Fourier series $f \sim \frac{a_0}{2} + \sum_{n=1}^\infty \left(a_n\cos(nx
 Leaving the edges aside for now, where does the Fourier series converges at the point  $x=0$? This is actually quite simple to find, since
 
 $$\sum_0^\infty \frac{4}{(2n+1)\pi} \overbrace{\sin((2n+1)0)}^{=0}=0.$$
+
 ![[step function approx.png|400]]
 More over, the intuition is that the approximation seems to converge to $-1$ just to the left of $x=0$ and to $+1$ just to the right of $x=0$ , and more or less go straight from $-1$ to $+1$ in the middle. In other words, the value at $x=0$ is exactly the average of the two values to its left and to its right! 
 

@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "Fourier_Series.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fourier_Series.md",
+                "file": "course_description.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,14 +171,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ba8acaf98fc0b9f8",
+  "active": "963969d656cfc7c1",
   "lastOpenFiles": [
     "course_description.md",
+    "temp.md",
+    "Fourier_Series.md",
     "liblib/course_description.md",
     "motivation.md",
-    "Fourier_Series.md",
     "inner_products.md",
-    "temp.md",
     "hebrew_motivation.md",
     "liblib/Untitled.md",
     "orthogonality.md",

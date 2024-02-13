@@ -11,8 +11,8 @@ layout: post
 # this is the first title {#id}
 
 <div class="highlight-section">
-  <div class="env-title">Theorem: Dirichlet's theorem</div>
-  <div class="env-content">
+  <div class="callout-title">Theorem: Dirichlet's theorem</div>
+  <div class="callout-content">
     <p>This is the content of your section.</p>
     <p>And this is the second paragraph which is very long since you never stop to read actual paragraphs which are this long unless there is some sort of punchline which I have not told you yet.</p>
   </div>
@@ -22,9 +22,9 @@ layout: post
 {::options parse_block_html="true" /}
 <div class="shadowed-section">
 {::options parse_block_html="false" /}
-<div class="env-title">Theorem: Dirichlet's theorem</div>
+<div class="callout-title">Theorem: Dirichlet's theorem</div>
 {::options parse_block_html="true" /}
-<div class="env-content">
+<div class="callout-content">
 This is the content of your section +_+_+_+_+_+_+_+_
     
 And this is the second paragraph which is very long since you never stop to read actual paragraphs which are this long unless there is some sort of punchline which I have not told you yet.
@@ -41,24 +41,24 @@ sdfsdf
 .
 What happen when I write directly above?
 <div class="bordered-section">
-  <div class="env-title">Theorem: Dirichlet's theorem</div>
-  <div class="env-content">
+  <div class="callout-title">Theorem: Dirichlet's theorem</div>
+  <div class="callout-content">
     <p>This is the content of your section.</p>
     <p>And this is the second paragraph which is very long since you never stop to read actual paragraphs which are this long unless there is some sort of punchline which I have not told you yet.</p>
   </div>
 </div>
 
 <div class="bracket-section">
-  <div class="env-title">Theorem: Dirichlet's theorem</div>
-  <div class="env-content">
+  <div class="callout-title">Theorem: Dirichlet's theorem</div>
+  <div class="callout-content">
     <p>This is the content of your section.</p>
     <p>And this is the second paragraph which is very long since you never stop to read actual paragraphs which are this long unless there is some sort of punchline which I have not told you yet.</p>
   </div>
 </div>
 
 <div class="top-bracket-section">
-  <div class="env-title">Theorem: Dirichlet's theorem</div>
-  <div class="env-content">
+  <div class="callout-title">Theorem: Dirichlet's theorem</div>
+  <div class="callout-content">
     <p>This is the content of your section.</p>
     <p>And this is the second paragraph which is very long since you never stop to read actual paragraphs which are this long unless there is some sort of punchline which I have not told you yet.</p>
   </div>

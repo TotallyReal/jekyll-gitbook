@@ -8,15 +8,15 @@
 
 .markdown-section .callout {
     position: relative;
-    border: 6px solid #ccccff; /* Adjust the border style and color as needed */
-    border-radius: 8px; /* Add rounded corners */
-    padding: 15px 20px 2px 20px; /* Adjust the padding as needed */
-    margin: 25px; /* Adjust the margin as needed */
+    border: 6px solid #ccccff; 
+    border-radius: 8px;
+    padding: 15px 20px 2px 20px; 
+    margin: 25px;  
 
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.markdown-section .callout .env-title {
+.markdown-section .callout .callout-title {
     position: absolute;
     top: -27px; /* Adjust the positioning as needed : 15 from padding in section + 12~half of font size*/
     background-color: #ccccff; /* Background color to cover the top border */
@@ -26,18 +26,49 @@
     font-weight: bold; /* Make the title bold */
 }
 
-.markdown-section .callout .env-content {
+.markdown-section .callout .callout-content {
     border-radius: 8px; /* Add rounded corners */
     top: -35px; /* Adjust the positioning as needed */
     margin-top: 0px; /* Adjust the spacing between title and content as needed */
 }
 
-/*------------- callout ------------------*/
+/*------------- proof ------------------*/
+
+.callout[data-callout="proof"] p {
+    font-family: verdana;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+.callout[data-callout="proof"] .callout-content::before {
+    content: ""; /* Add content to the pseudo-element */
+    display: block;
+    width: 100%; /* Full width of the container */
+    height: 1px; /* Line height */
+    background-color: rgba(0,0,0,0.5); /* Line color */
+    left: 0;
+}
+
+.callout[data-callout="proof"] .callout-content {
+    margin-top: 5px;
+}
+
 
 .callout[data-callout="proof"] {
-    --callout-color: 106, 184, 189;
-    --callout-icon: lucide-scroll;
-    border: 1px solid rgba(255,255,255, 0.5);
+    background-image: linear-gradient(to right, #808080, #ffffff), linear-gradient(to left, #808080, #ffffff), linear-gradient(to right, #808080, #ffffff), linear-gradient(to left, #808080, #ffffff);
+    background-repeat: no-repeat;
+    background-size: 15px 3px;
+    background-position: top left, top right, bottom left, bottom right;
+    border: solid #808080;
+    border-width: 0 3px;
+    margin: 25px;
+    padding: 15px 20px 2px 20px;
+}
+
+.callout[data-callout="proof"] .callout-title {
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the title bold */
 }
 /*------------- highlight-section ------------------*/
 

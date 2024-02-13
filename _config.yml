@@ -72,4 +72,9 @@ plugins:
 
 
 extra_css:
-  assets/latex-environments.css
+  # assets/latex-environments.css
+  css/style.css
+
+sass:
+  sass_dir: _sass
+  style: compressed
