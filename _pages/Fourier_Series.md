@@ -305,7 +305,7 @@ The last exercise shows that taking the integral of a continuous function doesn'
 > Let $f_0(x)=sign(x)$ which is not continuous. Show that there are $f_1(x),f_2(x)$ such that $f_2'(x)=f_1(x)$ and $f_1'(x)=f_0(x)$ in almost every $x$ and both $f_1,f_2$ are continuous (including edge points).
 
 >[!proof]- Proof:
-> The main idea is to start with $|x|$ as before, and to change it by a scalar to $f_1(x)=|x|+c$. This keeps $f_1(x)$ as a continuous function with $f_1'(x)=f_0(x)$. Let $F$ be as in the previous exercise, and define
+> The main idea is to start with $\abs{x}$ as before, and to change it by a scalar to $f_1(x)=|x|+c$. This keeps $f_1(x)$ as a continuous function with $f_1'(x)=f_0(x)$. Let $F$ be as in the previous exercise, and define
 > 
 > $$F_C(x)=\int_{-\pi}^{x} (f_1(t)+C)\dt-\frac{\pi^2}{2} = F(x)+Cx.$$ 
 > 

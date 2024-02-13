@@ -8,7 +8,6 @@ layout: post
 
 # What do we analyze?
 
-abc
 The "**Fourier Analysis**" is one of the most useful tool when we try to study real (and complex) function. These function of course appear naturally in many places, for example:
  - **Physics**: position, speed, force, temperature, etc. ,
  - **Digital representations**: like pixels in images, sound in audio file, or movement in animation

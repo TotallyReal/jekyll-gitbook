@@ -1,7 +1,7 @@
 import re
 
 import pytest
-from callout_converter import callout_pattern
+from callout_converter import callout_pattern, convert_content
 
 
 def construct_callout(
@@ -11,11 +11,15 @@ def construct_callout(
 {content}'''
 
 
-def test_no_space_begining():
+def test_no_space_begining_title():
     callout = construct_callout()
     callout = '>'+callout[2:]
     match = re.search(callout_pattern, callout, flags=re.MULTILINE)
     assert match is not None
+
+
+def test_no_space_begining_content():
+    assert convert_content('> line1\n>line2\n>    line3')=='line1\n\nline2\n\nline3'
 
 
 def test_brackets_in_title():
@@ -28,8 +32,7 @@ content before
 content after'''
     match = re.search(callout_pattern, example, flags=re.MULTILINE)
     assert match is not None
-    _, matched_title, _ = match[1], match[2], match[3]
-    assert title == matched_title
+    assert title == match[3]
 
 
 def test_finish_callout_by_string_end():
