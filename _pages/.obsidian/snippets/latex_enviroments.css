@@ -1,0 +1,144 @@
+
+
+/* ------------------------------ Theorem ------------------------------ */
+
+.callout[data-callout="theorem"] , .callout[data-callout="משפט"] {
+    --callout-color: 106, 134, 149;
+    --callout-icon: lucide-brain;
+    border: 5px solid rgba(255,255,255, 0.5);
+    font-family: CMU Serif, Times, Noto Serif JP;	
+    font-style: italic;
+    /*box-shadow: 0px 0px 10px rgba(255,255,255,0.5);*/
+}
+
+.callout[data-callout="theorem"] .callout-title {
+    font-style: normal;
+    font-weight: bolder;
+}
+
+/* ------------------------------ Lemma ------------------------------ */
+
+.callout[data-callout="lem"]  , .callout[data-callout="למה"] {
+    --callout-color: 238, 15, 149;
+    --callout-icon: lucide-sun;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: var(--size-2-2) solid rgb(var(--callout-color));
+    box-shadow: none;
+    padding: 0px;
+    font-family: CMU Serif, Times, Noto Serif JP;
+}
+
+.callout[data-callout="lem"] .callout-title {
+        padding: var(--size-2-3);
+        padding-left: var(--size-4-3);
+}
+
+.callout[data-callout="lem"] .callout-title-inner {
+        font-family: Inter;
+        font-weight: normal;
+        color: rgb(var(--callout-color));
+}
+
+.callout[data-callout="lem"] .callout-subtitle {
+        font-weight: lighter;
+}
+
+.callout[data-callout="lem"] .callout-content {
+        background-color: var(--background-primary);
+        padding: 1px 20px 2px 20px;
+}
+
+
+/*
+.callout[data-callout="lem"]  , .callout[data-callout="למה"] {
+    --callout-color: 206, 134, 200;
+    --callout-icon: lucide-sun;
+    border: 3px solid rgba(255,255,255, 0.5);
+}*/
+
+/* ------------------------------ Definition ------------------------------ */
+
+.callout[data-callout="def"] {
+    --callout-color: 206, 134, 150;
+    --callout-icon: lucide-eye;
+    border: 5px solid rgba(255,255,255, 0.5);
+}
+
+/* ------------------------------ Remark ------------------------------ */
+
+
+/*.callout[data-callout="remark"] , .callout[data-callout="הערה"] {
+    --callout-color: 150, 134, 199;
+    border: 2px solid rgba(255,255,255, 0.5);
+    font-family: CMU Serif, Times, Noto Serif JP;	
+}*/
+
+.callout[data-callout="remark"] {
+    --callout-color: 0, 0, 0;
+    background-image: linear-gradient(#808080, #ffffff), linear-gradient(#808080, #ffffff), linear-gradient(#ffffff, #808080), linear-gradient(#ffffff, #808080);
+    background-repeat: no-repeat;
+    background-size: 3px 15px; /* Adjusted size for brackets on the bottom and top */
+    background-position: top left, top right, bottom left, bottom right;
+    border: solid #808080;
+    border-width: 3px 0; /* Adjusted border-width for brackets on the bottom and top */
+}
+
+.callout[data-callout="remark"] .callout-title {
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.callout[data-callout="remark"] .callout-title-inner {
+    font-family: Inter;
+    font-weight: normal;
+    color: rgb(200,150,210);
+}
+
+/* ------------------------------ Corollary ------------------------------ */
+
+.callout[data-callout="cor"] {
+    --callout-color: 206, 230, 100;
+    --callout-icon: lucide-rabbit;
+    border: 3px solid rgba(255,255,255, 0.5);
+}
+
+/* ------------------------------ Excercise ------------------------------ */
+
+.callout[data-callout="exc"] {
+    --callout-color: 156, 200, 100;
+    --callout-icon: lucide-rabbit;
+    border: 3px solid rgba(255,255,255, 0.5);
+}
+
+/* ------------------------------ Proof ------------------------------ */
+
+.callout[data-callout="proof"] {
+    --callout-color: 106, 184, 189;
+    --callout-icon: lucide-scroll;
+    border: 1px solid rgba(255,255,255, 0.5);
+}
+
+/* ------------------------------ Example ------------------------------ */
+
+.callout[data-callout="example"] {
+    --callout-color: 106, 234, 200;
+    --callout-icon: lucide-squirrel;
+    border: 1px solid rgba(255,255,255, 0.5);
+}
+
+/* ------------------------------ Problem ------------------------------ */
+
+.callout[data-callout="problem"] {
+    --callout-icon: lucide-help-circle;
+    border: 1px solid rgba(255,255,255, 0.5);
+}
+
+/* ------------------------------ Claim ------------------------------ */
+
+.callout[data-callout="claim"] {
+    --callout-color: 240, 100, 150;
+    --callout-icon: lucide-aperture;
+    border: 1px solid rgba(255,255,255, 0.5);
+}

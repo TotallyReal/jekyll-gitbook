@@ -2,6 +2,8 @@
   "accentColor": "",
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "rtl"
+    "rtl",
+    "latex_enviroments",
+    "images"
   ]
 }

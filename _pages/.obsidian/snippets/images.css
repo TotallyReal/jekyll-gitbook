@@ -1,0 +1,24 @@
+
+img {
+    border: 5px solid rgba(155,255,155, 0.5);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+}
+
+
+.callout[data-callout="figure"] {
+  --callout-color: 100, 100, 100;
+  --callout-icon: lucide-book-image;
+  text-align: center;
+   margin-left: auto !important;
+   margin-right: auto !important;
+  .callout-content {
+      font-size: 0.5em; 
+      text-align: center;
+   }
+ }
+
+div[src$="#right"] {
+    text-align:right;
+}

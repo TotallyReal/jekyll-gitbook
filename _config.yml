@@ -49,7 +49,7 @@ exclude:
 collections:
   pages:
     output: true
-    permalink: /:collection/:path.html
+    permalink: /:collection/:path
     order:
       - course_description.md
       - motivation.md
@@ -68,7 +68,8 @@ plugins:
   - jemoji
 
 extra_css:
-  css/style.css
+  - css/style.css
+  - css/general.css
 
 sass:
   sass_dir: _sass

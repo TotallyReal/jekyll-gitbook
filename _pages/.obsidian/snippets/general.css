@@ -1,0 +1,9 @@
+
+/* remove border from embeddings */
+.markdown-embed {
+    border: none;
+}
+
+.ttt {
+    border: none;
+}
