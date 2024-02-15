@@ -11,3 +11,6 @@ layout: post
 before content 
 [[temp]]
 [[imgimg.png]]
+
+If $f$ is even (resp. odd) then $\cf[f]$ is even (resp. odd).](
+If $f$ is real (resp. pure imaginary), then $\cf[f]=\cf[f](fdfdf)$ 

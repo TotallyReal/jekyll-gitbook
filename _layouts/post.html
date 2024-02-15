@@ -15,6 +15,9 @@
         {% endif %}
     </head>
     <body>
+        <div id="hiddenDiv" style="display: none;">
+            ${% include_relative preamble.sty %}$
+        </div>
         <div class="book">
 
             {%- include toc-date.html -%}
@@ -33,9 +36,6 @@
                 </div>
 
                 <div class="body-inner">
-                    <div id="hiddenDiv" style="display: none;">
-                        {%- include preamble.html -%}
-                    </div>
                     {%- include body.html -%}
 
                     {% if page.previous %}

@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "motivation.md",
-                "mode": "preview",
-                "source": true
+                "file": "course_description.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "motivation.md",
+                "file": "course_description.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "motivation.md",
+                "file": "course_description.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "motivation.md"
+                "file": "course_description.md"
               }
             }
           }
@@ -146,13 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ba8acaf98fc0b9f8",
+  "active": "0f486e92ec171c03",
   "lastOpenFiles": [
-    "inner_products.md",
+    "Fourier Transform.md",
+    "Infinite Orthonormal basis.md",
     "motivation.md",
-    "hebrew_motivation.md",
-    "course_description.md",
+    "temp.md",
+    "orthogonality.md",
+    "Orthogonal sets - a reminder.md",
+    "inner_products.md",
+    "Inner product spaces - a reminder.md",
+    "index.md",
+    "imgimg.png",
     "Fourier Series.md",
+    "Fourier Course Information.md",
+    "course_description.md",
+    "images/Fourier Transform/Riemann Lebesgue.png",
+    "images/Fourier Transform/continuity of Fourier transform.png",
+    "images/Fourier Transform",
+    "hebrew_motivation.md",
     "Fourier_Series.md",
     "images/orthogonality/standard_basis2.jpg",
     "images/orthogonality/orthogonal projection.png",
@@ -162,27 +174,21 @@
     "images/Motivation/translation.jpg",
     "images/Motivation/The Fourier spring.gif",
     "images/Motivation/solar system.jpg",
-    "images/Motivation/piano notes.png",
-    "images/Motivation/piano keyboard.png",
-    "images/Motivation/pendulum.png",
     "images/Motivation",
     "images/inner products",
     "images/infinite basis",
     "images/Fourier Series",
     "images",
-    "temp.md",
     "temp2.md",
     "2024-01-01.md",
     "liblib/Untitled.md",
     "liblib/course_description.md",
-    "orthogonality.md",
     "liblib",
     "preamble.sty",
     "inner_products - Copy.md",
     "inner_products/temp.md",
     "inner_products/course_description.md",
     "inner_products/inner_products.md",
-    "inner_products",
-    "New folder"
+    "inner_products"
   ]
 }

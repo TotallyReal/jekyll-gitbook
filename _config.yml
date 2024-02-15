@@ -76,4 +76,4 @@ sass:
   style: compressed
 
 extra_body_js:
-  js/collapsible.js
+  - js/collapsible.js

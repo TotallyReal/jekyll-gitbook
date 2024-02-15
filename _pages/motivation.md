@@ -71,6 +71,9 @@ This idea of looking for patterns is measured in a sense in the Fourier transfor
 
 For example, in a $10\times10$ pixels image, there are $10\cdot 10=100$ possible patterns, which you can see on the figure below on the left. Given any such image, we can for example keep only the "first" $[1,i]\times [1,j]$ patterns, and plot it on the $(i,j)$ position as we see on the right with the cat picture. Note for example that the picture at the $(7,7)$ position only has $7\cdot 7=49$ out of the $100$  patterns from the original picture (less than half!) and is already quite similar to the final image.
 
+| ![[Fourier patterns.png]]   | ![[cat patterns.png]]   |
+|---|---|
+|   |   |
 
 As in turns out, most weights in this pattern decomposition are quite small, and removing their corresponding patterns completely doesn't change the image too much. Thus, in general we can throw away all the information about this small weight waves, and get a compression without losing too many details:
 
@@ -88,6 +91,9 @@ To summarize, one way (of many) to think about Fourier transform is as extractin
 
 When playing music on a piano (and many other instruments as well), we usually play different notes that sound "harmonious" together. For example, the chord `C` on the piano is a combination of the notes `C,E,G`. Each of these notes correspond to a "pure" sine sound wave with a given frequency, and when they are all played together, these waves sum up as can be seen in the image below.
 
+| ![[piano keyboard.png\|314]]   | ![[piano notes.png\|500]]   |
+|---|---|
+|   |   |
 
 Suppose now that we can hear this combination of notes together. Can we find out what are the notes being played? For example, can we extract from the `C+E+G` orange wave in the image, the `C,E,G` red, green and blue waves? This is one type of "pattern" search that Fourier transformation allows us to do.
 More over, when we are listening to the chord, there is probably a lot of background white noise, which we should think of as something "without any pattern". Is it possible to extract from the "noisy" chord the original notes as well? This too can be done using Fourier transformation.
