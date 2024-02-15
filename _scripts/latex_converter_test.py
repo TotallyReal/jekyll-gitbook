@@ -1,5 +1,5 @@
 import pytest
-from latex_converter import convert
+from latex_converter import convert, br_open, br_close, no_double_no_markdown
 
 
 def test_latex_converter():
@@ -29,3 +29,13 @@ $$\align{\int_c^d f(t) \dt &=\angles{\frac{a_0}{2}, \pi\chi_{[c,d]}} + \sum_1^\i
     solution = convert(example)
     print(solution)
     assert False
+
+
+def test_no_double_nomarkdown():
+    example = f'''content {br_open} content {br_open} content {br_close} content {br_open} content {br_close} content {br_close} 
+content {br_open} content {br_open} content {br_open} content {br_close} content {br_close} content {br_close} 
+content {br_open} content {br_close} content {br_open} content {br_close} content {br_open} content {br_close} '''
+    solution = f'''content {br_open} content  content  content  content  content {br_close} 
+content {br_open} content  content  content  content  content {br_close} 
+content {br_open} content {br_close} content {br_open} content {br_close} content {br_open} content {br_close} '''
+    assert no_double_no_markdown(example) == solution

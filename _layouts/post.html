@@ -36,6 +36,9 @@
                 </div>
 
                 <div class="body-inner">
+                    <div id="hiddenDiv" style="display: none;">
+                        ${% include_relative preamble.sty %}$
+                    </div>
                     {%- include body.html -%}
 
                     {% if page.previous %}

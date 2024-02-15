@@ -12,7 +12,7 @@ This is a simple yet powerful basis which arises naturally and used in many plac
 
 ![[standard_basis2.jpg|500]]
 
-Trying to understand and generalize this properties, led to the definition of orthonormal bases.
+Trying to understand and generalize this properties, led to the definition of orthonormal bases.123112323
 
 >[!def] Definition: Orthogonal and orthonormal bases
 > Let $V$ be an inner product space and let $\Omega \subseteq V$ be a subset. The set is called:
@@ -173,13 +173,10 @@ As the image suggests, the point $w\in W$ closest to $v$ is its orthogonal (perp
 > 
 > ![[approx_step_functions.jpg|500]]
 
-
-> [!exercise]-
-> #### Exercise:
+> [!exc]- Exercise:
 > Compute $\angles{x, f_i}$ for any of the step function in the orthogonal basis. Do it one time directly using the integral, and one time "geometrically". Try to conjecture how the approximation will look like, when taking all the functions with $p\leq P$ for some positive integer $P$, and then prove it. Try to do the same for other function (e.g. $f(x)=x^2$) - can you say in general how the approximation will look like?
 > 
 > Note that in the example above we had $P=2$ since the corresponding segments of our functions were of length $1=1/2^0$, $1/2$ and $1/2^2$.
-{: .exercise}
 
 ---
 

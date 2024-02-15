@@ -57,8 +57,8 @@ We can now look for an orthonormal basis and do a similar process as with the Fo
 
 We will soon see that this transform is well defined for our functions in $E^1(\RR)$, but first, let's see some examples.
 
->[!example]- Example: The function $\chi_{[a,b]}$.
-> For $a<b$ define the characteristic function:
+> [!example]- Example: The function $\chi_{[a,b]}$.
+> For $a < b $ define the characteristic function:
 > 
 > $$f(x)=\chi_{[a,b]}(x)=\cases{1&x\in[a,b]\\0&else}.$$
 > 
@@ -79,8 +79,8 @@ We will soon see that this transform is well defined for our functions in $E^1(\
 > <iframe scrolling="no" title="fourier transform characteristic" src="https://www.geogebra.org/material/iframe/id/htkvjguk/width/600/height/274/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="274px" style="border:0px;"> </iframe>
 
 >[!example]- Example: The function $e^{-a|x|}$, for $a>0$.
-> First we note that $f(x):=e^{-a|x|}\in E^1(\RR)$. Next, we have that
-> $$\begin{align}  2\pi \cdot \hat f(\omega) & = \int_{-\infty}^{\infty} e^{-a|x|} e^{-i\omega x}\dx = \int_{-\infty}^{0} e^{(a-i\omega) x}\dx + \int_{0}^{\infty}  e^{(-a-i\omega) x}\dx \\ & = \int_{0}^{\infty}\left(e^{-(a-i\omega)x}+e^{(-a-i\omega)x}\right)\dx=\left[\frac{e^{-ax}e^{i\omega x}}{i\omega-a}-\frac{e^{-ax}e^{-i\omega x}}{i\omega+a}\right]_{0}^{\infty}. \end{align}$$
+> First we note that $f(x):=e^{-a\abs{x}}\in E^1(\RR)$. Next, we have that
+> $$\begin{align}  2\pi \cdot \hat f(\omega) & = \int_{-\infty}^{\infty} e^{-a\abs{x}} e^{-i\omega x}\dx = \int_{-\infty}^{0} e^{(a-i\omega) x}\dx + \int_{0}^{\infty}  e^{(-a-i\omega) x}\dx \\ & = \int_{0}^{\infty}\left(e^{-(a-i\omega)x}+e^{(-a-i\omega)x}\right)\dx=\left[\frac{e^{-ax}e^{i\omega x}}{i\omega-a}-\frac{e^{-ax}e^{-i\omega x}}{i\omega+a}\right]_{0}^{\infty}. \end{align}$$
 > 
 > Since $e^{i\omega x}$ is bounded by 1, and $e^{-ax}\to 0$ as $x\to\infty$, we conclude that 
 > 
@@ -108,7 +108,7 @@ In the Fourier series section, we used $\sin(nx), \cos(nx)$ as our basis. Using 
 > 2. **Translation->Rotation**: Setting $f_\alpha(x) := f(x+\alpha)$, we have $$\hat{f}_\alpha (\omega) = e^{i\alpha\omega}\hat{f}(\omega).$$
 > 3. **Multiplication**: If $\lambda \neq 0$, then setting $g(x)=f(\lambda x)$ we have
 >    $$\hat g (\omega) = \frac {\hat{f}(\omega/\lambda)}{\abs{\lambda}}.$$
-> 4. **Conjugation**:  $\overline{\cf \left[f\right](\omega)}=\cf\left[\bar{f}\right](-\omega)$.
+> 4. **Conjugation**:  $\overline{\cf \left[f\right] (\omega)}=\cf\left[\bar{f}\right] (-\omega)$.
 
 >[!proof]- Proof:
 > 1. Follows from the fact that integrals are linear.
@@ -220,7 +220,14 @@ Next we turn to derivatives, which also contain an interesting duality.
 > 
 > $$\align{ 2\pi\left(\cf[f]'(\omega) -\cf[-ixf(x)] \right) & =\lim_{h\to 0}\int_{-\infty}^{\infty}f(x)\frac{e^{-i(\omega+h)x}-e^{-i\omega x}}{h}\dx + i\int_{-\infty}^{\infty}xf(x) e^{-i\omega x}\dx \\ & = \lim_{h\to 0}\int_{-\infty}^{\infty}f(x)e^{-i\omega x}\left( \frac{e^{-ihx}-(1-ihx)}{hx}x \right)\dx. }$$
 > 
-> As $e^z$ is analytic, we can find some constant $C$ such that $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<C\abs{hx}^2$ for $\abs{hx}<1$. If $\abs{hx}>1$, then $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<3$. Using the fact that $\norm {xf(x)}_1 <\infty$, the same ideas from before show that the limit is zero.
+> As $e^z$ is analytic, we can find some constant $C$ such that 
+> 
+> $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}} < C\abs{hx}^2$ 
+> $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}} <C\abs{hx}^2$ 
+> $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}< C\abs{hx}^2$ 
+> $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<C\abs{hx}^2$ 
+> 
+> for $\abs{hx}<1$. If $\abs{hx}>1$, then $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<3$. Using the fact that $\norm {xf(x)}_1 <\infty$, the same ideas from before show that the limit is zero.
 
 
 >[!example] Example: Fourier transform of the Gaussian

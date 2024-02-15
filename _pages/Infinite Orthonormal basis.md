@@ -23,16 +23,16 @@ When dealing with "non finite dimensional" vector spaces, we need to reconsider 
 As usually, before talking about the limit of infinite sums, we need to define what are limits.
 
 >[!def] Definition: Convergence in norm
- > Let $V$ be a normed vector space. We say that a sequence of vectors $v_n$ converges in norm to $v$ in $V$ if $\norm{v_n - v}\to 0$ and we denote it by $v_n \overset{\norm{\cdot}}{\longrightarrow} v$, or just $v_n \to v$ if there is no ambiguity.
+> Let $V$ be a normed vector space. We say that a sequence of vectors $v_n$ converges in norm to $v$ in $V$ if $\norm{v_n - v}\to 0$ and we denote it by $v_n \overset{\norm{\cdot}}{\longrightarrow} v$, or just $v_n \to v$ if there is no ambiguity.
  
 >[!remark] Remark:
- > Note that we have defined convergence with convergence, namely:
- > $$v_n \normto v \iff \norm{v_n -v}\to 0.$$
- > This is not a cyclic definition, since the new norm convergence on the left is defined by the old known convergence of real numbers on the right.
+> Note that we have defined convergence with convergence, namely:
+> $$v_n \normto v \iff \norm{v_n -v}\to 0.$$
+> This is not a cyclic definition, since the new norm convergence on the left is defined by the old known convergence of real numbers on the right.
  
  Before we go over a few examples to get some intuition, recall our three "main" norms on function spaces (say on $[0,1]$):
  
- $$\align{\norm{f}_1& = \int_0^1|f(x)|\dx \\ \norm{f}_2& = \sqrt{\int_0^1|f(x)|^2\dx} \\ \norm{f}_\infty& = \sup_{0\leq x\leq 1} |f(x)|. } $$
+ $$\align{\norm{f}_1& = \int_0^1 | f(x) | \dx \\ \norm{f}_2& = \sqrt{\int_0^1\|f(x)\|^2\dx} \\ \norm{f}_\infty& = \sup_{0\leq x\leq 1} \|f(x)\|. } $$
 
 The $\mathcal{L}^2$ norm is the induced norm from the standard inner product, and comes with all the benefits of such a norm. Unless said otherwise, the "norm" convergences will mean that norm. While the $\cl^1$ and $\cl^\infty$ are not induced norm, they have nice geometric intuition:
 1. The norm $\norm{f}_1$ measures the area between $f$ and the $x$-axis in absolute value. In particular two functions are close in this norm is the area between them is small.

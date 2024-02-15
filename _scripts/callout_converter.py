@@ -16,13 +16,28 @@ def process_match(match):
     collapsible_title = 'collapsible' if len(collapsible_type)>0 else ''
     collapsible_content = 'data-collapsed' if collapsible_type=='-' else ''
     content = convert_content(content)
+#     return f'''
+# {{::options parse_block_html="true" /}}
+# <div class="callout" data-callout="{class_name}">
+#
+#   {{::options parse_block_html="false" /}}
+#   <div class="callout-title" {collapsible_title}>{title}</div>
+#   {{::options parse_block_html="true" /}}
+#   <div class="callout-content-wrapper" {collapsible_content}>
+#   <div class="callout-content">
+# {content}
+#   </div>
+#   </div>
+# </div>
+# {{::options parse_block_html="false" /}}'''
+
     return f'''
 {{::options parse_block_html="true" /}}
 <div class="callout" data-callout="{class_name}">
 
-  {{::options parse_block_html="false" /}}
+  {{::nomarkdown}}
   <div class="callout-title" {collapsible_title}>{title}</div>
-  {{::options parse_block_html="true" /}}
+  {{:/}}
   <div class="callout-content-wrapper" {collapsible_content}>
   <div class="callout-content">
 {content}
