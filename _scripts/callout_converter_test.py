@@ -1,7 +1,7 @@
 import re
 
 import pytest
-from callout_converter import callout_pattern, convert_content
+from callout_converter import callout_pattern, convert_content, convert, Callout
 
 
 def construct_callout(
@@ -18,8 +18,21 @@ def test_no_space_begining_title():
     assert match is not None
 
 
-def test_no_space_begining_content():
-    assert convert_content('> line1\n>line2\n>    line3')=='line1\n\nline2\n\nline3'
+def test_lots_of_space_before_title():
+    title = '                Only now title'
+    example=f'''
+content before
+
+{construct_callout(title=title)}
+
+content after'''
+    match = re.search(callout_pattern, example, flags=re.MULTILINE)
+    assert match is not None
+    assert 'Only now title' == Callout.from_match(match).title
+
+
+# def test_no_space_begining_content():
+#     assert convert_content('> line1\n>line2\n>    line3')=='line1\n\nline2\n\nline3'
 
 
 def test_brackets_in_title():
@@ -32,7 +45,7 @@ content before
 content after'''
     match = re.search(callout_pattern, example, flags=re.MULTILINE)
     assert match is not None
-    assert title == match[3]
+    assert title == Callout.from_match(match).title
 
 
 def test_finish_callout_by_string_end():
@@ -63,12 +76,38 @@ This is a line'''
     match = re.search(callout_pattern, example, flags=re.MULTILINE)
     assert match is not None
 
+
 def test_hebrew_callout():
-    example='''> [!משפט] משפט
-דיריכלה
+    example='''> [!משפט] משפט דיריכלה
 > יש
 הרבה
 ראשונייים.'''
     match = re.search(callout_pattern, example, flags=re.MULTILINE)
     assert match is not None
+
+
+def test_space_between_callouts():
+    # Should be able to separate between different callouts
+    example='''
+>[!def] Definition: 
+ > content
+
+
+
+>[!remark] Remark:
+ > content
+ '''
+    matches = re.findall(callout_pattern, example, flags=re.MULTILINE)
+    assert len(matches) == 2
+
+
+# def test_me():
+#     example=r'''
+#
+# >[!lem] Lemma:
+# >     fff
+#  '''
+#     result = convert(example)
+#     print(result)
+#     assert result is None
 

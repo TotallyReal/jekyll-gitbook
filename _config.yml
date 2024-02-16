@@ -40,9 +40,6 @@ syntax_highlighter_style: colorful
 
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
-# Disqus comments
-# disqushandler:            sighingnow
-
 exclude:
   - _drafts
 
@@ -59,13 +56,19 @@ collections:
       - Infinite Orthonormal basis.md
       - Fourier Series.md
       - Fourier Transform.md
-  Temp:
+  FourierHebrew:
     output: true
     permalink: /:collection/:path
+    order:
+      - hebrew_motivation.md
+      - basic properties.md
+#  Temp:
+#    output: true
+#    permalink: /:collection/:path
 
 collections_dir: notes
 
-page_width: 800px
+page_width: 1000px
 
 destination:      ./_site
 incremental:      false

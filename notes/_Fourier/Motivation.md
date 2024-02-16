@@ -73,6 +73,7 @@ For example, in a $10\times10$ pixels image, there are $10\cdot 10=100$ possible
 
 | ![[Fourier patterns.png]]   | ![[cat patterns.png]]   |
 |---|---|
+| | |
 
 As in turns out, most weights in this pattern decomposition are quite small, and removing their corresponding patterns completely doesn't change the image too much. Thus, in general we can throw away all the information about this small weight waves, and get a compression without losing too many details:
 
@@ -92,6 +93,7 @@ When playing music on a piano (and many other instruments as well), we usually p
 
 | ![[piano keyboard.png\|314]]   | ![[piano notes.png\|500]]   |
 |---|---|
+| | | 
 
 Suppose now that we can hear this combination of notes together. Can we find out what are the notes being played? For example, can we extract from the `C+E+G` orange wave in the image, the `C,E,G` red, green and blue waves? This is one type of "pattern" search that Fourier transformation allows us to do.
 More over, when we are listening to the chord, there is probably a lot of background white noise, which we should think of as something "without any pattern". Is it possible to extract from the "noisy" chord the original notes as well? This too can be done using Fourier transformation.
@@ -123,8 +125,9 @@ Here, we would take this idea to the next stage - the infinite dimensional space
 ## Sine and cosine and the complex plane
 As mention several times, the sine and cosine functions are going to be our building blocks for the Fourier transform. At first glance, it is not clear why it happens and why they are so important, and in particular each one of one them on its own. However, they become quite interesting once combined - they are just two parts ($x$ and $y$ coordinates) of the same very simple and very important process: **Moving at constant speed on a circle**. This clues us as to why these trigonometric functions arise so naturally - a lot of natural phenomena have natural "rotational" behavior, and when we see the sine or cosines function, it is usually just because we don't see the "whole 2 dimensional picture".
 
->[!figure]- Figure:
-> ![[pendulum.png|209]]                    ![[solar system.jpg#right|500]]
+| ![[pendulum.png|209]]  |   ![[solar system.jpg|500]] |
+|---|---|
+| | | 
 
 More over, this is also why many of the computations that will be done with sines and cosines in our course can be much more natural in the 2-dimensional complex plane.
 Recall (or learn in a few weeks) that by definition we have that 

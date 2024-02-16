@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b2a49b868f36ec4b",
+        "id": "74d0723f187383f6",
         "type": "tabs",
         "children": [
           {
@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Fourier/Motivation.md",
-                "mode": "source",
-                "source": false
+                "file": "_Fourier/Fourier Transform.md",
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Fourier/Motivation.md",
+                "file": "_Fourier/Fourier Transform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Fourier/Motivation.md",
+                "file": "_Fourier/Fourier Transform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Fourier/Motivation.md"
+                "file": "_Fourier/Fourier Transform.md"
               }
             }
           }
@@ -148,16 +148,27 @@
   },
   "active": "ba8acaf98fc0b9f8",
   "lastOpenFiles": [
+    "_Fourier/Fourier Series.md",
+    "_Fourier/Infinite Orthonormal basis.md",
+    "index.html",
     "_Fourier/Orthogonal sets - a reminder.md",
-    "_notes.yml~",
-    "_notes.yml",
-    "_notes.yml.txt",
-    "New Text Document.txt",
-    "notes.yml",
-    "New folder",
     "_Fourier/Motivation.md",
-    "_Fourier/Fourier Course Information.md",
     "_Fourier/Inner product spaces - a reminder.md",
+    "_FourierHebrew/hebrew_motivation.md",
+    "_Fourier/Fourier Transform.md",
+    "_FourierHebrew/index.html",
+    "imgimg.png.md",
+    "_Fourier/index.html",
+    "index.html~",
+    "New Text Document.txt",
+    "README.md",
+    "_FourierHebrew/basic properties.md",
+    "obsidian hebrew.ahk~",
+    "obsidian.ahk~",
+    "obsidian hebrew.ahk",
+    "obsidian - Copy.ahk",
+    "obsidian.ahk",
+    "_Fourier/Fourier Course Information.md",
     "imgimg.png",
     "Orthogonal sets - a reminder.md",
     "orthogonality.md",
@@ -166,15 +177,11 @@
     "Inner product spaces - a reminder.md",
     "index.md",
     "Infinite Orthonormal basis.md",
-    "_FourierHebrew/hebrew_motivation.md",
     "course_description.md",
     "Fourier Course Information.md",
     "Fourier Series.md",
     "Fourier Transform.md",
-    "_Fourier/Infinite Orthonormal basis.md",
     "_Fourier/index.md",
-    "_Fourier/Fourier Transform.md",
-    "_Fourier/Fourier Series.md",
     "_Fourier/images/orthogonality/standard_basis2.jpg",
     "_Fourier/images/orthogonality/orthogonal projection.png",
     "_Fourier/images/orthogonality/linear_approximation.jpg",
@@ -184,14 +191,7 @@
     "_Fourier/images/Motivation/piano notes.png",
     "_Fourier/images/Motivation/solar system.jpg",
     "_Fourier/images/Motivation/piano keyboard.png",
-    "_Fourier/images/orthogonality",
-    "_Fourier/images/Motivation",
-    "_Fourier/images/inner products",
-    "_Fourier/images/infinite basis",
     "Fourier/Fourier Transform.md",
-    "Fourier/Fourier Series.md",
-    "Complex_numbers/complex numbers introduction0000000000000000000000.md",
-    "Fourier/Orthogonal sets - a reminder.md",
-    "Fourier/Motivation.md"
+    "Fourier/Fourier Series.md"
   ]
 }

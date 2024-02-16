@@ -95,7 +95,7 @@ Before proving some basic results about the Fourier transform, we need to actual
 
 >[!proof]- Proof:
 > This is a simple upper bound computation:
->    $$\abs{\hat{f}(\omega)}=\abs{\frac{1}{2\pi} \int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx} \leq \frac{1}{2\pi} \int_{-\infty}^{\infty} \abs{f(x)}\abs{e^{-i\omega x}}dx=\frac{1}{2\pi} \norm f_1.$$
+> $$\abs{\hat{f}(\omega)}=\abs{\frac{1}{2\pi} \int_{-\infty}^{\infty} f(x)e^{-i\omega x}dx} \leq \frac{1}{2\pi} \int_{-\infty}^{\infty} \abs{f(x)}\abs{e^{-i\omega x}}dx=\frac{1}{2\pi} \norm f_1.$$
 
 >[!remark]- Remark: Generalized inner products
 > As we mentioned before, the "inner product" $\angles{f,e^{i\omega x}}$ is no longer a standard an inner product, however there is some method to this madness. This is is a product between a function in $L^1(\RR)$ and $L^\infty(\RR)$, where it is usually between two functions in $L^2(\RR)$. These two pairs of numbers satisfy the simple "equation" $\frac{1}{1}+\frac{1}{\infty} = \frac{1}{2} + \frac{1}{2} = 1$, and as it turns out, this is enough for the "inner product" to be defined. For more details, you should read about [Holder inequality](https://en.wikipedia.org/wiki/H%C3%B6lder's_inequality).
@@ -153,7 +153,6 @@ Lets see a couple more examples.
 > is odd.
 > The second part is proved similarly from the conjugation identity.
 
-
 ## Continuity and derivatives
 
 Our next step is to show some properties on the function $\hat {f}$ itself, and we start by showing that it is continuous.
@@ -165,20 +164,21 @@ Our next step is to show some properties on the function $\hat {f}$ itself, and 
 
 >[!proof]- Proof:
 > 1. For the second claim, let's consider the following example with $f(x)=e^{-\abs{x}/10}$
->   ![[continuity of Fourier transform.png]]
->  The function itself is drawn in green, and we also draw $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ in blue and red, where we use sine function instead of complex exponents, just so we can draw them. The transform should be thought of as the integrals over these function.
->   In this example we want to show that since $10$ and $10.2$ are close, their integrals over $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ are also close. The idea is that (1) if we are near the center the functions themselves are very close so their integrals are close and (2) if we are far away from the center, while this no longer holds, the total area beneath $f(x)$ is very small, so even when multiplying by some sine functions it remains small. Thus, together they will be small.
->   More formally, fix some $M>0$ which "measures" how far we are from the center, then:
+>    ![[continuity of Fourier transform.png]]
+>    The function itself is drawn in green, and we also draw $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ in blue and red, where we use sine function instead of complex exponents, just so we can draw them. The transform should be thought of as the integrals over these function.
+>    In this example we want to show that since $10$ and $10.2$ are close, their integrals over $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ are also close. The idea is that (1) if we are near the center the functions themselves are very close so their integrals are close and (2) if we are far away from the center, while this no longer holds, the total area beneath $f(x)$ is very small, so even when multiplying by some sine functions it remains small. Thus, together they will be small.
+>    More formally, fix some $M>0$ which "measures" how far we are from the center, then:
 >   
 >    $$\align{  2\pi\abs{\hat{f}(\omega+h)-\hat{f}(\omega)} & \leq \int_{-\infty}^\infty\abs{e^{-i(\omega+h)x}-e^{-i\omega x}}\abs{f(x)}\dx = \int_{-\infty}^\infty\abs{e^{-ihx}-1}\abs{f(x)}\dx \\  & = \int_{\abs{x}\leq M}\abs{e^{-ihx}-1}\abs{f(x)}\dx + \int_{\abs{x}> M}\abs{e^{-ihx}-1}\abs{f(x)}\dx \\  & \leq \sup_{\abs{x}\leq M}\abs{e^{-ihx}-1} \cdot \int_{\abs{x}\leq M}\abs{f(x)}\dx + 2\int_{\abs{x}> M}\abs{f(x)}\dx \\  & \leq \sup_{\abs{x}\leq M}\abs{e^{-ihx}-1} \cdot \norm f_1 + 2\int_{\abs{x}> M}\abs{f(x)}\dx.}$$
->  
+>    
 >    Choose your favorite $\varepsilon>0$. Since $\norm f_1 <\infty$, we can choose $M$ big enough so that 
 >  
 >    $$2\int_{\abs{x}> M}\abs{f(x)}\dx < \frac {\varepsilon}{2}$$
->  
+>   
 >    Next, for $\abs{x}\leq M$, for all $\abs{h}$ small enough, using the continuity of $e^{-ihx}$ we can make sure that 
 >    $$\sup_{\abs{x}\leq M}\abs{e^{-ihx}-1} \cdot \norm f_1<\frac{\varepsilon}{2}.$$
 >    Together we see that as $h\to 0$ we have that $\hat{f}(\omega+h)\to \hat{f}(\omega)$, or in other words $\hat{f}$ is continuous.
+>    
 > 2. The Riemann Lebesgue lemma is proved in a similar fashion. 
 >    ![[Riemann Lebesgue.png]]
 >    When computing the integral in $f(\omega)$, when we are far away from the center the integral will be very small, regardless of $\omega$. When we are close to the center, we can approximate our function by a step function. For each such step, when $\omega$ is very large, we should expect very high frequency fluctuations so every "positive area" will more or less cancel out with a "negative area".
@@ -190,8 +190,8 @@ Our next step is to show some properties on the function $\hat {f}$ itself, and 
 >    $$\int_{\abs{x}>M} \abs{f(x)}\dx < \frac{\varepsilon}{2}.$$
 >    Since our function $f$ is Riemann integrable, we can approximate it by a step function $h$, namely $h(x)=\sum_1^n \lambda_i \chi_{[a_i,b_i]}$ is a finite combination of steps, and $\int_{\abs{x}\leq M}\abs{h(x)-f(x)}\dx < \frac{\varepsilon}{4}$. We can use it to upper bound the first summand:
 >    $$\align{ \abs{\int_{\abs{x}\leq M} e^{-i\omega x}f(x)\dx}&=\abs{\int_{\abs{x}\leq M} e^{-i\omega x}\left(f(x)-h(x)\right)\dx + \int_{\abs{x}\leq M} e^{-i\omega x}h(x)\dx} \\ & \leq \int_{\abs{x}\leq M} \abs{f(x)-h(x)}\dx + \abs{\sum_{i=1}^n\lambda_i \int_{\abs{x}\leq M} e^{-i\omega x}\chi_{[a_i,b_i]}(x)\dx} \\ & \leq \frac{\varepsilon}{4}+\sum_{i=1}^n\abs{\lambda_i}\hat{\chi}_{[a_i,b_i]}(\omega). }$$
-> We already saw that $\hat{\chi}_{[a_i,b_i]}(\omega)=\frac{e^{-i\omega a}-e^{-i\omega b}}{\omega i}\to0$ as $\omega \to \infty$, and since there are only finitely many such summands ($n$ now is fixed), for all $\omega$ large enough this sum is at most $\frac{\varepsilon}{2}$.
-> Putting everything together, we get that for all $\varepsilon>0$ and for all $\omega$ large enough, we have that $\abs{\hat{f}(\omega)}<\varepsilon$, or in other words $\hat{f}(\omega)\to 0$.
+>    We already saw that $\hat{\chi}_{[a_i,b_i]}(\omega)=\frac{e^{-i\omega a}-e^{-i\omega b}}{\omega i}\to0$ as $\omega \to \infty$, and since there are only finitely many such summands ($n$ now is fixed), for all $\omega$ large enough this sum is at most $\frac{\varepsilon}{2}$.
+>    Putting everything together, we get that for all $\varepsilon>0$ and for all $\omega$ large enough, we have that $\abs{\hat{f}(\omega)}<\varepsilon$, or in other words $\hat{f}(\omega)\to 0$.
 
 Next we turn to derivatives, which also contain an interesting duality.
 
@@ -251,8 +251,4 @@ Next we turn to derivatives, which also contain an interesting duality.
 
 
 
-
-
-
-
-
+$\sqrt{|\lambda|} \cdot f(\lambda x) \Rightarrow \sqrt{|\lambda|^{-1}} \hat{f}(\lambda^{-1} \omega)$

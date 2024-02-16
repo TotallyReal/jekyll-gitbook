@@ -174,8 +174,8 @@ As the image suggests, the point $w\in W$ closest to $v$ is its orthogonal (perp
 > ![[approx_step_functions.jpg|500]]
 
 
-> [!exercise]-
-> #### Exercise:
+> [!exc]- Exercise
+> 
 > Compute $\angles{x, f_i}$ for any of the step function in the orthogonal basis. Do it one time directly using the integral, and one time "geometrically". Try to conjecture how the approximation will look like, when taking all the functions with $p\leq P$ for some positive integer $P$, and then prove it. Try to do the same for other function (e.g. $f(x)=x^2$) - can you say in general how the approximation will look like?
 > 
 > Note that in the example above we had $P=2$ since the corresponding segments of our functions were of length $1=1/2^0$, $1/2$ and $1/2^2$.

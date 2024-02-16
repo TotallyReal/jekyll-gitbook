@@ -360,15 +360,6 @@ Let's summarize our convergence results in the space $E[-\pi,\pi]$:
  5. For any $f\in E[-\pi,\pi]$ we can do term by term integration of the Fourier series.
  6. If $f$ is continuous (including edge points) and $f'\in E[-\pi,\pi]$, then we can also take derivatives term by term.
 
->[!lem] Lemma:
-> this is the content of the lemma
-
-
-
- 
-   
-
-
 ---
 
 <-[[Infinite Orthonormal basis|Previous: Orthonormal basis]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,   [[Fourier Transform|Next: Fourier Transform]] -> 

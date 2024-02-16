@@ -93,7 +93,7 @@ $callout-title-fontsize: 20px;
     @extend %env-section;
 
     .callout-title {
-        font-size: $callout-title-fontsize; 
+        font-size: $callout-title-fontsize;
         font-weight: bold; /* Make the title bold */
     }
 
@@ -120,42 +120,111 @@ $callout-title-fontsize: 20px;
 
 }
 
+.left-bracket-section {
+    background-image: linear-gradient(to right, #808080, #ffffff), linear-gradient(to right, #808080, #ffffff);
+    background-repeat: no-repeat;
+    background-size: 15px 3px;
+    background-position: top left, bottom left;
+    border: solid #808080;
+    border-width: 0 0 0 3px;
+    @extend %env-section;
+
+    .callout-title {
+        font-size: $callout-title-fontsize;
+        font-weight: bold; /* Make the title bold */
+    }
+
+    .callout-content::before {
+        content: ""; /* Add content to the pseudo-element */
+        display: block;
+        width: 100%; /* Full width of the container */
+        height: 1px; /* Line height */
+        background-color: rgba(0,0,0,0.5); /* Line color */
+        left: 0;
+        margin-bottom: 5px;
+    }
+
+    .callout-content {
+        margin-top: 5px;
+    }
+}
+
+.right-bracket-section {
+    background-image: linear-gradient(to left, #808080, #ffffff), linear-gradient(to left, #808080, #ffffff);
+    background-repeat: no-repeat;
+    background-size: 15px 3px;
+    background-position: top right, bottom right;
+    border: solid #808080;
+    border-width: 0 3px 0 0;
+    @extend %env-section;
+
+    .callout-title {
+        font-size: $callout-title-fontsize;
+        font-weight: bold; /* Make the title bold */
+    }
+
+    .callout-content::before {
+        content: ""; /* Add content to the pseudo-element */
+        display: block;
+        width: 100%; /* Full width of the container */
+        height: 1px; /* Line height */
+        background-color: rgba(0,0,0,0.5); /* Line color */
+        left: 0;
+        margin-bottom: 5px;
+    }
+
+    .callout-content {
+        margin-top: 5px;
+    }
+}
+
 
 /*------------- environment types ------------------*/
 
-.callout[data-callout="cor"] {
+.callout[data-callout="figure"], .callout[data-callout="תמונה"] {
+    @extend .shadowed-section
+}
+
+.callout[data-callout="cor"], .callout[data-callout="מסקנה"] {
     @extend .highlight-section
 }
 
-
-.callout[data-callout="משפט"] {
+.callout[data-callout="theorem"], .callout[data-callout="משפט"] {
     @extend .shadowed-section
 }
 
-.callout[data-callout="theorem"] {
-    @extend .shadowed-section
-}
-
-.callout[data-callout="lem"] {
+.callout[data-callout="lem"], .callout[data-callout="למה"] {
     @extend .bordered-section
 }
 
-.callout[data-callout="def"] {
+.callout[data-callout="def"], .callout[data-callout="הגדרה"] {
     @extend .shadowed-section
 }
 
-.callout[data-callout="proof"] {
+.callout[data-callout="proof"], .callout[data-callout="הוכחה"] {
     @extend .bracket-section
 }
 
-.callout[data-callout="exc"] {
+.callout[data-callout="exc"], .callout[data-callout="תרגיל"] {
     @extend .bracket-section
 }
 
-.callout[data-callout="remark"] {
+.callout[data-callout="problem"], .callout[data-callout="בעיה"] {
+    @extend .bracket-section
+}
+
+.callout[data-callout="remark"], .callout[data-callout="הערה"] {
     @extend .top-bracket-section
 }
 
-.callout[data-callout="example"] {
+.callout[data-callout="example"], .callout[data-callout="דוגמא"] {
     @extend .bracket-section
+}
+
+.callout[data-callout="טענה"] {
+    @extend .right-bracket-section
+}
+
+.callout[data-callout="claim"] {
+    @extend .left-bracket-section
 }

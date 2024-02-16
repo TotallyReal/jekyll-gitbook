@@ -1,32 +1,32 @@
 import re
 import logging
 import os
-
-# Get the directory of the Python script
-script_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Create a 'log' directory if it doesn't exist
-log_dir = os.path.join(script_dir, '_log')
-if not os.path.exists(log_dir):
-    os.makedirs(log_dir)
-
-# Get the name of the Python script
-script_name = os.path.splitext(os.path.basename(__file__))[0]
-
-# Configure logging
-log_file = os.path.join(log_dir, f'{script_name}.log')
-logging.basicConfig(filename=log_file, level=logging.INFO)
-# logging.basicConfig(filename=log_file, filemode='w', level=logging.INFO)
+from dataclasses import dataclass
 
 
-callout_pattern = r'^>\s?\[!(.*?)\]([-|+]?) (.*?)\n([\s\S]*?)(?=(\n[^>])|\Z)'
+@dataclass
+class Callout:
+
+    class_name: str
+    title: str
+    collapsible: str
+    content: str
+
+    @staticmethod
+    def from_match(match: re.Match) -> 'Callout':
+        return Callout(class_name=match[1], collapsible=match[2], title=match[3], content=convert_content(match[4]))
+
+
+callout_pattern = r'^>\s?\[!(.*?)\]([-|+]?)[ \t]*(\S.*?)\n((?:[ \t]*>.*(?:\n|$))+)'
+
+# callout_pattern = r'^>\s?\[!(.*?)\]([-|+]?) (.*?)\n([\s\S]*?)(?=(\n[^>])|\Z)'
 
 
 def convert_content(content: str) -> str:
     """
     Converts the content from the markdown quote syntax to plain text.
     """
-    return '\n\n'.join(line[1:].lstrip() for line in content.split('\n'))
+    return '\n\n'.join(line.lstrip()[1:] for line in content.split('\n'))
 
 
 def process_match(match):

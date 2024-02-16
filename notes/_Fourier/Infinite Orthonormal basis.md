@@ -23,7 +23,7 @@ As usually, before talking about the limit of infinite sums, we need to define w
 
 >[!def] Definition: Convergence in norm
  > Let $V$ be a normed vector space. We say that a sequence of vectors $v_n$ converges in norm to $v$ in $V$ if $\norm{v_n - v}\to 0$ and we denote it by $v_n \overset{\norm{\cdot}}{\longrightarrow} v$, or just $v_n \to v$ if there is no ambiguity.
- 
+
 >[!remark] Remark:
  > Note that we have defined convergence with convergence, namely:
  > $$v_n \normto v \iff \norm{v_n -v}\to 0.$$

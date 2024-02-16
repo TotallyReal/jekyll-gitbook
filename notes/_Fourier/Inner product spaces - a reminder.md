@@ -36,13 +36,12 @@ With this geometric intuition, let us recall its generalization as "[[Inner prod
 Let's recall some interesting examples for inner product spaces:
 >[!example]- Examples:
 > 1. **Standard inner product**:
->    Over $\FF^n$ we have the standard inner product defined by:
+>     Over $\FF^n$ we have the standard inner product defined by:
 >    $$\angles {(x_1,...,x_n),(y_1,...,y_n)} = \sum_1^n x_i\overline{y_i}.$$
 > 2. **Integrals**: For continuous functions in $[0,1]$ we have the inner product:
 >    $$\angles {f,g} =\int_0^1 f(x)\overline{g(x)}\dx$$
 > 3. **Weighted integral**: For a nonnegative function $w:[0,1]\to[0,\infty)$ we define:
 >    $$\angles {f,g}_w:=\int_0^1f(x)\overline{g(x)}w(x)\dx$$
-^dd336f
 
 The last two examples are for infinite dimensional inner products spaces (where the second example is a specific case of the third one). They can be further extended in two interesting ways:
 - **Infinite domains**: Instead of integrating over $[0,1]$ we can of course integrate over any closed and bounded segment $[a,b]$. More over, we can integrate over unbounded segments, e.g. $[0,\infty)$, but then the inner product is not always well defined. For example, the constant 1 function $\bar{1}(x)$ is continuous on $[0,\infty)$, while 
@@ -94,4 +93,4 @@ As you can see, the standard unit circle for $p=2$ is an actual circle, while fo
 
 ---
 
-<-[[Fourier/Motivation|Previous: Motivation]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,    [[Orthogonal sets - a reminder|Next: Orthogonal sets]]-> 
+<-[[Fourier/Motivation|Previous: Motivation]]    ,    [[Fourier Course Information|Back to table of contents]]    ,    [[Orthogonal sets - a reminder|Next: Orthogonal sets]]-> 
