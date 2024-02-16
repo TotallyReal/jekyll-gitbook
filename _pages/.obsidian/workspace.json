@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course_description.md",
+                "file": "hebrew_motivation.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course_description.md",
+                "file": "hebrew_motivation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course_description.md",
+                "file": "hebrew_motivation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course_description.md"
+                "file": "hebrew_motivation.md"
               }
             }
           }
@@ -148,12 +148,14 @@
   },
   "active": "ba8acaf98fc0b9f8",
   "lastOpenFiles": [
+    "hebrew_motivation - Copy.txt",
+    "hebrew_motivation - Copy.md",
     "Fourier Transform.md",
+    "hebrew_motivation.md",
+    "course_description.md",
     "inner_products.md",
     "Orthogonal sets - a reminder.md",
-    "course_description.md",
     "Infinite Orthonormal basis.md",
-    "hebrew_motivation.md",
     "motivation.md",
     "temp.md",
     "orthogonality.md",

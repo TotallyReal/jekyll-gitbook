@@ -70,6 +70,7 @@ plugins:
 extra_css:
   - css/style.css
   - css/general.css
+  - css/hebrew.css
 
 sass:
   sass_dir: _sass

@@ -1,4 +1,22 @@
 import re
+import logging
+import os
+
+# Get the directory of the Python script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Create a 'log' directory if it doesn't exist
+log_dir = os.path.join(script_dir, '_log')
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
+# Get the name of the Python script
+script_name = os.path.splitext(os.path.basename(__file__))[0]
+
+# Configure logging
+log_file = os.path.join(log_dir, f'{script_name}.log')
+logging.basicConfig(filename=log_file, level=logging.INFO)
+# logging.basicConfig(filename=log_file, filemode='w', level=logging.INFO)
 
 
 callout_pattern = r'^>\s?\[!(.*?)\]([-|+]?) (.*?)\n([\s\S]*?)(?=(\n[^>])|\Z)'
@@ -47,5 +65,10 @@ def process_match(match):
 {{::options parse_block_html="false" /}}'''
 
 
-def convert(text):
+def convert(text: str):
+    # if text.startswith('LOG'):
+    #     with open(log_file, 'w'):
+    #         pass
+    #     logging.info('\n\n---------------------------\nConverting the text: ')
+    #     logging.info(text)
     return re.sub(callout_pattern, process_match, text, flags=re.MULTILINE)

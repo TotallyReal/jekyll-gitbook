@@ -4,6 +4,7 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
+
 Course: [[Fourier Course Information]]
 
 Up until now we talked about functions on $[-\pi,\pi]$, or equivalently $2\pi$ periodic functions. We now shift our focus to general function on $\RR$.

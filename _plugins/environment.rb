@@ -1,17 +1,20 @@
 require 'base64'
+require 'open3'
+
 
 module Jekyll
   class Environment < Generator
     priority :low
 
     def generate(site)
+
       puts "------------------+++++++++++++++++++++++++++----------------"
       
       site.collections["pages"].docs.each do |doc|
-        # puts File.basename(doc.path, '.*')
-        if File.basename(doc.path, '.*') != 'hebrew_motivation'
-          mod_content = `python _scripts\\converter.py '#{Base64.strict_encode64(doc.content)}'`
-          doc.content = mod_content
+        puts "converting #{File.basename(doc.path, '.*')}"
+        encoded_text = Base64.strict_encode64(doc.content)
+        Open3.popen3("python _scripts\\general_converter.py \"#{encoded_text}\"") do |stdin, stdout, stderr|
+          doc.content = stdout.read
         end
       end
 

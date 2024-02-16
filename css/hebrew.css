@@ -1,0 +1,4 @@
+.rtl-list li {
+    direction: rtl;
+    unicode-bidi: embed;
+}

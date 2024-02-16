@@ -1,4 +1,4 @@
-/*------------- environment styles ------------------*/
+﻿/*------------- environment styles ------------------*/
 
 $callout-title-fontsize: 20px;
 
@@ -125,6 +125,11 @@ $callout-title-fontsize: 20px;
 
 .callout[data-callout="cor"] {
     @extend .highlight-section
+}
+
+
+.callout[data-callout="משפט"] {
+    @extend .shadowed-section
 }
 
 .callout[data-callout="theorem"] {

@@ -63,3 +63,12 @@ This is a line'''
     match = re.search(callout_pattern, example, flags=re.MULTILINE)
     assert match is not None
 
+def test_hebrew_callout():
+    example='''> [!משפט] משפט
+דיריכלה
+> יש
+הרבה
+ראשונייים.'''
+    match = re.search(callout_pattern, example, flags=re.MULTILINE)
+    assert match is not None
+
