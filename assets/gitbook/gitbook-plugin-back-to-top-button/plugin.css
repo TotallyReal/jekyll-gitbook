@@ -11,12 +11,13 @@
     -moz-border-radius: 35px;
     border-radius: 35px;
     display: none;
+
+    text-align: center;
 }
 .back-to-top i {
     color: #fff;
     margin: 0;
     position: relative;
-    left: 15px;
     top: 14px;
     font-size: 22px;
 }

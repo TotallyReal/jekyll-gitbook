@@ -2,3 +2,9 @@
     direction: rtl;
     unicode-bidi: embed;
 }
+
+.hebrew {
+    ul, ol {
+        padding-right: 2em;
+    }
+}

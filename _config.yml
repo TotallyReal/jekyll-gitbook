@@ -46,15 +46,24 @@ markdown_ext:             markdown,mkdown,mkdn,mkd,md
 exclude:
   - _drafts
 
+# TODO: Move collection order to a file in the collection folder
 collections:
-  pages:
+  Fourier:
+    output: true
+    permalink: notes/:collection/:path
+    order:
+      - Fourier Course Information.md
+      - Motivation.md
+      - Inner product spaces - a reminder.md
+      - Orthogonal sets - a reminder.md
+      - Infinite Orthonormal basis.md
+      - Fourier Series.md
+      - Fourier Transform.md
+  Temp:
     output: true
     permalink: /:collection/:path
-    order:
-      - course_description.md
-      - motivation.md
-      - inner_products.md
-      - orthogonality.md
+
+collections_dir: notes
 
 page_width: 800px
 

@@ -1,0 +1,5 @@
+collection:
+  - name: Fourier
+    enabled: true
+  - name: Temp
+    enabled: True

@@ -14,9 +14,9 @@
             <link rel="next" href="{{site.baseurl}}{{page.next.url}}"/>
         {% endif %}
     </head>
-    <body>
+    <body {% if page.dir == 'rtl' %} class="hebrew"{% endif %}>
         <div id="hiddenDiv" style="display: none;">
-            ${% include_relative preamble.sty %}$
+            ${% include preamble.sty %}$
         </div>
         <div class="book">
 
@@ -37,7 +37,7 @@
 
                 <div class="body-inner">
                     <div id="hiddenDiv" style="display: none;">
-                        ${% include_relative preamble.sty %}$
+                        ${% include preamble.sty %}$
                     </div>
                     {%- include body.html -%}
 

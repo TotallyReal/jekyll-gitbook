@@ -4,6 +4,12 @@ from typing import List
 import re
 from dataclasses import dataclass
 
+# TODO: change to be parameters from _config.yml
+base_dir = 'C:/gem/myblog/notes'
+link_base_dir = '\\Fourier_Notes\\notes'
+
+# TODO: support links with directory in it
+
 
 @dataclass
 class Link:
@@ -43,7 +49,6 @@ def process_match(match):
 
 def create_file_dict(base_dir: str, link_base_dir: str, ignore_dirs: List[str]):
     file_dict = {}
-    base_dir = 'C:/gem/myblog/_pages' # TODO - extract this directory automatically
 
     for dirpath, dirnames, filenames in os.walk(base_dir):
         dirnames[:] = [d for d in dirnames if d not in ignore_dirs]
@@ -57,31 +62,17 @@ def create_file_dict(base_dir: str, link_base_dir: str, ignore_dirs: List[str]):
 wikilink_regex = r'(!)?\[\[(.*?)((\||\\\|)(.*?))?\]\]'
 
 
-file_dict = create_file_dict(base_dir='../_pages', link_base_dir='/Fourier_Notes/pages', ignore_dirs=['.obsidian'])
+subfolders = [d for d in os.listdir(base_dir)
+              if os.path.isdir(os.path.join(base_dir, d)) and d[0] == '_']
+file_dict = {}
+for subfolder in subfolders:
+    file_dict.update(create_file_dict(
+        base_dir=os.path.join(base_dir, subfolder),
+        link_base_dir=f'{link_base_dir}\\{subfolder[1:]}',
+        ignore_dirs=['.obsidian']))
 
 
 def convert(text):
     output = re.sub(wikilink_regex, process_match, text, flags=re.MULTILINE)
     return output # +'\n'+str(file_dict)
 
-
-example='''---
-title: Course Description
-author: Ofir David
-category: Fourier Analysis
-layout: post
----
-[[Fourier_Series]]
-![[imgimg.png]]
-before content 
-'''
-
-
-
-# for match in re.findall(pattern=wikilink_regex, string=example):
-#     print(match)
-
-# print(convert(example))
-
-# for key, value in file_dict.items():
-#     print(f'{key}: {value}')
