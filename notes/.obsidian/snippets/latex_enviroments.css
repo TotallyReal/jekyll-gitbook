@@ -60,7 +60,7 @@
 
 /* ------------------------------ Definition ------------------------------ */
 
-.callout[data-callout="def"] {
+.callout[data-callout="def"], .callout[data-callout="הגדרה"] {
     --callout-color: 206, 134, 150;
     --callout-icon: lucide-eye;
     border: 5px solid rgba(255,255,255, 0.5);
@@ -75,7 +75,7 @@
     font-family: CMU Serif, Times, Noto Serif JP;	
 }*/
 
-.callout[data-callout="remark"] {
+.callout[data-callout="remark"], .callout[data-callout="הערה"] {
     --callout-color: 0, 0, 0;
     background-image: linear-gradient(#808080, #ffffff), linear-gradient(#808080, #ffffff), linear-gradient(#ffffff, #808080), linear-gradient(#ffffff, #808080);
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@
 
 /* ------------------------------ Proof ------------------------------ */
 
-.callout[data-callout="proof"] {
+.callout[data-callout="proof"], .callout[data-callout="הוכחה"] {
     --callout-color: 106, 184, 189;
     --callout-icon: lucide-scroll;
     border: 1px solid rgba(255,255,255, 0.5);
@@ -137,7 +137,7 @@
 
 /* ------------------------------ Claim ------------------------------ */
 
-.callout[data-callout="claim"] {
+.callout[data-callout="claim"], .callout[data-callout="טענה"] {
     --callout-color: 240, 100, 150;
     --callout-icon: lucide-aperture;
     border: 1px solid rgba(255,255,255, 0.5);

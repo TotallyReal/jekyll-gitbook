@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "74d0723f187383f6",
+        "id": "f30f0d87a22d38a1",
         "type": "tabs",
         "children": [
           {
-            "id": "ba8acaf98fc0b9f8",
+            "id": "e2e3d492d551a77e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Fourier/Fourier Transform.md",
-                "mode": "preview",
-                "source": true
+                "file": "_FourierHebrew/hebrew_delta_function.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Fourier/Fourier Transform.md",
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Fourier/Fourier Transform.md",
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Fourier/Fourier Transform.md"
+                "file": "_FourierHebrew/hebrew_delta_function.md"
               }
             }
           }
@@ -146,23 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ba8acaf98fc0b9f8",
+  "active": "e2e3d492d551a77e",
   "lastOpenFiles": [
+    "_FourierHebrew/basic properties.md",
+    "_Fourier/Fourier Transform.md",
+    "_FourierHebrew/hebrew_delta_function.md",
+    "_FourierHebrew/hebrew_inverse_transform.md",
+    "_FourierHebrew/hebrew_motivation.md",
+    "_Fourier/Motivation.md",
     "_Fourier/Fourier Series.md",
     "_Fourier/Infinite Orthonormal basis.md",
     "index.html",
     "_Fourier/Orthogonal sets - a reminder.md",
-    "_Fourier/Motivation.md",
     "_Fourier/Inner product spaces - a reminder.md",
-    "_FourierHebrew/hebrew_motivation.md",
-    "_Fourier/Fourier Transform.md",
     "_FourierHebrew/index.html",
     "imgimg.png.md",
     "_Fourier/index.html",
     "index.html~",
     "New Text Document.txt",
     "README.md",
-    "_FourierHebrew/basic properties.md",
     "obsidian hebrew.ahk~",
     "obsidian.ahk~",
     "obsidian hebrew.ahk",
@@ -191,7 +193,6 @@
     "_Fourier/images/Motivation/piano notes.png",
     "_Fourier/images/Motivation/solar system.jpg",
     "_Fourier/images/Motivation/piano keyboard.png",
-    "Fourier/Fourier Transform.md",
-    "Fourier/Fourier Series.md"
+    "Fourier/Fourier Transform.md"
   ]
 }
