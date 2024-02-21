@@ -58,10 +58,12 @@ collections:
       - Fourier Transform.md
   FourierHebrew:
     output: true
-    permalink: /:collection/:path
+    permalink: notes/:collection/:path
     order:
       - hebrew_motivation.md
       - basic properties.md
+      - hebrew_delta_function.md
+      - hebrew_plancharel
 #  Temp:
 #    output: true
 #    permalink: /:collection/:path

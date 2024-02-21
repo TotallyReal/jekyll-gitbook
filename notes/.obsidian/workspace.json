@@ -148,14 +148,18 @@
   },
   "active": "e2e3d492d551a77e",
   "lastOpenFiles": [
-    "_FourierHebrew/basic properties.md",
-    "_Fourier/Fourier Transform.md",
+    "_FourierHebrew/hebrew_plancharel.md",
+    "_temp/hebrew_plancharel 1.md",
+    "_temp/temp.md",
     "_FourierHebrew/hebrew_delta_function.md",
+    "_Fourier/Fourier Transform.md",
+    "_FourierHebrew/basic properties.md",
+    "_Fourier/Infinite Orthonormal basis.md",
+    "_Fourier/Fourier Series.md",
+    "_Fourier/Fourier Course Information.md",
     "_FourierHebrew/hebrew_inverse_transform.md",
     "_FourierHebrew/hebrew_motivation.md",
     "_Fourier/Motivation.md",
-    "_Fourier/Fourier Series.md",
-    "_Fourier/Infinite Orthonormal basis.md",
     "index.html",
     "_Fourier/Orthogonal sets - a reminder.md",
     "_Fourier/Inner product spaces - a reminder.md",
@@ -170,7 +174,6 @@
     "obsidian hebrew.ahk",
     "obsidian - Copy.ahk",
     "obsidian.ahk",
-    "_Fourier/Fourier Course Information.md",
     "imgimg.png",
     "Orthogonal sets - a reminder.md",
     "orthogonality.md",
@@ -182,8 +185,6 @@
     "course_description.md",
     "Fourier Course Information.md",
     "Fourier Series.md",
-    "Fourier Transform.md",
-    "_Fourier/index.md",
     "_Fourier/images/orthogonality/standard_basis2.jpg",
     "_Fourier/images/orthogonality/orthogonal projection.png",
     "_Fourier/images/orthogonality/linear_approximation.jpg",
@@ -192,7 +193,6 @@
     "_Fourier/images/Motivation/The Fourier spring.gif",
     "_Fourier/images/Motivation/piano notes.png",
     "_Fourier/images/Motivation/solar system.jpg",
-    "_Fourier/images/Motivation/piano keyboard.png",
-    "Fourier/Fourier Transform.md"
+    "_Fourier/images/Motivation/piano keyboard.png"
   ]
 }

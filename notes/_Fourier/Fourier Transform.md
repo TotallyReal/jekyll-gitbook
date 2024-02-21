@@ -199,7 +199,7 @@ Next we turn to derivatives, which also contain an interesting duality.
 > Suppose that both $f\in E^1(\RR)$, and $f'\in E^1 (\RR)$. Then
 > $$\cf[f'](\omega)=i\omega \cf[f](\omega).$$
 > Similarly, if $xf(x)\in E^1 (\RR)$, then $\hat{f}$ is differentiable and 
-> $$\cf[-ixf(x)] = \cf[f]'(\omega).$$
+> $$\cf[-ixf(x)](\omega) = \cf[f]'(\omega).$$
 
 >[!remark] Remark:
 > Before we give a proper proof, note that if we are allowed to change the order of derivation and integration, then the second part is almost automatic. However, we don't know that we can do this, and we basically prove it here.
