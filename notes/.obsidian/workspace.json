@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_FourierHebrew/hebrew_delta_function.md",
+                "file": "_FourierHebrew/basic properties.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_FourierHebrew/hebrew_delta_function.md",
+                "file": "_FourierHebrew/basic properties.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_FourierHebrew/hebrew_delta_function.md",
+                "file": "_FourierHebrew/basic properties.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_FourierHebrew/hebrew_delta_function.md"
+                "file": "_FourierHebrew/basic properties.md"
               }
             }
           }
@@ -149,10 +149,11 @@
   "active": "e2e3d492d551a77e",
   "lastOpenFiles": [
     "_FourierHebrew/hebrew_plancharel.md",
+    "_Fourier/Orthogonal sets - a reminder.md",
+    "_Fourier/Fourier Transform.md",
+    "_FourierHebrew/hebrew_delta_function.md",
     "_temp/hebrew_plancharel 1.md",
     "_temp/temp.md",
-    "_FourierHebrew/hebrew_delta_function.md",
-    "_Fourier/Fourier Transform.md",
     "_FourierHebrew/basic properties.md",
     "_Fourier/Infinite Orthonormal basis.md",
     "_Fourier/Fourier Series.md",
@@ -161,7 +162,6 @@
     "_FourierHebrew/hebrew_motivation.md",
     "_Fourier/Motivation.md",
     "index.html",
-    "_Fourier/Orthogonal sets - a reminder.md",
     "_Fourier/Inner product spaces - a reminder.md",
     "_FourierHebrew/index.html",
     "imgimg.png.md",

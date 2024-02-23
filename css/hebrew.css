@@ -7,4 +7,23 @@
     ul, ol {
         padding-right: 2em;
     }
+
+    .book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+        padding-right: 30px;
+        padding-left: 0px;
+    }
+
+    .book .book-summary .exc-trigger {
+        right: 12px;
+    }
+}
+
+/* Need for waterfox */
+.hebrew ul {
+    padding-right: 2em;
+}
+
+.hebrew ol {
+    padding-right: 2em;
+}
 }

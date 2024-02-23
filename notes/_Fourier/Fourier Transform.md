@@ -247,8 +247,3 @@ Next we turn to derivatives, which also contain an interesting duality.
 
 
 <- [[Fourier Series|Previous: Fourier Series]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,   ??? ->
-
-
-
-
-$\sqrt{|\lambda|} \cdot f(\lambda x) \Rightarrow \sqrt{|\lambda|^{-1}} \hat{f}(\lambda^{-1} \omega)$
