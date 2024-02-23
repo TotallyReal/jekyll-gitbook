@@ -43,13 +43,10 @@
             {% for collection in site.collections %}
                 <!-- <p>{{ collection.label }}</p> -->
                 {% if collection.output %}
-                    {% if collection.label == "posts" %}
-                        {% assign reversed_posts = site[collection.label] | reverse %}
-                    {% else %}
-                        {% assign reversed_posts = site[collection.label] %}
-                    {% endif %}
+                    {% assign posts = site[collection.label] %}
 
-                    {% for post in reversed_posts %}
+                    {% for post in posts %}
+                        {% assign index = forloop.index %}
 
                         {% assign active = "" %}
                         {% if page.url == post.url %}
@@ -57,19 +54,19 @@
                         {% endif %}
                         <li class="chapter {{ active }}" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                             <a href="{{site.baseurl}}{{post.url}}" onclick="pageScrollToTop(this)">
-                                {{ post.title | escape }}
+                                {{index}}. {{ post.title | escape }}
                             </a>
                         </li>
                     {% endfor %}
 
-                    {% if reversed_posts.size > 0 %}
+                    {% if posts.size > 0 %}
                         <li class="divider"></li>
                     {% endif %}
                 {% endif %}
             {% endfor %}
 
             <li class="divider"></li>
-            <li>Inside this page:</li>
+            <li class="chapter">Inside this page:</li>
             <li class="chapter active" data-level="1.4" data-path="{{ site.baseurl }}{{ page.url }}">
                 <a href="{{ site.baseurl }}{{ post_path }}" onclick="pageScrollToTop(this)">
                     {{ page.title | escape }}
