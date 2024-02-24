@@ -195,49 +195,57 @@ $callout-title-fontsize: 20px;
 /*------------- environment types ------------------*/
 
 .callout[data-callout="figure"], .callout[data-callout="תמונה"] {
-    @extend .shadowed-section
+    @extend .shadowed-section;
 }
 
 .callout[data-callout="cor"], .callout[data-callout="מסקנה"] {
-    @extend .highlight-section
+    @extend .highlight-section;
 }
 
 .callout[data-callout="theorem"], .callout[data-callout="משפט"] {
-    @extend .shadowed-section
+    @extend .shadowed-section;
+    .callout-content{
+        font-family: CMU Serif, Times, Noto Serif JP;
+        font-style: italic;
+    }
 }
 
 .callout[data-callout="lem"], .callout[data-callout="למה"] {
-    @extend .bordered-section
+    @extend .bordered-section;
 }
 
 .callout[data-callout="def"], .callout[data-callout="הגדרה"] {
-    @extend .shadowed-section
+    @extend .shadowed-section;
+
+    .callout-content {
+        /*font-family: CMU Serif, Times, Noto Serif JP;*/
+    }
 }
 
 .callout[data-callout="proof"], .callout[data-callout="הוכחה"] {
-    @extend .bracket-section
+    @extend .bracket-section;
 }
 
 .callout[data-callout="exc"], .callout[data-callout="תרגיל"] {
-    @extend .bracket-section
+    @extend .bracket-section;
 }
 
 .callout[data-callout="problem"], .callout[data-callout="בעיה"] {
-    @extend .bracket-section
+    @extend .bracket-section;
 }
 
 .callout[data-callout="remark"], .callout[data-callout="הערה"] {
-    @extend .top-bracket-section
+    @extend .top-bracket-section;
 }
 
 .callout[data-callout="example"], .callout[data-callout="דוגמא"] {
-    @extend .bracket-section
+    @extend .bracket-section;
 }
 
 .callout[data-callout="טענה"] {
-    @extend .right-bracket-section
+    @extend .right-bracket-section;
 }
 
 .callout[data-callout="claim"] {
-    @extend .left-bracket-section
+    @extend .left-bracket-section;
 }
