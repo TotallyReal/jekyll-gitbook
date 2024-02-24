@@ -50,9 +50,7 @@ $$.\norm{f}_2^2=C\int_{-\infty}^\infty \abs{\hat{f}(\omega)}^2\dom=C\norm{\hat{f
 > מצד שני, שימוש בפלנשרל נותן ש
 > $$.\int_{-\infty}^\infty \left(\frac{a}{\pi(\omega^2+a^2)}\right)^2 \dom = \frac{1}{2\pi} \frac{1}{a}$$
 > אם נעביר אגפים ונשתמש בזוגיות של הפונקציה, נקבל ש
-> $$.\int_{0}^\infty \left(\frac{1}{(\omega^2+a^2)}\right)^2 \dom = \frac{\pi}{4a^3} $$
-
-
+> $$.\dboxed{\int_{0}^\infty \frac{1}{(\omega^2+a^2)^2} \dom = \frac{\pi}{4a^3}} $$  
 
 > [!דוגמא] דוגמא: פונקציות מדרגה סימטריות
 > עבור $a>0$ נסתכל על הפונקציה

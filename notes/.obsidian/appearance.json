@@ -3,7 +3,6 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "rtl",
-    "latex_enviroments",
     "images"
   ],
   "baseFontSize": 19

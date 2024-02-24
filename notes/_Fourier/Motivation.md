@@ -5,7 +5,8 @@ category: Fourier Analysis
 layout: post
 ---
 Course: [[Fourier Course Information]]
-# What do we analyze?
+
+# What do we analyze? 
 
 The "**Fourier Analysis**" is one of the most useful tool when we try to study real (and complex) functions, which naturally appear in many places, for example:
  - **Physics**: represent position, speed, force, temperature, etc. ,

@@ -1,22 +1,27 @@
 ---
-title: Fourier - course information
+title: Course notes in Fourier Analysis
 author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
 
-[[index|Back to all courses]]
+[Ofir David](https://prove-me-wrong.com/)
+{: class="centered"}
+
+---
 # Description
 short description for Fourier analysis
 
 # Syllabus
+
 **Fourier series**: Definitions, Dirichlet's convergence theorem, ...
+
 **Fourier transforms**: Definition,...
 
 # Prerequisites
-- [[Basic Linear Algebra]]: Linear system of equations, matrices, eigenvalues and eigenvectors.
-- [[Inner Products Course Information|Inner Products]]: Inner products and norms, orthonormal bases, orthogonal projection.
-- [[Calculus]]: Limits, continuity, derivatives and integrals on finite and infinite segments.
+- **Basic Linear Algebra**: Linear system of equations, matrices, eigenvalues and eigenvectors.
+- **Inner Products**: Inner products and norms, orthonormal bases, orthogonal projection.
+- **Calculus**: Limits, continuity, derivatives and integrals on finite and infinite segments.
 
 # Recommended books
 

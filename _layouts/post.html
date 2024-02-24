@@ -4,11 +4,8 @@
 
         {%- include head.html -%}
 
-        {% if page.previous %}
-            <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
-        {% else %}
-            <link rel="prev" href="{{site.baseurl}}/" />
-        {% endif %}
+        {% assign prev_url = page.previous.url | default: "/" %}
+        <link rel="prev" href="{{site.baseurl}}{{prev_url}}" />
 
         {% if page.next %}
             <link rel="next" href="{{site.baseurl}}{{page.next.url}}"/>
@@ -41,15 +38,11 @@
                 </div>
                 {%- include body.html -%}
 
-                {% if page.previous %}
-                    <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                {% else %}
-                    <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                {% endif %}
+
+                {% assign prev_title = page.previous.title | default: site.title %}
+                <a href="{{site.baseurl}}{{prev_url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{prev_title}}">
+                    <i class="fa fa-angle-left"/>
+                </a>
 
                 {% if page.next %}
                     <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{page.next.title}}">

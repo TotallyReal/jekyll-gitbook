@@ -16,8 +16,8 @@ cssclasses:
 >  תהא $f\in E^1(\RR)$ . אז :
 >  1. **התמרת פורייה היא לינארית**: כלומר $\cf(\alpha f + g) = \cf(f)+\cf(g)$.
 >  2. **כפל בסקלר**: אם $\lambda\neq0$, אז עבור $g_\lambda(x)=f(\lambda x)$ נקבל ש $$\hat g_\lambda (\omega) = \frac {\hat{f}(\omega/\lambda)}{\abs{\lambda}}.$$
->  3. **הזזה -> סיבוב**: עבור ההזזה $f_\alpha(x):=f(x+\alpha)$ נקבל את ההתמרה: $$.\hat{f}_\alpha(\omega) = e^{i\alpha\omega}\hat{f}(\omega)$$
->  4. **סיבוב -> הזזה:** עבור $c\in \RR$ נסמן $h_c(x)= e^{icx} f(x)$. אז $$\hat{h}_c(\omega) = \hat{f}(\omega - c)$$
+>  3. **הזזה $\Leftarrow$ סיבוב**: עבור ההזזה $f_\alpha(x):=f(x+\alpha)$ נקבל את ההתמרה: $$.\hat{f}_\alpha(\omega) = e^{i\alpha\omega}\hat{f}(\omega)$$
+>  4. **סיבוב  $\Leftarrow$  הזזה:** עבור $c\in \RR$ נסמן $h_c(x)= e^{icx} f(x)$. אז $$\hat{h}_c(\omega) = \hat{f}(\omega - c)$$
 >  5. **הצמדה**: מתקיים ש $$.\overline{\cf[f](\omega)}=\cf[\overline{f}](-\omega)$$
 
 > [!הוכחה]- הוכחה: 
