@@ -1,25 +1,38 @@
-﻿/*------------- environment styles ------------------*/
+﻿/*------------- callouts ------------------*/
 
-$callout-title-fontsize: 20px;
+.callout[collapsible] .callout-title {
+    cursor: pointer;
+}
+
+.callout[collapsible] .callout-title:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: left;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+
+.callout[collapsible="show"] .callout-title:before {
+    transform: rotate(180deg);
+}
 
 .callout-content-wrapper {
     display: grid;
-    grid-template-rows: 0fr;
+    grid-template-rows: 1fr;
     transition: grid-template-rows 0.3s ease-out;
 }
 
-.section.active .callout-content-wrapper,
-.callout-content-wrapper:not([data-collapsed]) {
-    grid-template-rows: 1fr;
-}
-
-.callout-title[collapsible] {
-    cursor: pointer;
+.callout[collapsible="hide"] .callout-content-wrapper {
+    grid-template-rows: 0fr;
 }
 
 .callout-content {
     overflow: hidden;
 }
+
+/*------------- environment styles ------------------*/
+
+$callout-title-fontsize: 20px;
 
 %env-section {
     margin: 15px 5px 15px 5px;

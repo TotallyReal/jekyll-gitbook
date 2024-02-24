@@ -85,6 +85,7 @@ extra_css:
   - css/style.css
   - css/general.css
   - css/hebrew.css
+  - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
 
 sass:
   sass_dir: _sass

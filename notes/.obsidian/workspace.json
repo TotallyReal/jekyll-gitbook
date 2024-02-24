@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Fourier/Fourier Transform.md",
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Fourier/Fourier Transform.md",
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Fourier/Fourier Transform.md",
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_Fourier/Fourier Transform.md"
+                "file": "_FourierHebrew/hebrew_delta_function.md"
               }
             }
           }
@@ -148,20 +148,20 @@
   },
   "active": "e2e3d492d551a77e",
   "lastOpenFiles": [
+    "_FourierHebrew/hebrew_motivation.md",
+    "_Fourier/Fourier Series.md",
+    "_Fourier/Fourier Transform.md",
     "_Fourier/Inner product spaces - a reminder.md",
     "_Fourier/Fourier Course Information.md",
     "_FourierHebrew/basic properties.md",
     "_Fourier/Motivation.md",
     "_FourierHebrew/hebrew_plancharel.md",
-    "_Fourier/Fourier Series.md",
     "_FourierHebrew/hebrew_delta_function.md",
     "_Fourier/Orthogonal sets - a reminder.md",
-    "_Fourier/Fourier Transform.md",
     "_temp/hebrew_plancharel 1.md",
     "_temp/temp.md",
     "_Fourier/Infinite Orthonormal basis.md",
     "_FourierHebrew/hebrew_inverse_transform.md",
-    "_FourierHebrew/hebrew_motivation.md",
     "index.html",
     "_FourierHebrew/index.html",
     "imgimg.png.md",

@@ -1,17 +1,13 @@
 
-// Get all elements with the class 'title'
-var titles = document.querySelectorAll('.callout-title[collapsible]');
+var callouts = document.querySelectorAll('.callout[collapsible]');
+for (let calloutElement of callouts){
+    var title = calloutElement.querySelector(".callout-title");
+    //console.log(title);
 
-// Iterate over each title
-titles.forEach(function(title) {
-  // Add click event listener
-  title.addEventListener('click', function() {
-    // Toggle the 'collapsed' attribute on the content element
-    var content = this.nextElementSibling;
-    if (content.hasAttribute('data-collapsed')) {
-      content.removeAttribute('data-collapsed');
-    } else {
-      content.setAttribute('data-collapsed', '');
-    }
-  });
-});
+    title.addEventListener('click', function() {
+        var state = calloutElement.getAttribute('collapsible');
+        var new_state = (state == 'hide') ? 'show' : 'hide';
+        calloutElement.setAttribute('collapsible', new_state);
+    });
+}
+

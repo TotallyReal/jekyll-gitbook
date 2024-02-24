@@ -42,9 +42,6 @@
     {%- for extra_css in site.extra_css -%}
         {%- assign starts_with = extra_css | slice: 0,4 -%}
 
-        {% assign css_href = starts_with(extra_css, "http") ? extra_css : site.baseurl | append: "/" | append: extra_css %}
-        <link rel="stylesheet" href="{{ css_href }}">
-
         {% if starts_with == "http" %}
 <link rel="stylesheet" href="{{ extra_css }}">
         {%- else -%}

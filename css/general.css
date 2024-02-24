@@ -1,8 +1,17 @@
+.centered{
+    text-align: center;
+}
+
+.double-bordered {
+    padding: 15px;
+    border-style: double;
+}
 
 img, iframe{
     margin-left: auto !important;
     margin-right: auto !important;
     display: block;
 }
+
 
 
