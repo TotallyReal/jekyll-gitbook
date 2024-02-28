@@ -1,9 +1,17 @@
 
-img {
-    border: 5px solid rgba(155,255,155, 0.5);
+table, .table-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+img, iframe {
     margin-left: auto !important;
     margin-right: auto !important;
     display: block;
+}
+
+img {
+    border: 5px solid rgba(155,255,155, 0.5);
 }
 
 

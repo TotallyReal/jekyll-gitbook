@@ -3,7 +3,8 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "rtl",
-    "images"
+    "images",
+    "general"
   ],
   "baseFontSize": 19
 }

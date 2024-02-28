@@ -63,7 +63,8 @@ collections:
       - hebrew_motivation.md
       - basic properties.md
       - hebrew_delta_function.md
-      - hebrew_plancharel
+      - hebrew_plancharel.md
+      - hebrew_convolution.md
 #  Temp:
 #    output: true
 #    permalink: /:collection/:path

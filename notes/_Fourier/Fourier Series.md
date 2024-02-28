@@ -55,9 +55,8 @@ To visualize these result, you can use the following Desmos program:
 
    
 Once you finish putting in the coefficients and choosing your function $f(x)$, you can close the menu and choose the approximation level using the $k=?$ slider below the graph.
-You can also go directly to the Desmos site [here](https://www.desmos.com/calculator/bmne2o5ycg).
-
-<iframe src="https://www.desmos.com/calculator/bmne2o5ycg" width="700" height="400" style="border: 1px solid #ccc" frameborder=0></iframe>
+You can also go directly to the Desmos site [here](https://www.desmos.com/calculator/wicwees0mt).
+<iframe src="https://www.desmos.com/calculator/wicwees0mt?embed" width="700" height="400" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 >[!example]- Examples: Fourier series
 > 1. $f(x)=x$: In this case, we already saw that $b_n=2\frac{(-1)^{n+1}}{n}$ and $a_n=0$ for all $n$ (since $x\cos(nx)$ is an odd function).

@@ -27,21 +27,14 @@ In the $[-\pi,\pi]$ finite case, we have that $\norm f_1 \leq \norm f_2 \leq \no
 >[!exc] Excercise:
 > For each $p\in\{1,2,\infty\}$ find a function $f$ such that $\norm f_p <\infty$, while the other two norms are infinity.
 
-We already saw that the inner product is not well defined for just bounded functions in $L^\infty (\RR)$, but it is well defined for function in $L^2(\RR)$.
+We already saw that the inner product is not well defined for just bounded functions in $E^\infty (\RR)$, but it is well defined for function in $E^2(\RR)$.
 
 >[!lem] Lemma: Inner product on $E^2(\RR)$
-> The map $\angles{f,g}$ defined above is an inner product on $L^2(\RR)$.
+> The map $\angles{f,g}$ defined above is an inner product on $E^2(\RR)$.
 
 >[!proof]- Proof:
-> The Cauchy-Shwarz inequality on finite segments show that 
-> 
-> $$\abs{ \int_a^b f(x)\overline{g(x)}\dx }^2 \leq  \int_a^b \abs{f(x)}^2 \dx \cdot \int_a^b \abs{g(x)}^2 \dx \leq  \int_{-\infty}^{\infty} \abs{f(x)}^2 \dx \cdot \int_{-\infty}^{\infty} \abs{g(x)}^2 \dx. $$
-> 
-> Taking the limit of $a\to -\infty$ and $b\to \infty$ on the left hand side, gives us the infinite Cauchy-Shawrz analogue, and in particular :
-> 
-> $$\abs{\angles{f,g}} \leq \norm f_2 \norm g_2,$$ 
-> 
-> so if both $f,g\in L^2(\RR)$, then their inner product is finite (and actually converges in absolute value).
+> Once we know that $\angles{f,g}$ is well defined, the rest of properties of inner products are easy to prove. We already saw in [[Inner product spaces - a reminder]] that the integral converges, but as a reminder, because $\abs{f(x)\overline{g(x)}}\leq \abs{f(x)}^2+\abs{g(x)}^2$, we get that the integral even converges in absolute value since
+> $$\int_{-\infty}^\infty\abs{f(x)g(x)}\dx \leq \norm{f(x)}_2^2+\norm{g(x)}_2^2<\infty.$$
 
 We can now look for an orthonormal basis and do a similar process as with the Fourier series. However, our main goal is to study functions through their periodicity (namely translation to the left and right), and the only periodic function which is in $E^2(\RR)$ is the zero function. Instead, we will just "extend" what we saw in the finite segment case to all of $\RR$.
 

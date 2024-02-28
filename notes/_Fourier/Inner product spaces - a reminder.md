@@ -31,7 +31,13 @@ This structure stands at the heart of the standard Euclidean geometry that we li
 
 With this geometric intuition, let us recall its generalization as "[[Inner product|inner products]]". In the following, our field will always be one of $\FF = \RR,\CC$.
 
-![[Inner product#^9bddd8]]
+>[!def] Definition: Inner Products
+>Let $V$ be a vector space. An **inner product** on $V$ is a function $$\angles{\cdot,\cdot}:V\times V \to \FF$$
+> such that 
+> 1. **Positive**: For any $v\in V$ we have $\angles {v,v} \geq 0$ with equality if and only if $v=0.$
+> 2. **Hermitian**: For any $u,v\in V$ we have that $\angles {u,v} = \overline{\angles {v,u}}$.
+> 3. **Linear in first coordinate**: For any $u,v,w\in V$ and $\alpha \in \FF$ we have 
+>    $$\angles {u+\alpha v,w} = \angles {u,w} + \alpha \angles {v,w}.$$
 
 Let's recall some interesting examples for inner product spaces:
 >[!example]- Examples:
@@ -43,24 +49,39 @@ Let's recall some interesting examples for inner product spaces:
 > 3. **Weighted integral**: For a nonnegative function $w:[0,1]\to[0,\infty)$ we define:
 >    $$\angles {f,g}_w:=\int_0^1f(x)\overline{g(x)}w(x)\dx$$
 
-The last two examples are for infinite dimensional inner products spaces (where the second example is a specific case of the third one). They can be further extended in two interesting ways:
-- **Infinite domains**: Instead of integrating over $[0,1]$ we can of course integrate over any closed and bounded segment $[a,b]$. More over, we can integrate over unbounded segments, e.g. $[0,\infty)$, but then the inner product is not always well defined. For example, the constant 1 function $\bar{1}(x)$ is continuous on $[0,\infty)$, while 
-  
-  $$\angles {\bar{1},\bar{1}}_{[0,\infty)}=\int_0^\infty 1\cdot 1\cdot \dx = \infty.$$
-  
-  We can "solve" this problem by only considering functions which satisfy 
-  
-  $$\int_0^\infty |f(x)|^2\dx < \infty.$$
-  
-  The space of these function is call the [[L2 functions]] and denoted by $\mathcal{L}^2$.
-- **Piecewise continuous function**: We can increase the set of functions we work with, and instead of just continuous functions, we can look at functions which are piecewise continuous. As in the previous case, this is again not an inner product space, though for a different reason. The "inner product" satisfies all the conditions except for $\angles {v,v} = 0$ if and only if $v=0$. For example, the function:
+The last two examples are for infinite dimensional inner products spaces (where the second example is a specific case of the third one). If we extend our space of continuous functions even a little bit to piecewise continuous functions, we suddenly have two interesting problems that need to be solved:
+- **The zero function**: Consider the function:
   ![[discontinuity.jpg|300]]
+  This is clearly a piecewise continuous function with one discontinuity at $x=1$. While it is not the zero function, it does satisfy $\angles{f,f}=0$, so that the function $\angles{\cdot,\cdot}$ is no longer an inner product. However, this is the only problem with the definition, which can be fixed easily by "increasing" the zero function to contain such functions. 
+  More formally, we will say that two functions are equivalent $f_1\sim f_2$ if $f_1-f_2$ is almost zero, in the sense that $\angles{f_1-f_2, f_1-f_2}=0$. The inner product is well defined modulo this equivalence, namely if $f_1 \sim f_2$ and $g_1 \sim g_2$, then $\angles{f_1,g_1}=\angles{f_2,g_2}$. This should not be two surprising because for piecewise continuous function $f_1 \sim f_2$ just means that $f_1(x)=f_2(x)$ except for finitely many points.
+- **Infinite integrals**: Consider the function $f:[0,1]\to\RR$ defined by $f(x)=\cases{\frac{1}{x} & x>0 \\ 0 & x=0}.$ This too is a piecewise continuous function with only one discontinuity at $x=0$. However this time $\angles{f,f}=\int_0^1\frac{1}{x^2}\dx = \infty$ , so our inner product doesn't necessarily return finite numbers.
+  This problem can be solved by restricting our space of functions to "small" enough functions, namely just $f$ which satisfy
+  $$\int_0^\infty |f(x)|^2\dx < \infty.$$
+  If we have two such functions $f,g$ , then 
+  $$\abs{f(x)\overline{g(x)}} \leq \max\{\abs{f(x)}^2,\abs{g(x)}^2\}\leq \abs{f(x)}^2 + \abs{g(x)}^2.$$
+  It follows that the integral in the inner product
+  $$\angles {f,g} =\int_0^1 f(x)\overline{g(x)}\dx$$
+  converges in absolute value (and is at most $\int_0^1 \abs{f(x)}^2 dx + \int_0^1\abs{g(x)}^2\dx$), and therefore converges.
+
+> [!def] Definition: The space of piecewise continuous functions.
+> For a segment $I\subseteq \RR$ we define:
+> $$E^2(I)=\{f:I\to \CC\;\mid\;f\text{ piecewise continuous, }\int_I\abs{f(x)}^2\dx < \infty\}.$$
+> We sometimes also denote it by $E(I)$.
+  
+  > [!remark] Remark: $\mathcal{L}^2$v-functions.
+  > This space can (and should be) extended a little bit, and instead of piecewise continuous function, we can talk about integrable functions, and then it is denoted by $\mathcal{L}^2$. However, for simplicity we will continue to work with the piecewise continuous functions.
 
 # The norm
 
 Once we have the inner product (which "corresponds" to angles), we also have the norm (which is the "length" of a vector):
 
-![[Norm#^5a49a3]]
+>[!def] Definition: Norms
+> Let $V$ be a vector space. A **norm** on $V$ is a function
+> $$\norm {\cdot} : V \to \RR$$
+> such that:
+> 1. **Positive**: For any $v \in V$ we have that $\norm v\geq 0$ with equality if and only if $v=0$.
+> 2. **Absolute homogeneous**: For any $v\in V$ and $\alpha \in \FF$ we have $$\norm {\alpha v} = |\alpha|\cdot \norm v.$$
+> 3. **Triangle inequality**: For any $u,v\in V$ we have $$\norm {u+v} \leq \norm u + \norm v.$$
 
 There are many examples of interesting norms, but probably one of the most useful one for us is the induced norm:
 >[!theorem] Theorem: The induced norm.

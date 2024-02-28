@@ -69,3 +69,4 @@ $$.\norm{f}_2^2=C\int_{-\infty}^\infty \abs{\hat{f}(\omega)}^2\dom=C\norm{\hat{f
 > $$.f_a(x)=\chi_{[-a,a]}(x)=\cases{1 & |x|\leq a \\ 0 & |x| > a}$$
 > עבור הפונקציות האלו ראינו ש $\hat{f}_a(\omega)=\frac{\sin(\omega a)}{\omega \pi}$. שימוש בפלנשרל עבור המכפלה הפנימית יתן לנו ש:
 > $$\align{\int_{-\infty}^\infty \frac{\sin(\omega a)}{\omega \pi} \cdot \frac{\sin(\omega b)}{\omega \pi} \dom &= \frac{1}{2\pi} \int_{-\infty}^\infty f_a(x) f_b(x) \dx = \frac{1}{2\pi} \int_{-\infty}^\infty f_{\min(a,b)}(x) \dx \\&= \frac{\min(a,b)}{\pi}}$$
+

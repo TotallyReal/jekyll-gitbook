@@ -4,6 +4,6 @@
     border: none;
 }
 
-.ttt {
-    border: none;
+body {
+    --file-line-width: 1200px;
 }
