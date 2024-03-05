@@ -32,7 +32,8 @@
       "beginProof": "\\begin{proof}",
       "endProof": "\\end{proof}",
       "insertSpace": true
-    }
+    },
+    "_FourierHebrew/hebrew_motivation.md": {}
   },
   "extraSettings": {
     "foldDefault": "",

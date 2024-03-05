@@ -85,8 +85,11 @@ plugins:
 extra_css:
   - css/style.css
   - css/general.css
-  - css/hebrew.css
   - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
+  - http://tikzjax.com/v1/fonts.css
+
+extra_head_js:
+  - http://tikzjax.com/v1/tikzjax.js
 
 sass:
   sass_dir: _sass

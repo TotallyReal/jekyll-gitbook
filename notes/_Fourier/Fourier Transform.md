@@ -215,6 +215,14 @@ Next we turn to derivatives, which also contain an interesting duality.
 > 
 > As $e^z$ is analytic, we can find some constant $C$ such that $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<C\abs{hx}^2$ for $\abs{hx}<1$. If $\abs{hx}>1$, then $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<3$. Using the fact that $\norm {xf(x)}_1 <\infty$, the same ideas from before show that the limit is zero.
 
+> [!example] $f(x)=e^{-|x|} x^n$
+> Note first that the function $f(x)$ is in $E^1(\RR)$, so it has a Fourier transform.
+> For the $n=0$ case we know that $\cf\left[e^{-|x|}\right](\omega) = \frac{1}{\omega^2 + 1}$. Using the last claim and a bit of induction, we get that :
+> $$\cf\left[x^ne^{-|x|}\right](\omega) = (-i)^n \cf\left[(-ix)^ne^{-|x|}\right](\omega) = (-i)^n \cf\left[e^{-|x|}\right]^{(n)}(\omega) = (-i)^n \frac{\partial^n}{\partial\omega^n}\left(\frac{1}{\omega^2+1}\right).$$
+> For example, for $n=1$ we simply get $\cf\left[xe^{-|x|}\right](\omega)=\frac{2\omega}{(\omega^2+1)^2}i$ .
+> 
+
+
 
 >[!example] Example: Fourier transform of the Gaussian
 > Letting $f(x)=e^{-x^2}$, its Fourier transform is 

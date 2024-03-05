@@ -40,12 +40,12 @@ $callout-title-fontsize: 20px;
 }
 
 .highlight-section {
-    $callout-color: rgb(238, 100, 149);
+    --callout-color: 238, 100, 149;
     --callout-icon: lucide-sun;
     border-top: none;
     border-bottom: none;
     border-right: none;
-    border-left: 4px solid $callout-color;
+    border-left: 4px solid rgba(var(--callout-color), 1);
     box-shadow: none;
     margin: 5px;
 
@@ -56,14 +56,20 @@ $callout-title-fontsize: 20px;
         /*inner title?*/
         font-family: Inter;
         font-weight: normal;
-        background: rgba($callout-color, 0.2);
-        color: $callout-color;
+        background: rgba(var(--callout-color), 0.2);
+        color: rgba(var(--callout-color), 1);
     }
 
     .callout-content {
         padding: 1px 20px 2px 20px;
-        background: rgba($callout-color, 0.05);
+        background: rgba(var(--callout-color), 0.05);
     }
+}
+
+
+.hebrew .highlight-section {
+    border-left: none;
+    border-right: 4px solid rgba(var(--callout-color), 1);
 }
 
 .bordered-section {
@@ -98,7 +104,10 @@ $callout-title-fontsize: 20px;
 }
 
 .bracket-section {
-    background-image: linear-gradient(to right, #808080, #ffffff), linear-gradient(to left, #808080, #ffffff), linear-gradient(to right, #808080, #ffffff), linear-gradient(to left, #808080, #ffffff);
+    background-image: linear-gradient(to right, #808080, #ffffff), 
+        linear-gradient(to left, #808080, #ffffff), 
+        linear-gradient(to right, #808080, #ffffff), 
+        linear-gradient(to left, #808080, #ffffff);
     background-repeat: no-repeat;
     background-size: 15px 3px;
     background-position: top left, top right, bottom left, bottom right;

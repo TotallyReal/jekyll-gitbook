@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_FourierHebrew/hebrew_convolution.md",
+                "file": "_FourierHebrew/basic properties.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "826f84ba00919b6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_FourierHebrew/hebrew_convolution.md",
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_FourierHebrew/hebrew_convolution.md",
+                "file": "_FourierHebrew/hebrew_delta_function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_FourierHebrew/hebrew_convolution.md"
+                "file": "_FourierHebrew/hebrew_delta_function.md"
               }
             }
           }
@@ -146,26 +159,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2e3d492d551a77e",
+  "active": "826f84ba00919b6e",
   "lastOpenFiles": [
-    "_FourierHebrew/hebrew_plancharel.md",
-    "_FourierHebrew/hebrew_delta_function.md",
-    "_FourierHebrew/hebrew_convolution.md",
-    "_temp/hebrew_plancharel 1.md",
-    "_Fourier/Motivation.md",
     "_FourierHebrew/basic properties.md",
-    "_Fourier/Fourier Series.md",
+    "_FourierHebrew/images",
+    "_FourierHebrew/hebrew_delta_function.md",
+    "_temp/temp.md",
+    "_FourierHebrew/images/dirac step.png",
     "_Fourier/Fourier Transform.md",
     "_FourierHebrew/hebrew_motivation.md",
+    "_Fourier/Orthogonal sets - a reminder.md",
+    "_Fourier/temp.md",
+    "_Fourier/Infinite Orthonormal basis.md",
+    "_FourierHebrew/hebrew_convolution.md",
+    "_FourierHebrew/hebrew_plancharel.md",
+    "_temp/hebrew_plancharel 1.md",
+    "_Fourier/Motivation.md",
+    "_Fourier/Fourier Series.md",
     "_Fourier/Inner product spaces - a reminder.md",
     "_temp/Untitled.md",
     "Inner product.md",
     "_inner product/Linear regression.md",
     "_inner product",
-    "_temp/temp.md",
-    "_Fourier/Orthogonal sets - a reminder.md",
     "_Fourier/Fourier Course Information.md",
-    "_Fourier/Infinite Orthonormal basis.md",
     "_FourierHebrew/hebrew_inverse_transform.md",
     "index.html",
     "_FourierHebrew/index.html",
@@ -177,14 +193,11 @@
     "obsidian hebrew.ahk~",
     "obsidian.ahk~",
     "obsidian hebrew.ahk",
-    "obsidian - Copy.ahk",
     "imgimg.png",
     "Orthogonal sets - a reminder.md",
     "orthogonality.md",
     "motivation.md",
     "inner_products.md",
-    "Inner product spaces - a reminder.md",
-    "index.md",
     "_Fourier/images/orthogonality/standard_basis2.jpg",
     "_Fourier/images/orthogonality/orthogonal projection.png",
     "_Fourier/images/orthogonality/linear_approximation.jpg",
@@ -192,7 +205,6 @@
     "_Fourier/images/Motivation/translation.jpg",
     "_Fourier/images/Motivation/The Fourier spring.gif",
     "_Fourier/images/Motivation/piano notes.png",
-    "_Fourier/images/Motivation/solar system.jpg",
-    "_Fourier/images/Motivation/piano keyboard.png"
+    "_Fourier/images/Motivation/solar system.jpg"
   ]
 }
