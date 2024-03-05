@@ -7,7 +7,6 @@ layout: post
 
 [motivation](motivation.md)
 
-
 # this is the first title {#id}
 
 <div class="highlight-section">
