@@ -63,7 +63,7 @@ We will soon see that this transform is well defined for our functions in $E^1(\
 > 
 > $$\hat{f}(0)=\frac{1}{2\pi} \int_{-\infty}^{\infty} \chi_{[a,b]}(x)dx=\frac {b-a}{2\pi}. $$
 > 
-> The function $\hat f(\omega)$ is easily seen to be continuous for $\omega \neq 0$, but you can also check that it is continuous at $\omega = 0$ as well. Also, since $e^{i\omega x}$ is bounded, as $\omega \to \infty$ we see that $\hat{f}(\omega)\to 0$
+> The function $\hat f(\omega)$ is easily seen to be continuous for $\omega \neq 0$, but you can also check that it is continuous at $\omega = 0$ as well. Also, since $e^{i\omega x}$ is bounded, as $\omega \to \infty$ we see that $\hat{f}(\omega)\to 0$. We will see later on that this is a much more general phenomena.
 > 
 > More over, when $a=-b$ is symmetric, the expression above is the real function:
 > 
@@ -84,7 +84,7 @@ We will soon see that this transform is well defined for our functions in $E^1(\
 Before proving some basic results about the Fourier transform, we need to actually show that it is well defined for our functions, namely that $\angles{f,e^{i\omega x}}$ is finite when $f\in E^1(\RR)$. 
 
 >[!lem] Lemma:
-> If $f\in E^1(\RR)$, then $\hat{f}(\omega)$ is well defined for all $\omega$ and $\norm {\hat{f}}_\infty \leq \norm f_1$.
+> If $f\in E^1(\RR)$, then $\hat{f}(\omega)$ is well defined for all $\omega$ and $\norm {\hat{f}}_\infty \leq \frac{1}{2\pi} \norm f_1$.
 
 >[!proof]- Proof:
 > This is a simple upper bound computation:
@@ -215,13 +215,13 @@ Next we turn to derivatives, which also contain an interesting duality.
 > 
 > As $e^z$ is analytic, we can find some constant $C$ such that $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<C\abs{hx}^2$ for $\abs{hx}<1$. If $\abs{hx}>1$, then $\abs{\frac{e^{-ihx}-(1-ihx)}{hx}}<3$. Using the fact that $\norm {xf(x)}_1 <\infty$, the same ideas from before show that the limit is zero.
 
+
 > [!example] $f(x)=e^{-|x|} x^n$
 > Note first that the function $f(x)$ is in $E^1(\RR)$, so it has a Fourier transform.
 > For the $n=0$ case we know that $\cf\left[e^{-|x|}\right](\omega) = \frac{1}{\omega^2 + 1}$. Using the last claim and a bit of induction, we get that :
 > $$\cf\left[x^ne^{-|x|}\right](\omega) = (-i)^n \cf\left[(-ix)^ne^{-|x|}\right](\omega) = (-i)^n \cf\left[e^{-|x|}\right]^{(n)}(\omega) = (-i)^n \frac{\partial^n}{\partial\omega^n}\left(\frac{1}{\omega^2+1}\right).$$
 > For example, for $n=1$ we simply get $\cf\left[xe^{-|x|}\right](\omega)=\frac{2\omega}{(\omega^2+1)^2}i$ .
 > 
-
 
 
 >[!example] Example: Fourier transform of the Gaussian
@@ -246,5 +246,3 @@ Next we turn to derivatives, which also contain an interesting duality.
 > 
 > $$\hat{f}(\omega) = \frac{1}{2\sqrt{\pi}} e^{-\omega^2/4}.$$
 
-
-<- [[Fourier Series|Previous: Fourier Series]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,   ??? ->

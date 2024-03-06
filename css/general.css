@@ -13,5 +13,10 @@ img, iframe{
     display: block;
 }
 
+thead , table{
+    border: 2px solid black; /* Border style */
+    font-weight: bold; /* Bold font */
+}
+
 
 

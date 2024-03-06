@@ -60,6 +60,7 @@ collections:
     output: true
     permalink: notes/:collection/:path
     order:
+      - hebrew_Fourier_transform.md
       - hebrew_motivation.md
       - basic properties.md
       - hebrew_delta_function.md
