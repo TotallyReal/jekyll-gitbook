@@ -14,6 +14,8 @@ short description for Fourier analysis
 
 # Syllabus
 
+**Geometry in infinite dimensional spaces**: Inner products, norms, distance, orthonormal systems
+
 **Fourier series**: Definitions, Dirichlet's convergence theorem, ...
 
 **Fourier transforms**: Definition,...
@@ -22,13 +24,3 @@ short description for Fourier analysis
 - **Basic Linear Algebra**: Linear system of equations, matrices, eigenvalues and eigenvectors.
 - **Inner Products**: Inner products and norms, orthonormal bases, orthogonal projection.
 - **Calculus**: Limits, continuity, derivatives and integrals on finite and infinite segments.
-
-# Recommended books
-
-# Table of contents
-1. [[Motivation|Motivation]]
-2. [[Inner product spaces - a reminder]]
-3. [[Orthogonal sets - a reminder]]
-4. [[Infinite Orthonormal basis]]
-5. [[Fourier Series|The Fourier Series]]
-6. [[Fourier Transform]]

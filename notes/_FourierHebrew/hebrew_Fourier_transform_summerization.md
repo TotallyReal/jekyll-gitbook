@@ -31,11 +31,12 @@ cssclasses:
 ---
 # דוגמאות חשובות
 
-| $\hat{f}(\omega)$                                                                                          | $f(x)$              |
-| :---------------------------------: | :------------: |
-| $\hat{f}(\omega)=\cases{\frac{\sin(\omega b)}{\omega \pi} & \omega \neq 0 \\ \frac{b}{\pi} & \omega = 0.}$ | $\chi_{[-a,a]}(x)$  |
-| $\frac{a}{\pi(\omega^2+a^2)}$                                                                              | $e^{-a\|x\|},\;a>0$ |
-| $\frac{1}{2\sqrt{\pi}} e^{-\omega^2/4}$                                                                    | $e^{-x^2}$          |
+|                                             $\hat{f}(\omega)$                                              |                  $f(x)$                   |
+| :--------------------------------------------------------------------------------------------------------: | :---------------------------------------: |
+| $\hat{f}(\omega)=\cases{\frac{\sin(\omega b)}{\omega \pi} & \omega \neq 0 \\ \frac{b}{\pi} & \omega = 0.}$ |            $\chi_{[-a,a]}(x)$             |
+|                                        $\frac{1}{\pi(\omega^2+1)}$                                         |              $e^{-\abs{x}}$               |
+|                                           $\frac{1}{1+i\omega}$                                            | $\chi_{[0,\infty)}(x) \cdot e^{-\abs{x}}$ |
+|                                  $\frac{1}{2\sqrt{\pi}} e^{-\omega^2/4}$                                   |                $e^{-x^2}$                 |
 
 # פעולות גאומטריות
 
@@ -44,7 +45,7 @@ cssclasses:
 |                  |                      $\hat{f}(\omega)$                      |                  $f(x)$                  |
 | ---------------- | :---------------: | :-----------------: |
 | **לינאריות**:    | $\alpha  \cdot \hat{f}(\omega)+\beta \cdot \hat{g}(\omega)$ | $\alpha \cdot  f(x) + \beta \cdot  g(x)$ |
-| **מתיחה**:       |          $\frac{\hat{f}(\omega/\lambda)}{\lambda}$          |              $f(\lambda x)$              |
+| **מתיחה**:       |        $\frac{\hat{f}(\omega/\lambda)}{\|\lambda\|}$        |              $f(\lambda x)$              |
 | **הצמדה**:       |                $\overline{\hat{f}(-\omega)}$                |            $\overline{f(x)}$             |
 | **הזזה לסיבוב:** |             $e^{i\alpha \omega}\hat{f}(\omega)$             |              $f(x+\alpha)$               |
 | **סיבוב להזזה**: |                     $\hat{f}(\omega-c)$                     |              $e^{icx}f(x)$               |

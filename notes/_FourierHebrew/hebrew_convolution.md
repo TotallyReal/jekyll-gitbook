@@ -113,8 +113,15 @@ $$\align{f(x)g(x) & = \left(\sum_{i=0}^d a_i x^i\right)\left(\sum_{j=0}^d b_j x^
 > 1. אסוציאטיביות: $f*(g*h)=(f*g)*h$.
 > 2. קומוטטיביות: $f*g=g*f$.
 > 3. לינאריות (דיסטריביוטיביות + כפל בסקלר): $f*(\alpha g + h) = \alpha f*g + f*h$.
-> 4. נגזרת: אם $f$ גזירה ואם $f*g$ קיימת וגזירה, אז $(f*g)'(x)=(f'*g)(x)$.
+> 4. אם נסמן $g_\alpha(x)=g(x+\alpha)$ אז $(f*g_\alpha)(x)=(f*g)(x+\alpha)$.
+> 5. נגזרת: אם $f$ גזירה ואם $f*g$ קיימת וגזירה, אז $(f*g)'(x)=(f'*g)(x)$.
 
+> [!הוכחה] הוכחה:
+> נשאיר את סעיפים 1,2,3,4 כתרגיל ונוכיח את 5.
+> ע"י שימוש בסעיף 4, נקבל ש $(f*g)'(x_0)=(f'*g)(x_0)$ נכון אמ"מ  $(f*g_{x_0})'(0)=(f'*g_{x_0})(0)$ נכון. לכן, עד כדי החלפת $g$ ב $g_{x_0}$ נוכל להניח ש $x_0=0$ כדי שיהיה לנו פחות פרמטר לרדוף אחריו.
+> 
+> כדי להראות את השוויון המבוקש, נעביר אגפים, ונקבל
+> $$\align{(f*g)'(0)-(f'*g)(0)| & = \lim_{h\to 0}\frac {(f*g)(h)-(f*g)(0)}{h}-(f'*g)(0) \\ &= \lim_{h\to 0}\int_{-\infty}^\infty \left[\frac {f(h-y)g(y)-f(-y)g(y)}{h}-(f'(-y)*g(y))\right]\dy \\ &= \lim_{h\to 0}\int_{-\infty}^\infty \left[\frac {f(h-y)-f(-y)}{h}-f'(-y)\right]g(y)\dy}$$
 # התמרת פורייה של קונבולוציה
 
 > [!משפט] משפט הקונבולוציה
@@ -188,7 +195,7 @@ $$.U(\omega,t)=U(\omega,0)e^{-k\omega^2t}$$
 $$.e^{-k\omega^2t}=e^{-(\omega\cdot 2\sqrt{kt})^2/4} =\frac{2\sqrt{\pi}}{2\sqrt{kt}}\cf[e^{-(x/2\sqrt{kt})^2}](\omega) =\sqrt{\frac{\pi}{kt}}\cf[e^{-x^2/4kt}](\omega)$$
 סה"כ קיבלנו ש 
 $$\cf[u](\omega,t) = \cf[u](\omega,0)\cdot \cf\left[\sqrt{\frac{\pi}{kt}}e^{-x^2/4kt}\right](\omega)=\frac{1}{2\pi} \cf\left[u(x,0)*\sqrt{\frac{\pi}{kt}}e^{-x^2/4kt}\right](\omega)$$
-כלומר
+כלומר, אם אנחנו יודעים את הטמפרטורה בזמן $t=0$ אז נוכל לחשב אותה בזמן $t$ כללי ע"י:
 $$.\dboxed{u(x,t)=\frac{1}{\sqrt{4\pi kt}}\int_{-\infty}^\infty u(y,0)e^{-\frac{(x-y)^2}{4kt}}\dy}$$
 
 > [!דוגמא]- סימולציה של משוואת החום
