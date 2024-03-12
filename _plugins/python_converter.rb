@@ -9,7 +9,7 @@ module Jekyll
     def generate(site)
 
       puts "------------------+++++++++++++++++++++++++++----------------"
-      
+
       site.collections.each do |collection_name, collection|
         puts collection_name
         puts collection.relative_directory
@@ -36,6 +36,7 @@ module Jekyll
 end
 
 def print_variables(obj)
+  puts "=============================="
   puts "# #{obj.class}"
   obj.instance_variables.each do |var|
     var_name = var.to_s.delete('@')
@@ -43,6 +44,16 @@ def print_variables(obj)
     var_type = var_value.class
     puts "#{var_name}: #{var_type}"
   end
+  puts "=============================="
+end
+
+def print_dict(dict)
+    puts "=============================="
+    puts "printing dictionary"
+    dict.each do |key, value|
+        puts "#{key}: #{value}"
+    end
+    puts "=============================="
 end
 
 def print_pages()  

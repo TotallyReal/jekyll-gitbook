@@ -101,13 +101,22 @@ def test_space_between_callouts():
     assert len(matches) == 2
 
 
-# def test_me():
-#     example=r'''
-#
-# >[!lem] Lemma:
-# >     fff
-#  '''
-#     result = convert(example)
-#     print(result)
-#     assert result is None
+def test_me():
+    example=r'''
+
+
+> [!הערה]- הערה: 
+> במקרה של פולינומים (מעל $\CC$) קיבלנו ממש את השוויון $f(x)=\sum_0^d a_kx^k$ לכל $x$. כפי שכבר ראינו, במקרה של טורי והתמרות פורייה, צריך לעבוד קצת יותר בשביל השוויון הזה.
+
+ '''
+    print('\n')
+    print('matches')
+    for match in re.findall(callout_pattern, example, flags=re.MULTILINE):
+        print('%')
+        # print(Callout.from_match(match))
+    print('end')
+
+    result = convert(example)
+    print(result)
+    assert result is None
 

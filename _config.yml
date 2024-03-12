@@ -60,12 +60,16 @@ collections:
     output: true
     permalink: notes/:collection/:path
     order:
-      - hebrew_Fourier_transform.md
       - hebrew_motivation.md
+      - hebrew_Fourier_transform.md
       - basic properties.md
       - hebrew_delta_function.md
       - hebrew_plancharel.md
       - hebrew_convolution.md
+      - hebrew_bounded_frequency.md
+      - hebrew_heat_equation.md
+      - hebrew_Fourier_transform_summerization.md
+      - hebrew_laplace.md
 #  Temp:
 #    output: true
 #    permalink: /:collection/:path

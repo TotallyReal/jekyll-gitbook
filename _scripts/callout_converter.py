@@ -16,6 +16,29 @@ class Callout:
     def from_match(match: re.Match) -> 'Callout':
         return Callout(class_name=match[1], collapsible=match[2], title=match[3], content=convert_content(match[4]))
 
+    def to_html(self):
+        collapsible_attr = ''
+        if len(self.collapsible)>0:
+            collapsible_state = 'hide' if self.collapsible == '-' else 'show'
+            collapsible_attr = f'collapsible="{collapsible_state}"'
+        content = convert_content(self.content)
+
+        return f'''
+{{::options parse_block_html="true" /}}
+<div class="callout" data-callout="{self.class_name}" {collapsible_attr}>
+
+  {{::nomarkdown}}
+  <div class="callout-title">{self.title}</div>
+  {{:/}}
+  <div class="callout-content-wrapper">
+  <div class="callout-content">
+{content}
+  </div>
+  </div>
+</div>
+{{::options parse_block_html="false" /}}'''
+
+
 
 callout_pattern = r'^>\s?\[!(.*?)\]([-|+]?)[ \t]*(\S.*?)\n((?:[ \t]*>.*(?:\n|$))+)'
 

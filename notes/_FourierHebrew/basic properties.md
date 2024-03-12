@@ -32,6 +32,25 @@ cssclasses:
 >   4. נובע מכך שהצמדה של אינטגרל זה אינטגרל של הצמדה:
 >      $$2\pi \overline{\hat{f}(\omega)} = \overline{\int_{-\infty}^{\infty} f(x) e^{-i\omega x}\dx} = \int_{-\infty}^{\infty} \overline{f(x)} e^{i\omega x}\dx = 2\pi \hat{\overline{f}}(-\omega)$$
 
+> [!דוגמא]- דוגמא: הפונקציות $\chi_{[a,b]}(x)$ ו $e^{-|ax|}$.
+> כבר חישבנו את התמרה של  $\chi_{[a,b]}(x)$ :
+> $$.\hat{ \chi}_{[a,b]}(\omega)=\cases{\frac{e^{-i\omega a}-e^{-i\omega b}}{2\pi\omega i} & \omega\neq 0 \\ \frac{b-a}{2\pi} & \omega=0}$$
+> במקרה המאוד פשוט של $[a,b]=[-1,1]$ נקבל את ההתמרה 
+> 
+> $$.\hat{\chi}_{[-1,1]}(\omega)=\cases{\frac{\sin(\omega)}{\pi\omega} & \omega\neq 0 \\ \frac{1}{\pi} & \omega=0}$$
+> עד כדי הזזות מתיחה, פונקציה מציינת של קטע סופי תמיד ניתן להעביר לפונקציה מציינת של $[-1,1]$, למשל:
+> $$.\chi_{[a,b]}(x) =\chi_{[-\frac{b-a}{2},\frac{b-a}{2}]}(x-\frac{a+b}{2}) =\chi_{[-1,1]}(\frac{2x}{b-a}-\frac{a+b}{b-a})$$
+> זה מקשר לנו בין ההתמרות של שתי הפונקציות ע"י מתיחות וסיבובים, ובפרט:
+> $$\hat{\chi}_{[a,b]}(\omega)=e^{i\frac{a+b}{a-b}\omega}\cdot \frac{b-a}{2}\cdot \hat{\chi}_{[-1,1]}\left(\frac{b-a}{2}\omega\right)$$
+> במילים אחרות, כל הפונקציות האלו "נובעות" מאותה פונקציה, ולכן כל ההתמרות ניתן לחשב מאותה התמרה.
+> בצורה דומה הפונקציה $e^{-|ax|}$ היא מתיחה של הפונקציה $e^{-x}$ ולכן ניתן לקשר בין ההתמרות שלהן.
+
+> [!דוגמא]- הפונקציה $f(x)=e^{-x}\cdot \chi_{[0,\infty)}(x)$
+> החישוב היחיד של ההתמרה של הפונקציה הזאת הוא לא קשה:
+> $$.\hat{f}(\omega) = \frac{1}{2\pi}\int_{-\infty}^\infty e^{-x}\chi_{[0,\infty)}(x)e^{-i\omega x}\dx = \frac{1}{2\pi}\int_{0}^\infty e^{-(1+i\omega) x}\dx = \frac {1}{2\pi(1+i\omega)}$$
+> אם נשים לב ש $e^{-|x|}$ מורכבת משני עותקים של $f(x)$ כלומר $e^{-|x|}=f(x)+f(-x)$ אז נוכל לחשב את ההתמרה של $e^{-|x|}$ גם דרך הפירוק הזה:
+> $$.\widehat{e^{-|x|}}(\omega) =\hat{f}(\omega)+\frac{1}{|-1|}\hat{f}(\frac{\omega}{-1}) =\hat{f}(\omega)+\hat{f}(-\omega)= \frac{1}{2\pi}\left(\frac{1}{1+i\omega}+\frac{1}{1-i\omega}\right)=\frac{1}{\pi(1+\omega^2)}$$
+
 מהטענה למעלה קיבלנו שההתמרה לינארית, כלומר היא מעבירה חיבור של פונקציות וכפל בסקלר לחיבור וכפל בסקלר. בנוסף, השילוב של כפל בסקלר ממשי והכפל $\lambda x$ שהם בעצם מתיחות/כיווצים עוברים גם למתיחות וכיווצים ובפרט
 $$\sqrt{|\lambda|} \cdot f(\lambda x) \Rightarrow \sqrt{|\lambda|^{-1}} \hat{f}(\lambda^{-1} \omega)$$
 לבסוף, גם ההצמדה של פונקציה מותמרת (פחות או יותר) להצמדה של ההתמרה.
@@ -66,3 +85,4 @@ $$\sqrt{|\lambda|} \cdot f(\lambda x) \Rightarrow \sqrt{|\lambda|^{-1}} \hat{f}(
 > דוגמא יותר פשוטה, בואו נחשב את ההתמרה סינוס על קטע סופי (כדי שהפונקציה תהיה אינטגרבילית), למשל $\chi_{[-\pi,\pi]}(x)\cdot \sin(x)$. מהתכונות שראינו למעלה על התמרות של סיבובים (כפל בסינוס), נקבל ש 
 > $$\cf\left[\chi_{[-\pi,\pi]}(x)\cdot \sin(x) \right](\omega) = \frac{\cf\left[\chi_{[-\pi,\pi]}\right](\omega-1) - \cf\left[\chi_{[-\pi,\pi]}\right](\omega+1)}{2i} = \frac{\frac{\sin((\omega-1)\pi)}{(\omega-1)\pi} - \frac{\sin((\omega+1)\pi)}{(\omega+1)\pi}}{2i}$$
 > הפונקציה שקיבלנו היא מדומה טהורה. בנוסף, הפונקציה היא אי זוגית כי הפונקציה במכנה היא אי זוגית, בדיוק כפי שציפינו.
+
