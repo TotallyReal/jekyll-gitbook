@@ -65,7 +65,7 @@ def process_match(match):
 <div class="callout" data-callout="{class_name}" {collapsible_attr}>
 
   {{::nomarkdown}}
-  <div class="callout-title">{title}</div>
+  <div class="callout-title"><span class="callout-title-inner">{title}</span></div>
   {{:/}}
   <div class="callout-content-wrapper">
   <div class="callout-content">

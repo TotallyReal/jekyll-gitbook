@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_FourierHebrew/hebrew_convolution.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4de0bf228bd211c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_FourierHebrew/hebrew_Fourier_transform_summerization.md",
+                "file": "_FourierHebrew/hebrew_heaviside.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_FourierHebrew/hebrew_Fourier_transform_summerization.md",
+                "file": "_FourierHebrew/hebrew_heaviside.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_FourierHebrew/hebrew_Fourier_transform_summerization.md",
+                "file": "_FourierHebrew/hebrew_heaviside.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_FourierHebrew/hebrew_Fourier_transform_summerization.md"
+                "file": "_FourierHebrew/hebrew_heaviside.md"
               }
             }
           }
@@ -159,12 +146,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4de0bf228bd211c9",
+  "active": "502d0c0da3626069",
   "lastOpenFiles": [
-    "_FourierHebrew/hebrew_convolution.md",
-    "_FourierHebrew/hebrew_Fourier_transform_summerization.md",
+    "_FourierHebrew/hebrew_heat_equation.md",
     "_FourierHebrew/hebrew_laplace.md",
+    "_FourierHebrew/hebrew_heaviside.md",
+    "_FourierHebrew/hebrew_laplace_differential_equations.md",
+    "_FourierHebrew/hebrew_laplace_convolution.md",
+    "_FourierHebrew/images/linear_glue_constant.png",
+    "_FourierHebrew/hebrew_convolution.md",
+    "_Fourier/Fourier Series.md",
+    "_Fourier/Fourier Transform.md",
+    "_Fourier/Infinite Orthonormal basis.md",
+    "_Fourier/Inner product spaces - a reminder.md",
+    "_Fourier/Motivation.md",
+    "_Fourier/Orthogonal sets - a reminder.md",
+    "_FourierHebrew/hebrew_Fourier_transform_summerization.md",
+    "_FourierHebrew/hebrew_Fourier_transform.md",
+    "_FourierHebrew/hebrew_delta_function.md",
     "_FourierHebrew/hebrew_bounded_frequency.md",
+    "_FourierHebrew/basic properties.md",
+    "_FourierHebrew/hebrew_plancharel.md",
+    "_FourierHebrew/hebrew_motivation.md",
     "_FourierHebrew/images/checkerd.png",
     "_FourierHebrew/js/checkerd_tiles/sketch.js",
     "_FourierHebrew/js/checkerd_tiles/index.html",
@@ -177,34 +180,19 @@
     "_FourierHebrew/js/wheel_aliasing/wheel_aliasing.js",
     "_FourierHebrew/js/wheel_aliasing/wheel_aliasing.html",
     "_FourierHebrew/images/periodic_continuation.png",
-    "_FourierHebrew/basic properties.md",
     "_FourierHebrew/images/wave_aliasing.png",
-    "_FourierHebrew/hebrew_heat_equation.md",
-    "_Fourier/Fourier Transform.md",
-    "_FourierHebrew/hebrew_plancharel.md",
     "_Fourier/Fourier Course Information.md",
-    "_FourierHebrew/hebrew_delta_function.md",
-    "_Fourier/Fourier Series.md",
-    "_FourierHebrew/hebrew_Fourier_transform.md",
     "_temp/temp.md",
-    "_FourierHebrew/hebrew_motivation.md",
     "_FourierHebrew/images/inverse_fourier_fix1.png",
-    "_Fourier/Motivation.md",
     "_FourierHebrew/images/heat_equation_poly.png",
     "imgimg.png.md",
     "_FourierHebrew/images/inverse_fourier_fix2.png",
     "_FourierHebrew/images/inverse_fourier_odd_function.png",
     "_FourierHebrew/images/dirac step.png",
-    "_Fourier/Orthogonal sets - a reminder.md",
     "_Fourier/temp.md",
-    "_Fourier/Infinite Orthonormal basis.md",
     "_temp/hebrew_plancharel 1.md",
-    "_Fourier/Inner product spaces - a reminder.md",
     "_temp/Untitled.md",
     "Inner product.md",
-    "_inner product/Linear regression.md",
-    "_FourierHebrew/hebrew_inverse_transform.md",
-    "imgimg.png",
-    "_Fourier/images/orthogonality/standard_basis2.jpg"
+    "imgimg.png"
   ]
 }

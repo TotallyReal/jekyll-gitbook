@@ -70,6 +70,8 @@ collections:
       - hebrew_heat_equation.md
       - hebrew_Fourier_transform_summerization.md
       - hebrew_laplace.md
+      - hebrew_laplace_differential_equations.md
+      - hebrew_heaviside.md
 #  Temp:
 #    output: true
 #    permalink: /:collection/:path

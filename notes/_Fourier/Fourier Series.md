@@ -4,9 +4,7 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-Course: [[Fourier Course Information]]
-
-# The Fourier series
+## The Fourier series
 
 After reminding ourselves the notations and results from inner product spaces, and combining it with the norm convergence in our new infinite dimensional vector spaces, we are ready to study the Fourier transforms on periodic function.
 
@@ -88,7 +86,7 @@ You can also go directly to the Desmos site [here](https://www.desmos.com/calcul
 >    
 >    This is already Fourier series expression of $f(x)$, and since there is always a unique such combination, this is the Fourier series of $f(x)$.
 
-# Pointwise convergence
+## Pointwise convergence
 
 In our Fourier series $f \sim \frac{a_0}{2} + \sum_{n=1}^\infty \left(a_n\cos(nx) + b_n\sin(nx)\right)$ , the limit on the right is the norm convergence, and we have already seen that it doesn't imply pointwise convergence. However, as can be seen in the Fourier series in the step function $\chi_{[0,\pi]}-\chi_{[-\pi,0]}$ above, in most of the points we do have pointwise convergence. Moreover, the only points where it doesn't seem to have pointwise convergence are the two edge points at $\pm \pi$ and in $0$. These are exactly the "problematic" points where the function is not continuous. 
 
@@ -146,7 +144,7 @@ We this new definition of "differentiable" function, we have the following:
 >[!exc] Excercise:
 > Compute the Fourier series for $f(x)=\chi_{[0,\pi]}$. Where are its discontinuity points, and what should be the pointwise convergence there for the Fourier series?
 
-# Uniform convergence
+## Uniform convergence
 
 We have now seen that for a "smooth" enough function $f(x)$, our Fourier series not only converges in norm but also pointwise (more or less). Can we strengthen this to a uniform convergence? In general, the answer is no. Our Fourier approximations are continuous (combination of sine and cosine functions), and the uniform limit of continuous functions is again continuous. So unless $f(x)$ by itself is continuous, this is false.
 
@@ -341,7 +339,7 @@ The last exercise shows that taking the integral of a continuous function doesn'
 >
 >$$\align{\int_0^x f(t)\dx & = \int_0^x (1+a_1\cos(t))\dx = x + a_1 \sin(t)\mid_0^x = x+a_1\sin(x)\\ x-f'(x) & = x-(1+a_1\cos(x))' = x + a_1\sin(x)}.$$
 
-# Convergence summarization
+## Convergence summarization
 
 Let's summarize our convergence results in the space $E[-\pi,\pi]$:
 1. Norm and pointwise convergence implications for sequence $f_n$ of functions:
@@ -359,6 +357,3 @@ Let's summarize our convergence results in the space $E[-\pi,\pi]$:
  5. For any $f\in E[-\pi,\pi]$ we can do term by term integration of the Fourier series.
  6. If $f$ is continuous (including edge points) and $f'\in E[-\pi,\pi]$, then we can also take derivatives term by term.
 
----
-
-<-[[Infinite Orthonormal basis|Previous: Orthonormal basis]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,   [[Fourier Transform|Next: Fourier Transform]] -> 

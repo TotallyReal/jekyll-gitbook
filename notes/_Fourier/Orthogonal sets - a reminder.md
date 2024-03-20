@@ -4,13 +4,13 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-Course: [[Fourier Course Information]]
-# Orthonormal sets
 Once we have a vector space, usually the next step is finding a nice basis. In the finite dimensional case, we had the standard basis, denoted by $\{e_1,...,e_n\}$ where
 $$e_i= (0,...,0,\overbrace{1}^i,0,...,0).$$
 This is a simple yet powerful basis which arises naturally and used in many places. One of the main reasons for its usefulness is that it also has nice "geometric" properties, and in a sense it provides a "direction" to the space. 
 
 ![[standard_basis2.jpg|500]]
+
+## Definition and basic properties
 
 Trying to understand and generalize this properties, led to the definition of orthonormal bases.
 
@@ -128,7 +128,7 @@ Once you do have a proof, you are welcome to check on of these three proof metho
 
 The importance of orthogonal, and in particular orthonormal bases, is that it is very easy to find the coefficients in these bases.
 
-# Orthogonal projection 
+## Orthogonal projection 
 
 At this point we already have one very interesting property of orthogonal (and better yet) orthonormal sets - it is very easy to find the coefficients for orthogonal bases. However, these sets have more interesting properties, and one of them is related to a very interesting problem that rises up naturally in many places:
 
@@ -150,7 +150,7 @@ As the image suggests, the point $w\in W$ closest to $v$ is its orthogonal (perp
 > $$P_W(v):=\sum_1^k \angles {v,w_i}w_i.$$
 > This orthogonal projection of $v$ is the closest point to $v$ in $W$.
 
-# Examples
+## Examples
 
 >[!example]- Example: Orthogonal step function approximation
 > Let's try to approximate the function $f(x)=x$ using the orthogonal step functions we defined previously, and we shall use only the first four such functions. 
@@ -197,8 +197,6 @@ In other words, the area (more or less, up to the square in the integrand) betwe
 >[!problem] Problem:
 > When does the norm convergence implies also pointwise convergence? And if there isn't pointwise convergence, then what can we say?
 
->[!exercise]- Exexcise: Sine and cosine approximation
+>[!exc]- Exercise: Sine and cosine approximation
 > To get some intuition about the last question, try to approximate some other "nice" function and try to guess the answer for this question for those functions. Try it on a range of families of functions like: constant, linear, polynomial, exponential, unbounded function, noncontinuous, etc.
 
-
-<-[[Inner product spaces - a reminder|Previous: Inner products]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,   [[Infinite Orthonormal basis|Next: Orthonormal basis]] ->

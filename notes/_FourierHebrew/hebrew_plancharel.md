@@ -7,7 +7,6 @@ dir: rtl
 cssclasses:
   - hebrew
 ---
-# נוסחת פלנשרל
 
 אם נחזור שוב לעולם של טורי פורייה, אז יכולנו להשתמש שם בשוויון פרסיבל ולקבל שעבור פונקציה $f:[-\pi,\pi]\to\CC$ רציפה למקוטעין עם מקדמי פורייה $a_n,b_n$ מתקיים ש
 $$.\norm{f}_2^2=\frac{\abs{a_0}^2}{2}+ \sum_1^\infty \left(\abs{a_n}^2+\abs{b_n}^2\right)$$
@@ -42,7 +41,7 @@ $$.\norm{f}_2^2=C\int_{-\infty}^\infty \abs{\hat{f}(\omega)}^2\dom=C\norm{\hat{f
 > $$.\int_{-N}^N \abs{\hat{f}(\omega) \overline{\hat{g}(\omega)}} \dom =\angles{|\hat{f}|,|\hat{g}|} \leq \norm{\hat{f}}_2 \norm{\hat{g}}_2 = \frac{1}{4\pi^2}\norm{f}_2 \norm{g}_2 < \infty $$
 > זה אומר שהאינטגרל מתכנס בהחלט, ולכן גם בלי הערך המוחלט הוא מתכנס, ללא קשר לקצב שאיפת הגבולות אינטגרציה ל $\pm \infty$. זה מסיים את ההוכחה עבור פונקציות עם תומך סופי.
 
-# דוגמאות
+## דוגמאות
 
 > [!דוגמא] דוגמא: הפונקציה $e^{-a|x|}$ עבור $a>0$
 > ראינו כבר שההתמרה של הפונקציה הזאת היא $\cf[e^{-a|x|}](\omega)=\frac{a}{\pi(\omega^2+a^2)}$. אם נחשב את הנורמה של הפונקציה נקבל ש
@@ -59,7 +58,7 @@ $$.\norm{f}_2^2=C\int_{-\infty}^\infty \abs{\hat{f}(\omega)}^2\dom=C\norm{\hat{f
 > $$\align{\int_{-\infty}^\infty \frac{\sin(\omega a)}{\omega \pi} \cdot \frac{\sin(\omega b)}{\omega \pi} \dom &= \frac{1}{2\pi} \int_{-\infty}^\infty f_a(x) f_b(x) \dx = \frac{1}{2\pi} \int_{-\infty}^\infty f_{\min(a,b)}(x) \dx \\&= \frac{\min(a,b)}{\pi}}$$
 
 
-# התמרות פורייה ב $E^2 (\RR)$
+## התמרות פורייה ב $E^2 (\RR)$
 
 אם נתונה פונקציה $f\in E^2(\RR)$ שלא ידוע מראש שהיא גם ב $E^1(\RR)$, אז באופן כללי אין סיבה שהאינטגרל בהתמרת פורייה יתכנס. למרות זאת, יש דרך להרחיב את ההגדרה של התמרת פורייה גם לפונקציות כאלו. 
 

@@ -4,9 +4,7 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-Course: [[Fourier Course Information]]
-
-# Orthonormal basis - from finite to infinite
+## Orthonormal basis - from finite to infinite
 
 The concept of a basis is fundamental in linear algebra (and generally in mathematics). Its formal definition is just a set of linearly independent vectors which span the given vector space. The other equivalent definition, was that $\{v_1,...,v_n\}$ is a basis for $V$, if and only if any vector $v\in V$ has a unique presentation as a linear combination
 $$v = \sum_1^n \alpha_i v_i.$$
@@ -17,7 +15,7 @@ When dealing with "non finite dimensional" vector spaces, we need to reconsider 
 1. **The algebraic approach**: Here we only know how to add finitely many vectors, so the set $S$ is spanning, if every vector is a **finite** linear combination of finitely many vectors in $S$, and it is linearly independent if any **finite** subset of $S$ is linearly independent.
 2. **The analytic approach**: In special and interesting cases, we might be able to define infinite sums, namely  $\sum_1^\infty \alpha_i v_i$ , and then the definition is the analogue to what we have for finite sets. As the spaces we deal with are special and interesting, this will be our next step.
 
-# Convergence in norm
+## Convergence in norm
 
 As usually, before talking about the limit of infinite sums, we need to define what are limits.
 
@@ -64,7 +62,7 @@ The $\mathcal{L}^2$ norm is the induced norm from the standard inner product, an
 > Conclude that if $f_n$ converges in $\cl^\infty$, then it converges in both $\cl^1$ and $\cl^2$, and similarly if $f_n$ converges in $\cl^2$, then it converges in $\cl^1$.
 > So intuitively, the infinity norm is the "strongest norm": convergence there implies convergence "everywhere".
 
-## Pointwise convergence 
+### Pointwise convergence 
 
 One more important type of convergence for functions which we learned about in calculus, which is not a norm convergence (why?) is the pointwise convergence:
 
@@ -94,7 +92,7 @@ Unfortunately, there is no such connection with the induced norm.
 > 
 > Since our step functions always have height 1, then the normed squared equals to the area, which in turn equals to the width $\frac{1}{2^n}\to 0$. On the other hand, this sequence doesn't converge point wise to any point!
 
-# Continuous functions
+## Continuous functions
 
 Given an inner product space $V$ with the inner product $\angles{\cdot,\cdot}$, we now know how to generate a norm $\norm{v}:=\sqrt{\angles{v,v}}$, and from the previous section use this norm to define limits. Of course, once we have "limits" we can ask whether given functions are continuous, and fortunately our standard arithmetic functions are continuous.
 
@@ -113,7 +111,7 @@ Given an inner product space $V$ with the inner product $\angles{\cdot,\cdot}$, 
 > By assumption, we have that  $\norm{u_n-u} , \norm{v_n-v} \to 0$. Since $\norm{u}$ is constant and $\norm{v_n} \leq \norm{v_n-v} + \norm{v}$ is bounded, we conclude that $(*)$ converges to zero, which is exactly what we wanted to show.
 > Part (5) now follows by taking $u_n=v_n$, together with the fact that the square root function is continuous. $\square$
 
-# Infinite sums and complete orthonormal bases
+## Infinite sums and complete orthonormal bases
 
 Now that we have the definition of limits in our normed space, we can define infinite sums $\sum_1^\infty v_k$ as the limit (if exists) of the partial sums $\sum_1^N v_k$. 
 
@@ -195,11 +193,3 @@ We can now extend two of the results we know for finite dimensional inner produc
 
 >[!proof]- Proof:
 > We know that $\norm v = \sum_1^\infty |\angles{v,e_k}|^2$ so we must have that $\limfi{n} |\angles{v,e_k}| = 0$.
-
-
-
-
----
-
-<-[[Orthogonal sets - a reminder|Previous: Orthogonal sets]]    ,    [[Fourier Course Information#Table of contents|Back to table of contents]]    ,   [[Fourier Series|Next: Fourier series]] -> 
-

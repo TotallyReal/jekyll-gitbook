@@ -7,7 +7,7 @@ dir: rtl
 cssclasses:
   - hebrew
 ---
-# איך חוסמים את התדירות של פונקציה
+## איך חוסמים את התדירות של פונקציה
 
 כאשר נתונה לנו פונקציה על הישר $f:\RR \to \RR$, הרבה פעמים יש לה יחסית "מעט מסה" בקצוות של הישר. למשל, אם האינטגרל  $\int_{-\infty} ^\infty |f(x)|\dx <\infty$  הוא סופי, אז לכל $\varepsilon>0$ נוכל למצוא $M_\varepsilon$ כך שהאינטגרל מחוץ ל $[-M_\varepsilon,M_\varepsilon]$ הוא קטן, כלומר   $\int_{|x|<M_\varepsilon}  |f(x)|\dx <\varepsilon$  . במקרים כאלו הרבה פעמים נסתכל על הפונקציה $f(x)\chi_{[-M_\varepsilon, M_\varepsilon]}(x)$ שמכילה את "רב האינפורמציה" מהפונקציה המקורית ויש לה תומך סופי (היא שווה לאפס מחוץ לקטע הסופי $[-M_\varepsilon,M_\varepsilon]$.)
 
@@ -18,7 +18,7 @@ $$? \;\;\;\widehat{f_M}(\omega)=\cases{\hat{f}(\omega) & |\omega|\leq M \\ 0 & |
 נזכיר ש $\cf[\chi_{[-M,M]}](\omega)=\frac{\sin(\omega M)}{\omega \pi}$, ואם נשתמש בהתמרה ההפוכה (עבור פונקציות ב $E^2$) נקבל ש $\cf[\frac{2\sin(xM)}{x}] = \chi_{[-M,M]}$ ולכן
  $$\cf\left[ f*\frac{\sin(xM)}{\pi x}\right](\omega) = \cf\left[ f\right](\omega) \cdot \cf\left[ \frac{2\sin(xM)}{x}\right]= \cf\left[ f\right](\omega) \cdot \chi_{[-M,M]}(\omega)$$
 
-# למה פונקציות שחסומות בתדר מעניינות?
+## למה פונקציות שחסומות בתדר מעניינות?
 
 אחת הסיבות שנרצה לעבוד עם פונקציות שחסומות בתדר היא המשפט הבא:
 
@@ -54,7 +54,7 @@ $$? \;\;\;\widehat{f_M}(\omega)=\cases{\hat{f}(\omega) & |\omega|\leq M \\ 0 & |
 > 
 > <iframe src="js/checkerd_tiles/index.html" width="500" height="500" frameborder="0" scrolling="no"></iframe>
 
-# הוכחת משפט הדגימה
+## הוכחת משפט הדגימה
 
 > [!הוכחה] הוכחה למשפט הדגימה:
 > 1. **נרמול הפונקציה**: כדי לפשט קצת את הסימונים, ולא לעבוד עם $L$ כללית, נסתכל על הפונקציה $g(x):=f(\frac{\pi}{L}x)$ . היתרון בפונקציה הזאת היא שההתמרה שלה היא $\hat{g}(\omega)=\frac{L}{\pi}\hat{f}(\frac{L}{\pi}\omega)$ ולכן הנתון מתרגם ל $\hat{g}(\omega)=0$ לכל $|\omega|\geq \pi$ וצריך להראות ש 

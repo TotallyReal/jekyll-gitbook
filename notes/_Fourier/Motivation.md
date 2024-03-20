@@ -4,9 +4,7 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-Course: [[Fourier Course Information]]
-
-# What do we analyze? 
+## What do we analyze? 
 
 The "**Fourier Analysis**" is one of the most useful tool when we try to study real (and complex) functions, which naturally appear in many places, for example:
  - **Physics**: represent position, speed, force, temperature, etc. ,
@@ -52,21 +50,21 @@ This "symmetry" structure seems simple at first, however it leads to very intere
 > The finite discrete Fourier transforms are also very important, but will not be part of this course. However, they appear frequently in the theoretical side of computer science, if you wish to study more about them.
 
 ---
-# "Real life" problems:
+## "Real life" problems:
 
 Let see some examples for this pattern search in real life problems.
 
-## Image compression
+### Image compression
 
 In our modern day life, we take images and videos of almost everything that happens to us. More over, as our technology improves, we can save more and more information in each image. However, the problem with this approach is that this information takes a lot of space. One solution is to keep buying new space, whether it is a new hard drive or extra cloud space. Another solution is to try compressing the information instead. There are many compression algorithms and some of which (for example, the JPEG image compression) use ideas based on Fourier transforms.
-### Pixelwise compression:
+#### Pixelwise compression:
 
 Suppose we have a grayscale image file, where the color of each pixel is represented by an integer in $[0,255]$ going from black at $0$ all the way to white at $255$. One very simple way to compress the image, is to change the pixel value from 255 options to something smaller, for example 16 or 8. This already gives us some compressions, and for some images it will be hard to notice the changes.
 
 ![[Euler pixel compressions.png|600]]
 
  However, as the number of pixel values decreases, we start to see jumps in colors. This is not too surprising, because we are trying to approximate our image by step (piecewise constant) functions. So even though two nearby pixels can have nearby color values originally, we can still have a jump in the color. This is because our compression looks at each pixel separately. To improve our compressions, we can try to exploit "patterns" in the image. For example, if there is a gradient section, namely the color changes linearly from one place to another, then we would only need two parameters to describe it (e.g. to write $ax+b$). 
-### Pattern compression:
+#### Pattern compression:
 
 This idea of looking for patterns is measured in a sense in the Fourier transform coefficients. The Fourier transform "decomposes" the full image (and not each pixel separately) into sine and cosine wave patterns with weights which determines how "strong" that pattern is in the picture. 
 
@@ -88,7 +86,7 @@ Some interesting YouTube videos about image compressions:
 
 To summarize, one way (of many) to think about Fourier transform is as extracting patterns from our data and the a weight for each pattern. If the data has nice "wavy" data, then the Fourier transform can help understanding it.
 
-## Music and noise reduction
+### Music and noise reduction
 
 When playing music on a piano (and many other instruments as well), we usually play different notes that sound "harmonious" together. For example, the chord `C` on the piano is a combination of the notes `C,E,G`. Each of these notes correspond to a "pure" sine sound wave with a given frequency, and when they are all played together, these waves sum up as can be seen in the image below.
 
@@ -104,7 +102,7 @@ See for example:
 - [Youtube: Extract Musical Notes from Audio in Python with FFT - By Jeff Heaton](https://www.youtube.com/watch?v=rj9NOiFLxWA)
 - [Openprocessing: Visualizing Fourier transformation of audio](https://openprocessing.org/sketch/1051721)
 
-## Channel separation
+### Channel separation
 
 When opening a website online, usually our computer sends a request to our internet provider to send us exactly the information needed to view the website. However, when we watch television, or listen to the radio, our television and radio (usually) don't send any requests, and instead get all the possible channels that we paid for, in a single stream of information. So the question is, how do they separate this single stream into the different channels?
 
@@ -114,16 +112,16 @@ Here too, one of the ways of extracting these different channels is by in a sens
 
 
 ---
-# The tools of our craft
+## The tools of our craft
 
 What type of tools and ideas are we going to use?
 
-## Divide and conquer - the orthonormal basis
+### Divide and conquer - the orthonormal basis
 One of our main tools, is to decompose our large space of functions into smaller sections (=patterns), where we can understand each section separately, and once we do, combine them back together to understand our original function.
 You already learned about this idea back in your first course in linear algebra, which had the mysterious name of eigenvalues and eigenvectors. This was further expanded in the second course, about inner product spaces, where you saw the importance of geometry and working with orthonormal basis of eigenvalues.
 Here, we would take this idea to the next stage - the infinite dimensional space of functions - where our building blocks orthonormal basis would consist of the sine and cosine functions.
 
-## Sine and cosine and the complex plane
+### Sine and cosine and the complex plane
 As mention several times, the sine and cosine functions are going to be our building blocks for the Fourier transform. At first glance, it is not clear why it happens and why they are so important, and in particular each one of one them on its own. However, they become quite interesting once combined - they are just two parts ($x$ and $y$ coordinates) of the same very simple and very important process: **Moving at constant speed on a circle**. This clues us as to why these trigonometric functions arise so naturally - a lot of natural phenomena have natural "rotational" behavior, and when we see the sine or cosines function, it is usually just because we don't see the "whole 2 dimensional picture".
 
 | ![[pendulum.png|209]]  |   ![[solar system.jpg|500]] |
@@ -143,20 +141,14 @@ Is the string moving to the right (which is our space's "symmetry" action) or is
 
 The rainbow colors might help to answer this question, but without them it would be impossible to decide. Indeed, the exponential property basically says that translation to the right and left $\theta \mapsto \theta + \phi$ is exactly the same as rotating since $e^{i(\theta+\phi)}=e^{i\theta} \cdot e^{i\phi}$ (as an exercise, think what it means in the language of eigenvalues and eigenvectors). This transformation between left and right translation, and the simpler rotation is what stands at the mathematical heart of the Fourier transform.
 
-# Some mathematical applications
+## Some mathematical applications
 
-## Differential equations
+### Differential equations
 
 Another important property that the sines and cosines (and even better, the exponential function) have, is that it is easy to differentiate them. More specifically $\sin'(x)=\cos(x)$ and $\cos'(x)=-\sin(x)$. Such relations make it much simpler to solve differential equations where the functions are combinations of these sine and cosine functions. Luckily for us, the Fourier transform shows that most of the interesting functions can be written as such combinations, and this is quite useful for solving general differential equations.
 
-## Number and group theory
+### Number and group theory
 
 These Fourier transforms, and in particular it discrete finite versions, appear frequently in number theory when studying finite groups and fields. For example, they appear when studying Diophantine equations, namely integer solution for integral equations (e.g. solutions to $x^2 + y^2 = n$ for some integer $n$). In this area the "Fourier transforms" are usually called group representations.
 
-%%## Probability%%
-
-%%add here%%
-
-
-[[Fourier Course Information#Table of contents|Back to table of contents]]    ,    [[Inner product spaces - a reminder| Next: Inner product spaces]]-> 
 

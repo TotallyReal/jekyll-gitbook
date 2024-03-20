@@ -4,10 +4,8 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-Course: [[Fourier Course Information]]
-
 Up until now we talked about functions on $[-\pi,\pi]$, or equivalently $2\pi$ periodic functions. We now shift our focus to general function on $\RR$.
-# Inner products
+## Inner products
 
 The first issue we encounter with these general functions, is that the corresponding inner products is on an infinite segment :
 $$\angles{f,g}:=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(x)\overline{g(x)}\dx.$$
@@ -38,7 +36,7 @@ We already saw that the inner product is not well defined for just bounded funct
 
 We can now look for an orthonormal basis and do a similar process as with the Fourier series. However, our main goal is to study functions through their periodicity (namely translation to the left and right), and the only periodic function which is in $E^2(\RR)$ is the zero function. Instead, we will just "extend" what we saw in the finite segment case to all of $\RR$.
 
-# The Fourier Transform in $E^1(\RR)$
+## The Fourier Transform in $E^1(\RR)$
 
 >[!def] Definition: The Fourier transform
 > For a function $f:\RR \to \CC$ and $\omega \in \RR$ we write:
@@ -79,7 +77,7 @@ We will soon see that this transform is well defined for our functions in $E^1(\
 > 
 > $$2\pi \cdot \hat f(\omega) = \frac{1}{i\omega+a}-\frac{1}{i\omega-a} = \frac{2a}{\omega^2+a^2}. $$
 
-## Basic properties
+### Basic properties
 
 Before proving some basic results about the Fourier transform, we need to actually show that it is well defined for our functions, namely that $\angles{f,e^{i\omega x}}$ is finite when $f\in E^1(\RR)$. 
 
@@ -116,7 +114,7 @@ In the Fourier series section, we used $\sin(nx), \cos(nx)$ as our basis. Using 
 
 If $f\in L^1(\RR)$ and we multiply it by some bounded function $g\in L^\infty(\RR)$ then it is easy to check that $f(x)\cdot g(x)\in L^1(\RR)$, and actually $\norm {f\cdot g}_1 \leq \norm {f}_1 \norm{g}_\infty$. In this case, we can ask what is the Fourier transform of $f\cdot g$. Probably the most important bounded function we work with is $e^{ix}$ which not only appear in the computation of the Fourier transform, but we also saw it in the claim above where a translation became a rotation. As it turns out the other direction works as well.
 
->[!claim] Claim: Rotation->translation.
+>[!claim] Claim: Rotation $\Rightarrow$ translation.
 > Let $f\in E^1(\RR)$ and for $c\in \RR$ let $h_c(x):=e^{icx}f(x)$. Then 
 > 
 > $$\hat{h_c}(\omega)=\hat{f}(\omega-c).$$
@@ -146,7 +144,7 @@ Lets see a couple more examples.
 > is odd.
 > The second part is proved similarly from the conjugation identity.
 
-## Continuity and derivatives
+### Continuity and derivatives
 
 Our next step is to show some properties on the function $\hat {f}$ itself, and we start by showing that it is continuous.
 

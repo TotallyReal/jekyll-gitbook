@@ -4,8 +4,7 @@ author: Ofir David
 category: Fourier Analysis
 layout: post
 ---
-Course: [[Fourier Course Information]]
-# The Euclidean prototype
+## The Euclidean prototype
 We start by recalling some elements from the theory of inner products, which are our ways to give standard vector spaces a new geometric structure. The prototype of this structure is the standard Euclidean dot product on $\RR^3$ defined by 
 
 $$\angles {(x_1, x_2, x_3),(y_1,y_2,y_3)}=x_1y_1+x_2y_2+x_3y_2.$$
@@ -27,7 +26,7 @@ This structure stands at the heart of the standard Euclidean geometry that we li
 **The Pythagorean theorem**": If $u \perp v$ are perpendicular, then $\norm{u+v}^2 = \norm u^2 + \norm v^2$
 
 ![[pythagoras.jpg|400]]
-# The inner product
+## The inner product
 
 With this geometric intuition, let us recall its generalization as "[[Inner product|inner products]]". In the following, our field will always be one of $\FF = \RR,\CC$.
 
@@ -67,11 +66,12 @@ The last two examples are for infinite dimensional inner products spaces (where 
 > For a segment $I\subseteq \RR$ we define:
 > $$E^2(I)=\{f:I\to \CC\;\mid\;f\text{ piecewise continuous, }\int_I\abs{f(x)}^2\dx < \infty\}.$$
 > We sometimes also denote it by $E(I)$.
-  
-  > [!remark] Remark: $\mathcal{L}^2$v-functions.
-  > This space can (and should be) extended a little bit, and instead of piecewise continuous function, we can talk about integrable functions, and then it is denoted by $\mathcal{L}^2$. However, for simplicity we will continue to work with the piecewise continuous functions.
 
-# The norm
+
+ > [!remark] Remark: $\mathcal{L}^2$v-functions.
+ > This space can (and should be) extended a little bit, and instead of piecewise continuous function, we can talk about integrable functions, and then it is denoted by $\mathcal{L}^2$. However, for simplicity we will continue to work with the piecewise continuous functions.
+
+## The norm
 
 Once we have the inner product (which "corresponds" to angles), we also have the norm (which is the "length" of a vector):
 
@@ -111,7 +111,3 @@ While there are similarities between the discrete and continuous case, the discr
 <center><iframe scrolling="no" title="L_p norms in the plane" src="https://www.geogebra.org/material/iframe/id/tqp6ewcv/width/700/height/333/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="333px" style="border:0px; "> </iframe></center>
 
 As you can see, the standard unit circle for $p=2$ is an actual circle, while for $p=1$ we get a diamond, and as $p\to \infty$ it approaches (and in the limit is) a square lined up to the X and Y axes. Also, for $p<1$ the formula defined above is not a norm, and we can "see" it, since the interior of the unit circle is not convex.
-
----
-
-<-[[Fourier/Motivation|Previous: Motivation]]    ,    [[Fourier Course Information|Back to table of contents]]    ,    [[Orthogonal sets - a reminder|Next: Orthogonal sets]]-> 

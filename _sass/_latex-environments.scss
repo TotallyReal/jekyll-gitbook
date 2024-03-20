@@ -1,15 +1,22 @@
 ﻿/*------------- callouts ------------------*/
 
-.callout[collapsible] .callout-title {
-    cursor: pointer;
+.callout[collapsible] {
+    .callout-title {
+        cursor: pointer;
+    }
+
+    .callout-title-inner:before {
+        font-family: 'Glyphicons Halflings';
+        content: "\e114";
+        float: left;
+        margin-right: 5px;
+        transition: all 0.5s;
+    }
 }
 
-.callout[collapsible] .callout-title:before {
-    font-family: 'Glyphicons Halflings';
-    content: "\e114";
-    float: left;
-    margin-right: 5px;
-    transition: all 0.5s;
+.hebrew .callout[collapsible] .callout-title:before {
+    float: right;
+    margin-left: 5px;
 }
 
 .callout[collapsible="show"] .callout-title:before {
@@ -35,19 +42,21 @@
 $callout-title-fontsize: 20px;
 
 %env-section {
-    margin: 15px 5px 15px 5px;
+    margin: 15px 2px 15px 2px;
     padding: 5px 10px 2px 10px;
 }
 
 .highlight-section {
     --callout-color: 238, 100, 149;
     --callout-icon: lucide-sun;
+    --callout-content-alpha: 0.05;
     border-top: none;
     border-bottom: none;
     border-right: none;
     border-left: 4px solid rgba(var(--callout-color), 1);
     box-shadow: none;
-    margin: 5px;
+    margin: 5px 5px 15px 5px;
+
 
     .callout-title {
         font-size: 25px;
@@ -61,8 +70,8 @@ $callout-title-fontsize: 20px;
     }
 
     .callout-content {
-        padding: 1px 20px 2px 20px;
-        background: rgba(var(--callout-color), 0.05);
+        padding: 4px 20px 2px 20px;
+        background: rgba(var(--callout-color), var(--callout-content-alpha));
     }
 }
 
@@ -103,15 +112,90 @@ $callout-title-fontsize: 20px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.bracket-section {
-    background-image: linear-gradient(to right, #808080, #ffffff), 
-        linear-gradient(to left, #808080, #ffffff), 
-        linear-gradient(to right, #808080, #ffffff), 
-        linear-gradient(to left, #808080, #ffffff);
+.bottom-line-section {
+    @extend %env-section;
+
+    .callout-title {
+        font-size: $callout-title-fontsize;
+        font-weight: bold; /* Make the title bold */
+    }
+
+    .callout-content {
+    }
+
+}
+
+.bottom-line-section::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the line */
+    background: linear-gradient(to right, transparent 25%, #000000 40%, #000000 60%, transparent 75%);
+}
+
+
+.cornered-section {
+    --border-color: #101010;
+    --top-left-color: var(--border-color);
+    --top-right-color: var(--border-color);
+    --bottom-left-color: var(--border-color);
+    --bottom-right-color: var(--border-color);
+    background-image: 
+        linear-gradient(to right, var(--bottom-left-color), #ffffff00), 
+        linear-gradient(to top, var(--bottom-left-color), #ffffff00), 
+        linear-gradient(to left, var(--bottom-right-color), #ffffff00), 
+        linear-gradient(to top, var(--bottom-right-color), #ffffff00), 
+        linear-gradient(to left, var(--top-right-color), #ffffff00), 
+        linear-gradient(to bottom, var(--top-right-color), #ffffff00),
+        linear-gradient(to right, var(--top-left-color), #ffffff00), 
+        linear-gradient(to bottom, var(--top-left-color), #ffffff00);
+    background-repeat: no-repeat;
+    background-size: 
+        35px 3px, 3px 35px, 
+        35px 3px, 3px 35px, 
+        55px 3px, 3px 35px, 
+        55px 3px, 3px 35px;
+    background-position: 
+        bottom left, bottom left, 
+        bottom right, bottom right,
+        top right, top right, 
+        top left, top left;
+    border: solid var(--border-color);
+    border-width: 0px 0px;
+    @extend %env-section;
+
+    .callout-title {
+        font-size: $callout-title-fontsize;
+        font-weight: bold; /* Make the title bold */
+        text-decoration: underline;
+    }
+    /*
+    .callout-title-inner::after {
+        content: ""; 
+        display: block;
+        width: 100%; 
+        height: 1px; 
+        background-color: rgba(0,0,0,0.5); 
+        left: 0;
+        margin-bottom: 5px;
+    }*/
+
+    .callout-content {
+        margin-top: 5px;
+    }
+}
+
+
+.bracket-section {    
+    --border-color: #a0a0a0;
+    background-image: linear-gradient(to right, var(--border-color), #ffffff), 
+        linear-gradient(to left, var(--border-color), #ffffff), 
+        linear-gradient(to right, var(--border-color), #ffffff), 
+        linear-gradient(to left, var(--border-color), #ffffff);
     background-repeat: no-repeat;
     background-size: 15px 3px;
     background-position: top left, top right, bottom left, bottom right;
-    border: solid #808080;
+    border: solid var(--border-color);
     border-width: 0 3px;
     @extend %env-section;
 
@@ -137,11 +221,58 @@ $callout-title-fontsize: 20px;
 
 .top-bracket-section {
     @extend .bracket-section;
-    background-image: linear-gradient(#808080, #ffffff), linear-gradient(#808080, #ffffff), linear-gradient(#ffffff, #808080), linear-gradient(#ffffff, #808080);
+    background-image: linear-gradient(var(--border-color), #ffffff), 
+                      linear-gradient(var(--border-color), #ffffff), 
+                      linear-gradient(#ffffff, var(--border-color)), 
+                      linear-gradient(#ffffff, var(--border-color));
     background-size: 3px 15px; /* brackets' size on the bottom and top */
     border-width: 3px 0; /* border-width for brackets on the bottom and top */
-
 }
+
+
+.open-bracket-section {
+    --border-color: #c0c0c0;
+    background-image: 
+        linear-gradient(to right, var(--border-color), #ffffff00), 
+        linear-gradient(to right, var(--border-color), #ffffff00);
+    background-repeat: no-repeat;
+    background-size: 15px 3px;
+    background-position: top left, bottom left;
+    border: solid var(--border-color);
+    border-width: 0 0 0 3px;
+    @extend %env-section;
+
+    .callout-title {
+        text-decoration: underline;
+        font-size: $callout-title-fontsize;
+        font-weight: bold; /* Make the title bold */
+    }
+    /*
+    .callout-content::before {
+        content: ""; 
+        display: block;
+        width: 100%; 
+        height: 1px; 
+        background-color: rgba(0,0,0,0.5); 
+        left: 0;
+        margin-bottom: 5px;
+    }*/
+
+    .callout-content {
+        margin-top: 5px;
+    }
+}
+
+.hebrew .open-bracket-section {
+    --border-color: #c0c0c0;
+    background-image: 
+        linear-gradient(to left, var(--border-color), #ffffff00), 
+        linear-gradient(to left, var(--border-color), #ffffff00);
+    background-position: top right, bottom right;
+    border-width: 0 3px 0 0;
+}
+
+
 
 .left-bracket-section {
     background-image: linear-gradient(to right, #808080, #ffffff), linear-gradient(to right, #808080, #ffffff);
@@ -173,11 +304,12 @@ $callout-title-fontsize: 20px;
 }
 
 .right-bracket-section {
-    background-image: linear-gradient(to left, #808080, #ffffff), linear-gradient(to left, #808080, #ffffff);
+    --border-color: #c0c0c0;
+    background-image: linear-gradient(to left, var(--border-color), #ffffff), linear-gradient(to left, var(--border-color), #ffffff);
     background-repeat: no-repeat;
     background-size: 15px 3px;
     background-position: top right, bottom right;
-    border: solid #808080;
+    border: solid var(--border-color);
     border-width: 0 3px 0 0;
     @extend %env-section;
 
@@ -208,22 +340,6 @@ $callout-title-fontsize: 20px;
     @extend .shadowed-section;
 }
 
-.callout[data-callout="cor"], .callout[data-callout="מסקנה"] {
-    @extend .highlight-section;
-}
-
-.callout[data-callout="theorem"], .callout[data-callout="משפט"] {
-    @extend .shadowed-section;
-    .callout-content{
-        font-family: CMU Serif, Times, Noto Serif JP;
-        font-style: italic;
-    }
-}
-
-.callout[data-callout="lem"], .callout[data-callout="למה"] {
-    @extend .bordered-section;
-}
-
 .callout[data-callout="def"], .callout[data-callout="הגדרה"] {
     @extend .shadowed-section;
 
@@ -232,30 +348,40 @@ $callout-title-fontsize: 20px;
     }
 }
 
+.callout[data-callout="theorem"], .callout[data-callout="משפט"] {
+    @extend .shadowed-section;
+}
+
+.callout[data-callout="claim"], .callout[data-callout="טענה"] {
+    @extend .open-bracket-section;
+}
+
+.callout[data-callout="lem"], .callout[data-callout="למה"] {
+    @extend .bordered-section;
+}
+
+.callout[data-callout="cor"], .callout[data-callout="מסקנה"] {
+    @extend .open-bracket-section;
+}
+
 .callout[data-callout="proof"], .callout[data-callout="הוכחה"] {
-    @extend .bracket-section;
-}
-
-.callout[data-callout="exc"], .callout[data-callout="תרגיל"] {
-    @extend .bracket-section;
-}
-
-.callout[data-callout="problem"], .callout[data-callout="בעיה"] {
-    @extend .bracket-section;
+    @extend .cornered-section;
 }
 
 .callout[data-callout="remark"], .callout[data-callout="הערה"] {
-    @extend .top-bracket-section;
+    @extend .bottom-line-section;
 }
 
 .callout[data-callout="example"], .callout[data-callout="דוגמא"] {
-    @extend .bracket-section;
+    @extend .highlight-section;
+    --callout-color: 100, 149, 238;
+    --callout-content-alpha: 0.01;
 }
 
-.callout[data-callout="טענה"] {
-    @extend .right-bracket-section;
+.callout[data-callout="exc"], .callout[data-callout="תרגיל"] {
+    @extend .open-bracket-section;
 }
 
-.callout[data-callout="claim"] {
-    @extend .left-bracket-section;
+.callout[data-callout="problem"], .callout[data-callout="בעיה"] {
+    @extend .open-bracket-section;
 }
