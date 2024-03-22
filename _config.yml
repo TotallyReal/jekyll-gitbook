@@ -63,6 +63,7 @@ collections:
       - hebrew_motivation.md
       - hebrew_Fourier_transform.md
       - basic properties.md
+      - hebrew_transform_derivatives.md
       - hebrew_delta_function.md
       - hebrew_plancharel.md
       - hebrew_convolution.md

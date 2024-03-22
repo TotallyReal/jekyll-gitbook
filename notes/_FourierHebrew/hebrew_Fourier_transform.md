@@ -66,8 +66,10 @@ $$.\angles{f,g}:=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(x)\overline{g(x)}\dx$$
 נראה שתי דוגמאות חשובות להתמרת פורייה:
 
 > [!דוגמא]- דוגמא: הפונקציה $\chi_{[a,b]}$
+> ![[indicator.png|300]]{: ; style="float: left; border: 2px solid #000000;"}
 > עבור $a<b$ נגדיר את הפונקציה המציינת 
 > $$.f(x)=\chi_{[a,b]}(x)=\cases{1&x\in[a,b]\\0&else}$$
+>
 > חישוב של התמרת פורייה של הפונקציה הזאת יתן:
 > $$.2\pi \hat{f}(w)= \int_{-\infty}^{\infty} \chi_{[a,b]}(x)e^{-i\omega x}dx = \int_{a}^{b} e^{-i\omega x}dx =\frac{1}{\omega} ie^{-i\omega x}\mid_a^b = \frac{e^{-i\omega a}-e^{-i\omega b}}{\omega i}  $$
 > הביטוי למעלה אינו מוגדר כאשר $\omega=0$ ולכן שם צריך לחשב בנפרד ולקבל ש 

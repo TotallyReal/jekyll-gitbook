@@ -154,10 +154,13 @@ Our next step is to show some properties on the function $\hat {f}$ itself, and 
 > 2. (The Riemann-Lebesgue lemma): $\limfi{\abs{\omega}} \hat{f}(\omega) = 0$.
 
 >[!proof]- Proof:
-> 1. For the second claim, let's consider the following example with $f(x)=e^{-\abs{x}/10}$
+> 1. For the first claim, let's consider the following example with $f(x)=e^{-\abs{x}/10}$
 >    ![[continuity of Fourier transform.png]]
->    The function itself is drawn in green, and we also draw $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ in blue and red, where we use sine function instead of complex exponents, just so we can draw them. The transform should be thought of as the integrals over these function.
->    In this example we want to show that since $10$ and $10.2$ are close, their integrals over $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ are also close. The idea is that (1) if we are near the center the functions themselves are very close so their integrals are close and (2) if we are far away from the center, while this no longer holds, the total area beneath $f(x)$ is very small, so even when multiplying by some sine functions it remains small. Thus, together they will be small.
+>    We would like to show that the integrals over $f(x)e^{-i\omega x}$ and $f(x) e^{-i\omega_0x}$ are close if $\omega, \omega_0$ are close. However, since it is hard to draw complex function, we will look at their real analogues. In the picture above, the function itself is drawn in green, and we also draw $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ in blue and red. The transform should be thought of as the integrals over these function.
+>    In this example we want to show that since $10$ and $10.2$ are close, their integrals over $f(x)\cdot \sin(10x)$ and $f(x)\cdot \sin(10.2 x)$ are also close. There are two ideas that can be seen in the image that we can use in general: 
+>    1. If we are "near the center" the blue and red functions themselves are very close so their integrals are close and 
+>    2. If we are "far away from the center", while this no longer holds, the total area beneath $f(x)$ is very small, so even when multiplying by some sine functions it remains small. Thus, even if we look at the difference between two such functions, the area will be small.
+>    
 >    More formally, fix some $M>0$ which "measures" how far we are from the center, then:
 >   
 >    $$\align{  2\pi\abs{\hat{f}(\omega+h)-\hat{f}(\omega)} & \leq \int_{-\infty}^\infty\abs{e^{-i(\omega+h)x}-e^{-i\omega x}}\abs{f(x)}\dx = \int_{-\infty}^\infty\abs{e^{-ihx}-1}\abs{f(x)}\dx \\  & = \int_{\abs{x}\leq M}\abs{e^{-ihx}-1}\abs{f(x)}\dx + \int_{\abs{x}> M}\abs{e^{-ihx}-1}\abs{f(x)}\dx \\  & \leq \sup_{\abs{x}\leq M}\abs{e^{-ihx}-1} \cdot \int_{\abs{x}\leq M}\abs{f(x)}\dx + 2\int_{\abs{x}> M}\abs{f(x)}\dx \\  & \leq \sup_{\abs{x}\leq M}\abs{e^{-ihx}-1} \cdot \norm f_1 + 2\int_{\abs{x}> M}\abs{f(x)}\dx.}$$
