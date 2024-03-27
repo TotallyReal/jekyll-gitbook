@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_FourierHebrew/hebrew_laplace_convolution.md",
+                "file": "_FourierHebrew/hebrew_heaviside.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_FourierHebrew/hebrew_laplace_convolution.md",
+                "file": "_FourierHebrew/hebrew_heaviside.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_FourierHebrew/hebrew_laplace_convolution.md",
+                "file": "_FourierHebrew/hebrew_heaviside.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_FourierHebrew/hebrew_laplace_convolution.md"
+                "file": "_FourierHebrew/hebrew_heaviside.md"
               }
             }
           }
@@ -173,10 +173,11 @@
   },
   "active": "6a11aae9886fce81",
   "lastOpenFiles": [
-    "_FourierHebrew/hebrew_laplace.md",
     "_FourierHebrew/hebrew_laplace_convolution.md",
-    "_FourierHebrew/hebrew_convolution.md",
+    "_FourierHebrew/images/integration order.png",
     "_FourierHebrew/hebrew_laplace_differential_equations.md",
+    "_FourierHebrew/hebrew_laplace.md",
+    "_FourierHebrew/hebrew_convolution.md",
     "_FourierHebrew/hebrew_heaviside.md",
     "_FourierHebrew/hebrew_transform_derivatives.md",
     "_FourierHebrew/hebrew_plancharel.md",
@@ -215,7 +216,6 @@
     "_FourierHebrew/images/heat_equation_poly.png",
     "imgimg.png.md",
     "_FourierHebrew/images/inverse_fourier_fix2.png",
-    "_FourierHebrew/images/inverse_fourier_odd_function.png",
     "_Fourier/temp.md",
     "_temp/hebrew_plancharel 1.md"
   ]

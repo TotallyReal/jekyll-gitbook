@@ -47,10 +47,11 @@ $$\left[\;H(t)f(t)\;*\;H(t)g(t)\;\right]\;(x) = \int_{-\infty}^\infty H(x-t)f(x-
 
 > [!הוכחה]- הוכחה:
 > 1. עבור $x\geq 0$ מתקיים ש 
-> $$.|(f*g)(x)|\leq \int_0^x|f(x-t)|\cdot|g(t)|\dt\leq \int_0^xK_fK_ge^{s_0(x-t+t)}\dt=K_fK_ge^{s_0x}\int_0^x1\dt=K_fK_ge^{s_0x}x$$
+>    $$.|(f*g)(x)|\leq \int_0^x|f(x-t)|\cdot|g(t)|\dt\leq \int_0^xK_fK_ge^{s_0(x-t+t)}\dt=K_fK_ge^{s_0x}\int_0^x1\dt=K_fK_ge^{s_0x}x$$
 > 2. מהחלק הראשון נקבל שהתמרת לפלס של $f*g$ מוגדת לכל $s>s_0$, ושווה ל:
 >    $$.\cl[f*g](s) = \int_0^\infty \left(\int_0^tf(t-y)g(y)\dy\right)e^{-st}\dt$$
->    בגלל שכל האינטגרלים מתכנסים בהחלט, ניתן להשתמש ב[[hebrew_convolution|משפט פוביני]] כדי להחליף סדר אינטגרציה. התחום מוגדר ע"י $0\leq y\leq t$ ולכן $$.\int_0^\infty \left[\int_0^t (\cdots) \dt \right]\dy = \int_0^\infty \left[\int_0^\infty \chi_{[0,t]}(y)(\cdots) \dt\right] \dy = \int_0^\infty \left[\int_0^\infty \chi_{[0,t]}(y)(\cdots) \dt \right]\dy= \int_0^\infty \left[\int_y^\infty (\cdots) \dt \right]\dy$$
+>    בגלל שכל האינטגרלים מתכנסים בהחלט, ניתן להשתמש ב[[hebrew_convolution|משפט פוביני]] כדי להחליף סדר אינטגרציה. התחום מוגדר ע"י $0\leq y\leq t$ ולכן $$.\int_0^\infty \left[\int_0^t (\cdots) \dy \right]\dt = \int_0^\infty \left[\int_0^\infty \chi_{[0,t]}(y)(\cdots) \dy\right] \dt = \int_0^\infty \left[\int_0^\infty \chi_{[0,t]}(y)(\cdots) \dt \right]\dy= \int_0^\infty \left[\int_y^\infty (\cdots) \dt \right]\dy$$
+>    ![[integration order.png|400]]
 >    סה"כ נקבל ש 
 >    $$.\align{\cl[f*g](s) &= \int_0^\infty \left(\int_y^\infty f(t-y)g(y)e^{-st}\dt\right)\dy = \int_0^\infty g(y)e^{-sy}\left(\int_y^\infty f(t-y)e^{-s(t-y)}\dt\right)\dy \\ &= \int_0^\infty g(y)e^{-sy}\left(\int_0^\infty f(t)e^{-st}\dt\right)\dy = \cl[g](s)\cdot \cl[f](s)}$$
 >    
