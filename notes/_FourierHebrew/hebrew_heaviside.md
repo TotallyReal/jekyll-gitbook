@@ -25,7 +25,7 @@ $$.\cl[f](s)=\int_0^\infty f(t)e^{-st}\dt=\int_{-\infty}^\infty H(t)\tilde{f}(t)
 
 > [!טענה] טענה:
 > תהא $f:[0,\infty)\to \CC$ כך ש $\cl[f](s)$ קיים לכל $s>s_0$. אז לכל $c\geq 0$ ו $s>s_0$ מתקיים ש 
-> $$.\cl\left[H_{[c,\infty)}(t)f(t-c)\right](s) = \cl\left[H(t-c)f(t-c)\right](s) =e^{-sc}\cl[f](s)$$
+> $$.\dboxed{\cl\left[H_{[c,\infty)}(t)f(t-c)\right](s) = \cl\left[H(t-c)f(t-c)\right](s) =e^{-sc}\cl[f](s)}$$
 
 > [!הוכחה]- הוכחה:
 > ההוכחה היא עכשיו החלפת משתנים פשוטה:

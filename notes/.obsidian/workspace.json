@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_FourierHebrew/hebrew_transform_derivatives.md",
+                "file": "_FourierHebrew/hebrew_laplace.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6a11aae9886fce81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_FourierHebrew/hebrew_laplace_convolution.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "פוביני",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_FourierHebrew/hebrew_transform_derivatives.md",
+                "file": "_FourierHebrew/hebrew_laplace_convolution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_FourierHebrew/hebrew_transform_derivatives.md",
+                "file": "_FourierHebrew/hebrew_laplace_convolution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_FourierHebrew/hebrew_transform_derivatives.md"
+                "file": "_FourierHebrew/hebrew_laplace_convolution.md"
               }
             }
           }
@@ -158,25 +171,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "502d0c0da3626069",
+  "active": "6a11aae9886fce81",
   "lastOpenFiles": [
-    "_FourierHebrew/hebrew_plancharel.md",
-    "_FourierHebrew/hebrew_transform_derivatives.md",
-    "_Fourier/Fourier Transform.md",
     "_FourierHebrew/hebrew_laplace.md",
-    "_FourierHebrew/hebrew_Fourier_transform.md",
-    "_FourierHebrew/basic properties.md",
+    "_FourierHebrew/hebrew_laplace_convolution.md",
     "_FourierHebrew/hebrew_convolution.md",
-    "_FourierHebrew/hebrew_bounded_frequency.md",
-    "_FourierHebrew/hebrew_delta_function.md",
     "_FourierHebrew/hebrew_laplace_differential_equations.md",
     "_FourierHebrew/hebrew_heaviside.md",
+    "_FourierHebrew/hebrew_transform_derivatives.md",
+    "_FourierHebrew/hebrew_plancharel.md",
+    "_Fourier/Fourier Transform.md",
+    "_FourierHebrew/hebrew_Fourier_transform.md",
+    "_FourierHebrew/basic properties.md",
+    "_FourierHebrew/hebrew_bounded_frequency.md",
+    "_FourierHebrew/hebrew_delta_function.md",
     "_FourierHebrew/images/heaviside.png",
     "_Fourier/Orthogonal sets - a reminder.md",
     "_FourierHebrew/hebrew_motivation.md",
     "_FourierHebrew/images/indicator.png",
     "_FourierHebrew/hebrew_heat_equation.md",
-    "_FourierHebrew/hebrew_laplace_convolution.md",
     "_FourierHebrew/images/linear_glue_constant.png",
     "_Fourier/Fourier Series.md",
     "_Fourier/Infinite Orthonormal basis.md",
@@ -204,7 +217,6 @@
     "_FourierHebrew/images/inverse_fourier_fix2.png",
     "_FourierHebrew/images/inverse_fourier_odd_function.png",
     "_Fourier/temp.md",
-    "_temp/hebrew_plancharel 1.md",
-    "_temp/Untitled.md"
+    "_temp/hebrew_plancharel 1.md"
   ]
 }
