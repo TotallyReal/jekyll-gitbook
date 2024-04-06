@@ -73,6 +73,9 @@ collections:
       - hebrew_laplace.md
       - hebrew_laplace_differential_equations.md
       - hebrew_heaviside.md
+      - hebrew_laplace_convolution.md
+      - hebrew_integral_equations.md
+      - hebrew_laplace_summerization.md
 #  Temp:
 #    output: true
 #    permalink: /:collection/:path
