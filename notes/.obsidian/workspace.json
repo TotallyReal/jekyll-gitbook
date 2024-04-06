@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_FourierHebrew/hebrew_integral_equations.md",
+                "file": "_Fourier/Fourier Course Information.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,13 +43,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_FourierHebrew/hebrew_laplace_summerization.md",
+                "file": "_Fourier/Fourier Series.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_FourierHebrew/hebrew_integral_equations.md",
+                "file": "_Fourier/Fourier Course Information.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_FourierHebrew/hebrew_integral_equations.md",
+                "file": "_Fourier/Fourier Course Information.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_FourierHebrew/hebrew_integral_equations.md"
+                "file": "_Fourier/Fourier Course Information.md"
               }
             }
           }
@@ -178,10 +179,12 @@
   },
   "active": "6a11aae9886fce81",
   "lastOpenFiles": [
-    "_FourierHebrew/hebrew_laplace_convolution.md",
+    "_Fourier/Fourier Series.md",
     "_FourierHebrew/hebrew_laplace_summerization.md",
-    "_FourierHebrew/hebrew_Fourier_transform_summerization.md",
+    "_Fourier/Fourier Course Information.md",
     "_FourierHebrew/hebrew_integral_equations.md",
+    "_FourierHebrew/hebrew_laplace_convolution.md",
+    "_FourierHebrew/hebrew_Fourier_transform_summerization.md",
     "_FourierHebrew/hebrew_transform_derivatives.md",
     "_FourierHebrew/hebrew_heaviside.md",
     "_FourierHebrew/hebrew_laplace_differential_equations.md",
@@ -200,7 +203,6 @@
     "_FourierHebrew/images/indicator.png",
     "_FourierHebrew/hebrew_heat_equation.md",
     "_FourierHebrew/images/linear_glue_constant.png",
-    "_Fourier/Fourier Series.md",
     "_Fourier/Infinite Orthonormal basis.md",
     "_Fourier/Inner product spaces - a reminder.md",
     "_Fourier/Motivation.md",
@@ -217,7 +219,6 @@
     "_FourierHebrew/js/wheel_aliasing/wheel_aliasing.html",
     "_FourierHebrew/images/periodic_continuation.png",
     "_FourierHebrew/images/wave_aliasing.png",
-    "_Fourier/Fourier Course Information.md",
     "_temp/temp.md",
     "_FourierHebrew/images/inverse_fourier_fix1.png",
     "_FourierHebrew/images/heat_equation_poly.png",
