@@ -19,6 +19,8 @@ $$\{\frac{1}{\sqrt{2}}, \sin(x), \cos(x), \sin(2x), \cos(2x),...\}.$$
 >[!remark]- Remark: Equality between functions
 > Recall that in our space $E[-\pi,\pi]$ we identify between two function $f,g$ if $f-g$ is zero almost everywhere (namely $f\equiv g$ for all but finitely many points).
 > In particular, if both $f$ and $g$ have the same Fourier series, then $f\sim g$ are the same in $E[-\pi, \pi]$ (both equivalent to the same Fourier series) and therefore are equal almost everywhere.
+> 
+> ^tag
 
 
 >[!def] Definition: Fourier coefficients

@@ -1,110 +1,20 @@
 
 
-/* I don't like changing the whole div. Why does 'body' not enough? */ 
-.hebrew div{
-  /*direction :rtl;*/
-}
-
-.hebrew.ol {
-  /*direction: rtl;*/
-}
-
-/*.markdown-preview-view h2 {
-    color: purple;
-}*/
-
 .hebrew.markdown-preview-view, .hebrew.markdown-source-view {
     direction: rtl;
 }
 
-    .hebrew.markdown-source-view span.cm-math {
-        aabackground: #101010;
-        direction: ltr !important;
-        aafont-size: 30px;
-        unicode-bidi: embed;
-    }
-/*
-.hebrew ul{
-  direction: rtl;
-}*/
-/*
-.hebrew li{
-  direction: rtl;
-}*/
+.hebrew.markdown-source-view span.cm-math {
+    aabackground: #101010;
+    direction: ltr !important;
+    aafont-size: 30px;
+    unicode-bidi: embed;
+}
 
 .CodeMirror pre.CodeMirror-line {
   max-width: 300px;
 }
 
-
-/*  -------------------------- doesn't work ----------------------------- */
-/*
-.hebrew h1 {
-    color: red;
-}
-
-.markdown-preview-view .h1 {
-    color: green;
-}
-
-.h1 {
-  color: blue;
-}
-
-h1 {
-  color: yellow;
-}
-*/
-/*  -------------------------- up to here ----------------------------- */
-
 .hebrew.markdown-preview-view body {
   direction:rtl;
 }
-
-/*
-.markdown-preview-view h4 {
-  color: blue;
-}
-
-.cm-header-4 h4 {
-  color: blue;
-}
-
-.cm-header h4 {
-  color: blue;
-}
-
-.cm-widgetBuffer h4 {
-  color: blue;
-}
-
-.markdown-reading-view h4 {
-  color: green;
-}
-
-.markdown-source-view h4 {
-  color: red;
-}
-
-.cm-s-obsidian h4 {
-  color: red;
-}
-
-.cm-editor h4 {
-  color: red;
-}
-
-.cm-editor h4 {
-  color: green;
-}
-*/
-
-/*
-.view-header{
-direction: rtl;
-text-align: right;
-}
-.markdown-preview-view.view-content {
-    text-align: right;
-    direction: rtl;
-}*/

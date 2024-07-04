@@ -163,7 +163,7 @@ cssclasses:
 > 1. **התכנסות נקודתית**: לכל $x=x_0$ קבוע נקבל את ההתכנסות הנקודתית $\displaystyle{\lim_{h\to 0}} f_h(x_0)=|0|\cdot|f(x_0)|=0$ , כלומר הפונקציות מתכנסות נקודתית לפונקצית האפס.
 > 2. **שליטה**: אי שוויון המשולש נותן לנו ש $|f_h(x)|\leq 2|f(x)|$, כלומר הפונקציות נשלטות ע"י $2f(x)$ שהיא אינטגרבילית בהחלט.
 > משפט ההתכנסות הנשלטת יתן לנו ש
-> $$\lim_{h\to 0}\int_{-\infty}^\infty f_h(x)\dx = \int_{-\infty}^\infty \limfi _{h\to 0}f_h(x)\dx = \int_{-\infty}^\infty 0 \dx = 0$$
+> $$\lim_{h\to 0}\int_{-\infty}^\infty f_h(x)\dx = \int_{-\infty}^\infty \lim _{h\to 0}f_h(x)\dx = \int_{-\infty}^\infty 0 \dx = 0$$
 > וזה יסיים את ההוכחה.
 
 
